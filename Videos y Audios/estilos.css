@@ -17,19 +17,27 @@ body {
   padding: 2em 0 2em 0;
 }
 
+.titulos {
+  color: white;
+  display: inline-block;
+  position: relative;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  padding-top: 1em;
+}
+
 .contenedor {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 19em;
   margin: auto;
-  height: auto;
-  background-color: black;
+  height: 24em;
   border-radius: 14px;
   overflow: hidden;
   padding-top: 10px;
   margin-bottom: 20px;
-  /*box-shadow: 10px 10px 5px grey;*/
 }
 
 .crop {
@@ -42,10 +50,10 @@ body {
   /*width: 384px;
   height: 216px;
   margin: -30px 0 0 -60px;*/
+  border-radius: 14px;
   width: 384px;
   height: 216px;
   margin: -10px 0 0 0px;
-  border-color: black;
   object-fit: contain;
 }
 
@@ -58,7 +66,7 @@ body {
   text-align: justify;
   color: rgba(240,240,240,0.9);
   font-family: sans-serif;
-  font-size: 0.65em;
+  font-size: 0.8em;
   padding: 1.2em;
 }
 
@@ -66,6 +74,31 @@ body {
   text-align: center;
 }
 
-.contenedor iframe:hover {
+/*------------------------------------ Musica ---------------------------------*/
 
+#Audios {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 0 2em 0;
+  justify-content: center;
+}
+
+.contenedor-musica {
+  position: relative;
+  display: inline-block;
+  width: 19em;
+}
+
+.contenedor-musica audio {
+  width: 19em;
+  height: 4em;
+}
+
+.contenedor-musica h2 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2em;
 }
