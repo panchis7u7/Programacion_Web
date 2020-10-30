@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Carlos Sebastian Madrigal Rodriguez">
+    <title>Ejercicios JS</title>
+    <style media="screen">
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    .elemento {
+      margin: 5px 0 5px 0;
+    }
+
+    </style>
+    <script type="text/javascript">
+
+      //Funcion que cuenta el numero de veces que aparece un caracter en una cadena.
+      function noOcurrencias(button){
+        let cadena = button.form.elements['ocurrencias'].value;
+        let car = button.form.elements['car'].value;
+        let contador = 0;
+        Array.from(cadena).forEach((item, i) => {
+          if(cadena[i] == car){
+            contador++;
+          } i++ });
+        //document.getElementById('res_ocurrencias').innerHTML = ' => ' + car + ' se repite ' + contador + ' veces.' ;
+        button.form.elements['res'].value = ' => ' + car + ' se repite ' + contador + ' veces.' ;
+      } //End noOcurrencias;
+      /*************************************************************************/
+
+      //Funcion que recibe un caracter y devuelve su equivalente en alfabeto radiofonico.
+      function sisRadiofonico(button){
+        let car = button.form.elements['car2'].value.toLowerCase();
+        switch (car) {
+          case 'a': button.form.elements['res2'].value = ' => Alfa'; break;
+          case 'b': button.form.elements['res2'].value = ' => Bravo'; break;
+          case 'c': button.form.elements['res2'].value = ' => Charlie'; break;
+          case 'd': button.form.elements['res2'].value = ' => Delta'; break;
+          case 'e': button.form.elements['res2'].value = ' => Echo'; break;
+          case 'f': button.form.elements['res2'].value = ' => Foxtrot'; break;
+          case 'g': button.form.elements['res2'].value = ' => Golf'; break;
+          case 'h': button.form.elements['res2'].value = ' => Hotel'; break;
+          case 'i': button.form.elements['res2'].value = ' => India'; break;
+          case 'j': button.form.elements['res2'].value = ' => Juliett'; break;
+          case 'k': button.form.elements['res2'].value = ' => Kilo'; break;
+          case 'l': button.form.elements['res2'].value = ' => Lima'; break;
+          case 'm': button.form.elements['res2'].value = ' => Mike'; break;
+          case 'n': button.form.elements['res2'].value = ' => November'; break;
+          case 'o': button.form.elements['res2'].value = ' => Oscar'; break;
+          case 'p': button.form.elements['res2'].value = ' => Papa'; break;
+          case 'q': button.form.elements['res2'].value = ' => Quebec'; break;
+          case 'r': button.form.elements['res2'].value = ' => Romeo'; break;
+          case 's': button.form.elements['res2'].value = ' => Sierra'; break;
+          case 't': button.form.elements['res2'].value = ' => Tango'; break;
+          case 'u': button.form.elements['res2'].value = ' => Uniform'; break;
+          case 'v': button.form.elements['res2'].value = ' => Victor'; break;
+          case 'w': button.form.elements['res2'].value = ' => Whiskey'; break;
+          case 'x': button.form.elements['res2'].value = ' => Xray'; break;
+          case 'y': button.form.elements['res2'].value = ' => Yankee'; break;
+          case 'z': button.form.elements['res2'].value = ' => Zulu'; break;
+          case '1': button.form.elements['res2'].value = ' => One'; break;
+          case '2': button.form.elements['res2'].value = ' => Two'; break;
+          case '3': button.form.elements['res2'].value = ' => Three'; break;
+          case '4': button.form.elements['res2'].value = ' => Four'; break;
+          case '5': button.form.elements['res2'].value = ' => Five'; break;
+          case '6': button.form.elements['res2'].value = ' => Six'; break;
+          case '7': button.form.elements['res2'].value = ' => Seven'; break;
+          case '8': button.form.elements['res2'].value = ' => Eight'; break;
+          case '9': button.form.elements['res2'].value = ' => Nine'; break;
+          case '0': button.form.elements['res2'].value = ' => Zero'; break;
+          default: button.form.elements['res2'].value = 'Error.';
+        }
+      } //End noOcurrencias();
+      /*************************************************************************/
+
+      //Funcion que recibe un caracter y devuelve su equivalente en ASCII.
+      function asc(button){
+        let car = button.form.elements['car3'].value;
+        button.form.elements['res2'].value = ' => ' + car.charCodeAt();
+      } //End asc();
+      /*************************************************************************/
+    </script>
+  </head>
+  <body>
+    <h2 class="elemento" style="font-family: sans-serif;">Contar el numero de ocurrencias de una letra en una cadena:</h2>
+    <form style="margin: 5px;">
+      <label class="elemento" for="ocurrencias">Ingrese cadena de texto y el caracter que quiere contar.</label><br>
+      <input class="elemento" type="text" name="ocurrencias" value="">
+      <input class="elemento" style="text-align: center;" type="text" name="car" value="" size="4">
+      <input class="elemento" style="border: none; color: red; background-color: white;" type="text" name="res" value="" size="20" disabled><br>
+      <button class="elemento" type="button" name="btnCaracter" onclick="noOcurrencias(this)">Contar</button>
+    </form>
+    <h2 class="elemento" style="font-family: sans-serif;">Obtener el valor radiofonico equivalente de una letra:</h2>
+    <form style="margin: 5px;">
+      <label class="elemento" for="car2"></label>
+      <input class="elemento" style="text-align: center;" type="text" name="car2" value="" size="4">
+      <input class="elemento" style="border: none; color: red; background-color: white;" type="text" name="res2" value="" size="10" disabled><br>
+      <button class="elemento" type="button" name="btnCaracter2" onclick="sisRadiofonico(this)">Convertir</button>
+    </form>
+    <h2 class="elemento" style="font-family: sans-serif;">Obtener el valor ASCII equivalente de un caracter:</h2>
+    <form style="margin: 5px;">
+      <label class="elemento" for="car3"></label>
+      <input class="elemento" style="text-align: center;" type="text" name="car3" value="" size="4">
+      <input class="elemento" style="border: none; color: red; background-color: white;" type="text" name="res2" value="" size="10" disabled><br>
+      <button class="elemento" type="button" name="btnCaracter3" onclick="asc(this)">Convertir</button>
+    </form>
+  </body>
+</html>

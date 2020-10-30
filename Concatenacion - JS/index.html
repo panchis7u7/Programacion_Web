@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Email Address Generator</title>
+    <script>
+      function prueba(button) {
+        let arr1 = button.form.elements;
+        document.getElementById('res').innerHTML = arr1['first'].value + '.' + arr1['last'].value + "@gmail.com";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Enter your first and last names and then click the button.</h1>
+    <form>
+      <label for="first">First Name: </label>
+      <input type="text" name="first" value=""><br>
+      <label for="last">Last Name: </label>
+      <input type="text" name="last" value=""><br><br>
+      <input type="button"value="Generate Email" onclick="prueba(this)"><br>
+    </form>
+    <h2 id="res"></h2>
+  </body>
+</html>
