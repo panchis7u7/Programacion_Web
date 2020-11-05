@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Carlos Sebastian Madrigal Rodriguez">
+    <title>Controles</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        background-color: black;
+      }
+
+      #imagen_mov {
+        width: 128px;
+        height: 128px;
+        position: absolute;
+        background-position: 0 0;
+        background-image: url(https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/44/28/metablogapi/7380.sprites_763B2186.png);
+        transform: rotateY(180deg);
+      }
+
+      #reinicio {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 65%;
+        background-color: #809fff;
+        padding: 10px;
+        position: absolute;
+        border-radius: 6px;
+
+      }
+
+      .contenedor_controles {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+        display: block;
+        position: fixed;
+        width: 256;
+        height: 128;
+        border: 6px solid rgba(210,210,210,0.6);
+        border-radius: 6px;
+        text-align: center;
+      }
+
+      .boton {
+        width: 64px;
+        height: 64px;
+        display: inline-block; margin: 5px;
+        background-image: url(https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/44/28/metablogapi/7380.sprites_763B2186.png);
+      }
+
+      #arriba { background-position: 128px 0px;}
+      #izquierda { background-position: 128px 0px;  transform: rotate(-90deg);  }
+      #abajo { background-position: 128px 0px; transform: rotate(180deg); }
+      #derecha { background-position: 128px 0px;  transform: rotate(90deg);  }
+
+      #arriba:hover, #izquierda:hover, #abajo:hover, #derecha:hover {background-color: rgba(210,210,210, 0.8); border-radius: 6px;}
+
+    </style>
+    <script type="text/javascript">
+      function arriba(){
+        let x = document.getElementById('imagen_mov').offsetTop;
+        x = x - 20;
+        let img = document.getElementById('imagen_mov').style.top = x + "px";
+      }
+
+      function izquierda(){
+        let x = document.getElementById('imagen_mov').offsetLeft;
+        x = x - 20;
+        let img = document.getElementById('imagen_mov').style.left = x + "px";
+        document.getElementById('imagen_mov').style.transform = 'rotateY(0deg)';
+      }
+
+      function abajo(){
+        let x = document.getElementById('imagen_mov').offsetTop;
+        x = x + 20;
+        let img = document.getElementById('imagen_mov').style.top = x + "px";
+      }
+
+      function derecha(){
+        let x = document.getElementById('imagen_mov').offsetLeft;
+        x = x + 20;
+        let img = document.getElementById('imagen_mov').style.left = x + "px";
+        document.getElementById('imagen_mov').style.transform = 'rotateY(180deg)';
+      }
+
+      function reiniciar(){
+        document.getElementById('imagen_mov').style.top = '0px';
+        document.getElementById('imagen_mov').style.left = '0px';
+      }
+    </script>
+  </head>
+  <body>
+    <div id="imagen_mov">
+    </div>
+    <button id="reinicio" type="button" name="Reiniciar" onclick="reiniciar()">Reiniciar</button>
+    <div class="contenedor_controles">
+      <div class="boton" id="arriba" onclick="arriba()"></div>
+        <div style="display: block; position: relative; width: 280px; text-align: center;">
+          <div class="boton" id="izquierda" onclick="izquierda()"></div>
+          <div class="boton" id="abajo" onclick="abajo()"></div>
+          <div class="boton" id="derecha" onclick="derecha()"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
