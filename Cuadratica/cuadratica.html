@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Carlos Sebastian Madrigal Rodriguez">
+    <title>Funcion Cuadratica</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      input[type=text] {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      form {
+        border: 6px solid rgba(210,210,210,0.8);
+        padding: 1.5em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 8px;
+      }
+
+      button {
+        margin-top: 6px;
+        padding: 6px;
+        border-radius: 12px;
+        background-color: rgba(137,165,245,1);
+        border-color: rgba(137,165,245,1);
+      }
+
+      h2 {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%,-50%);
+      }
+      button:hover{ background-color: rgba(59,93,184,1); border-color: rgba(59,93,184,1);}
+    </style>
+    <script type="text/javascript">
+      //Funcion que calcula las soluciones del termino cuadratico.
+      function chicharronera(forma){
+        let a = forma.form.elements['coefa'].value;
+        let b = forma.form.elements['coefb'].value;
+        let c = forma.form.elements['coefc'].value;
+        let sol = document.getElementById('Solucion');
+        let bpot = b**2;
+        let fourac = 4*a*c;
+        let prim = parseFloat(((-1*b)/(2*a)));
+        let seg = parseFloat(bpot-fourac);
+
+        if (isNaN(a) || a == '' || isNaN(b) || b == '' || isNaN(c) || c == ''){
+          alert('Asegure que haya ingresado los valores correctos!');
+          return;
+        } else if(bpot < fourac){
+          sol.innerHTML = '<hr><br>Las raices son imaginarias!<br>Soluciones: <br><br> x<sub>1</sub>: ' +
+          prim + ' + √' + seg + ' = ' + prim + ' + √' + Math.abs(seg) + 'i' + '.<br>' +
+          '<br> x<sub>2</sub>: ' + prim + ' - √' + seg + ' = ' + prim + ' - √' + Math.abs(seg) + 'i' + '.<br>' ;
+        } else if(bpot == fourac){
+          sol.innerHTML = '<hr><br>Solo hay una solucion!<br>Solucion: <br><br> x<sub>1</sub>: ' +
+          prim + '.<br>';
+        } else if (bpot > fourac){
+          sol.innerHTML = '<hr><br>Existen 2 soluciones reales!<br>Soluciones: <br><br> x<sub>1</sub>: ' +
+          parseFloat(prim + (Math.sqrt(seg)/(2*a))) + '.<br>' +
+          '<br> x<sub>2</sub>: ' + parseFloat(prim - (Math.sqrt(seg)/(2*a))) + '.<br>' ;
+        }
+      } //Fin Chicharronera.
+      /************************************************************************/
+    </script>
+  </head>
+  <body>
+    <h2>Calculadora de raices</h2>
+    <form>
+      <img style="padding-bottom: 1.5em;" src="https://i.pinimg.com/originals/19/ab/87/19ab870784d018c47ad9b36c6da9c2c8.gif" alt="chicharronera"><br>
+      <label for="coefa">Ingrese el coeficiente a: </label>
+      <input type="text" name="coefa" value="" size="4"><br>
+      <label for="coefb">Ingrese el coeficiente b: </label>
+      <input type="text" name="coefb" value="" size="4"><br>
+      <label for="coefc">Ingrese el coeficiente c: </label>
+      <input type="text" name="coefc" value="" size="4"><br>
+      <button type="button" name="calcular" onclick="chicharronera(this)">Calcular</button>
+      <p id="Solucion"></p>
+    </form>
+  </body>
+</html>
