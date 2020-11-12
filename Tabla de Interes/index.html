@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Carlos Sebastian Madrigal Rodriguez">
+    <title>Compound Interest Calculator</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      form {
+        clear: both;
+        text-align: right;
+      }
+
+      form * {
+        margin: 2px 0 2px 0;
+      }
+
+      #cont {
+        width: 250px;
+        margin-bottom: 16px;
+      }
+
+      table {
+        border: 4px solid white;
+        display: none;
+      }
+
+      table thead {
+        background-color: DarkBlue;
+      }
+
+      tbody tr td {
+        color: black;
+        background-color: #FAAFBE;
+      }
+
+      td {
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+
+    </style>
+    <script src="generar.js"></script>
+  </head>
+  <body>
+    <h2>Compound Interest Calculator</h2>
+    <div id="cont">
+      <form>
+        <label for="depInicial">Initial deposit: </label>
+        <input type="text" name="depInicial" value="" size="5"><br>
+        <label for="tasaInteres">Annual interest rate: </label>
+        <input type="text" name="tasaInteres" value="" size="5"><br>
+        <label for="crecimiento">Years to grow: </label>
+        <input type="text" name="crecimiento" value="" size="5"><br>
+        <button style="padding: 2px; margin-top: 16px;" type="button" name="button" onclick="generate(this)"> Generate compund interest </button>
+      </form>
+    </div>
+    <table id="res">
+      <thead>
+        <td>Year</td>
+        <td>Starting Value</td>
+        <td>Interest Earned</td>
+        <td>Ending Values</td>
+      </thead>
+      <tbody>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
