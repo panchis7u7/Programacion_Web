@@ -7,3 +7,4 @@
 *.jfif
 *.gif
 *.txt
+/node_modules/
