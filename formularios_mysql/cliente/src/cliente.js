@@ -1,7 +1,7 @@
 import React from "react";
 import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert} from "react-bootstrap";
 
-class cliente extends React.Component {
+class Cliente extends React.Component {
     constructor(props){
         super(props)
         this.state={
@@ -14,7 +14,7 @@ class cliente extends React.Component {
           email: "",
           alerta: false,
           msgAlerta: "",
-          tipoAlerta: "satisfactoria",
+          tipoAlerta: "success",
         };
       }
     
@@ -54,10 +54,11 @@ class cliente extends React.Component {
             email: "",
             alerta: true,
             msgAlerta: resultado.respuesta,
-            tipoAlerta: "satisfactoria",
+            tipoAlerta: "success",
           });
         });
       };
+
     
       render(){
         return (
@@ -111,4 +112,4 @@ class cliente extends React.Component {
         );
       }
     }
- export default cliente;
+ export default Cliente;

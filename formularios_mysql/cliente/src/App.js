@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import NavBar from "./barra-nav.js";
-import cliente from "./cliente"
+import Cliente from "./cliente.js"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
 class App extends React.Component{
@@ -12,14 +12,24 @@ class App extends React.Component{
     }
   };
 
-  render(){
+  tbclientes = () => {
+    return (<Cliente></Cliente>);
+  };
+
+  render(){ 
     return (
       <div>
         <Router>
           <NavBar></NavBar>
-          <Switch>
-            <Route path="/cliente" component={cliente}>
-              <cliente></cliente>
+          <Switch>     
+            <Route path="/cliente" component={Cliente}>
+              <Cliente></Cliente>
+            </Route>
+            <Route path="/bodega" component={Cliente}>
+              <Cliente></Cliente>
+            </Route>
+            <Route path="/cliente" component={Cliente}>
+              <Cliente></Cliente>
             </Route>
           </Switch>
         </Router>

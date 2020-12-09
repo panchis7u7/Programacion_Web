@@ -2,7 +2,7 @@ import React from "react";
 import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert} from "react-bootstrap";
 import './App.css';
 
-class bodega extends React.Component {
+class Pedido extends React.Component {
     constructor(props){
         super(props)
         this.state={
@@ -10,7 +10,7 @@ class bodega extends React.Component {
           capacidad: "",
           alerta: false,
           msgAlerta: "",
-          tipoAlerta: "satisfactoria",
+          tipoAlerta: "success",
         };
       }
     
@@ -40,7 +40,7 @@ class bodega extends React.Component {
             capacidad: "",
             alerta: true,
             msgAlerta: resultado.respuesta,
-            tipoAlerta: "satisfactoria",
+            tipoAlerta: "success",
           });
         });
       };
@@ -77,4 +77,4 @@ class bodega extends React.Component {
         );
       }
     }
- export default det_pedido;
+ export default Pedido;
