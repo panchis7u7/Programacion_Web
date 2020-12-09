@@ -62,6 +62,11 @@ app.post("/api/create", (req, res) => {
     let sql = "INSERT INTO cliente SET ?";
     let query = conn.query(sql, data, (err, result) => {
         if (err) throw err;
-        res.send(JSON.stringify({status: 200, error: null, response: "Nuevo regisstro anadido satisfactoriamente"}));
+        res.send(JSON.stringify({status: 200, error: null, response: "Nuevo registro anadido satisfactoriamente"}));
     });
+});
+
+//Mostrar todos los registros.
+app.get("/api/view", (req, res) => {
+    let sql = "SELECT * FROM cliente";
 });
