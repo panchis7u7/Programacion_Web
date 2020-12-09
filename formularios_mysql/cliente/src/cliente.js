@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert} from "react-bootstrap";
+import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert, Table} from "react-bootstrap";
 
 class Cliente extends React.Component {
     constructor(props){
@@ -12,6 +12,7 @@ class Cliente extends React.Component {
           telefono2: "",
           direccion: "",
           email: "",
+          record: [],
           alerta: false,
           msgAlerta: "",
           tipoAlerta: "success",
@@ -59,6 +60,27 @@ class Cliente extends React.Component {
         });
       };
 
+      componentWillMount(){
+        this.fethRegistros();
+      }
+
+      fethRegistros = () => {
+        let cabezales = new Headers();
+        cabezales.append("Content-Type", "application/json");
+        fetch("http://localhost:3001/api/view", {
+          method: "GET",
+          headers: cabezales,
+        })
+        .then((respuesta) => respuesta.json())
+        .then((resultado) => {
+          console.log("resultado: ", resultado);
+          this.setState({
+            record: resultado.respuesta,
+          });
+        })
+        .catch((error) => console.log("error: ", error));
+      };
+
     
       render(){
         return (
@@ -74,6 +96,24 @@ class Cliente extends React.Component {
                 <Alert.Heading>{this.state.msgAlerta}</Alert.Heading>
               </Alert>
               ): null}
+              {/* Todos los registros seran mostrados*/}
+              <Row >
+                <Table striped bordered hover size="sm">
+                  <thead>
+                    <tr>
+                      <th>Cedula</th>
+                      <th>Nombre</th>
+                      <th>Apellido</th>
+                      <th>Telefono1</th>
+                      <th>Telefono2</th>
+                      <th>Direccion</th>
+                      <th>email</th>
+                      <th colSpan="2">Acciones</th>
+                    </tr>
+                  </thead>
+
+                </Table>
+              </Row>
             <Row>
               <Form>
                 <FormGroup>

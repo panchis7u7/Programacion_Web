@@ -13,7 +13,7 @@ class Pedido extends React.Component {
           tipoAlerta: "success",
         };
       }
-    
+
       handleChange = (evt) => {
         this.setState({
           [evt.target.name]: evt.target.value,
