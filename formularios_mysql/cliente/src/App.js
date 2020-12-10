@@ -5,8 +5,10 @@ import Bodega from "./Vistas/bodega.js";
 import Proveedor from "./Vistas/proveedor.js";
 import Empleado from "./Vistas/empleado.js";
 import Categoria from "./Vistas/categoria.js";
-import Pedido from "./Vistas/det_pedido.js";
 import Main from "./Vistas/main.js";
+import Factura from "./Vistas/factura.js"
+import Det_pedido from "./Vistas/det_pedido.js"
+import Det_factura from "./Vistas/det_factura.js"
 import './Estilos/App.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
@@ -42,8 +44,14 @@ class App extends React.Component{
             <Route path="/categoria" component={Categoria}>
               <Categoria></Categoria>
             </Route>
-            <Route path="/det_pedido" component={Pedido}>
-              <Pedido></Pedido>
+            <Route path="/det_pedido" component={Det_pedido}>
+              <Det_pedido></Det_pedido>
+            </Route>
+            <Route path="/det_factura" component={Det_factura}>
+              <Det_factura></Det_factura>
+            </Route>
+            <Route path="/factura" component={Factura}>
+              <Factura></Factura>
             </Route>
           </Switch>
         </Router>

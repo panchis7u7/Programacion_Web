@@ -25,6 +25,9 @@ render(){
                         <Link to="/cliente">
                             <ReactBootStrap.Nav.Link href="/cliente">Clientes</ReactBootStrap.Nav.Link>
                         </Link>
+                        <Link to="/factura">
+                            <ReactBootStrap.Nav.Link href="/factura">Facturas</ReactBootStrap.Nav.Link>
+                        </Link>
                         <ReactBootStrap.NavDropdown title="Personal" id="collasible-nav-dropdown">
                             <Link to="/empleado">
                                 <ReactBootStrap.NavDropdown.Item href="/empleado">Empleados</ReactBootStrap.NavDropdown.Item>
@@ -39,6 +42,14 @@ render(){
                             </Link>
                             <Link to="/categoria">
                                 <ReactBootStrap.NavDropdown.Item href="/categoria">Categorias</ReactBootStrap.NavDropdown.Item>
+                            </Link>
+                        </ReactBootStrap.NavDropdown>
+                        <ReactBootStrap.NavDropdown title="Compras" id="collasible-nav-dropdown">
+                            <Link to="/det_factura">
+                                <ReactBootStrap.NavDropdown.Item href="/det_factura">Facturas</ReactBootStrap.NavDropdown.Item>
+                            </Link>
+                            <Link to="/det_pedido">
+                                <ReactBootStrap.NavDropdown.Item href="/det_pedido">Pedidos</ReactBootStrap.NavDropdown.Item>
                             </Link>
                         </ReactBootStrap.NavDropdown>
                         

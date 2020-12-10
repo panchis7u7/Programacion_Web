@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Form, FormControl, FormLabel, Button, Alert, Table, Col, bordered, striped, hover } from "react-bootstrap";
+import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col,bordered,striped,hover} from "react-bootstrap";
 import "../Estilos/Tabla.css";
 
 class Cliente extends React.Component {
@@ -172,38 +172,38 @@ class Cliente extends React.Component {
               </Alert>
             ) : null}
           <Row>
-            <Table striped bordered hover size="sm">
+            <Table striped bordered hover size="sm" >
               <thead>
                 <tr>
-                  <th>Id</th>
-                  <th>Cedula</th>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
-                  <th>Telefono1</th>
-                  <th>Telefono2</th>
-                  <th>Direccion</th>
-                  <th>email</th>
-                  <th colSpan="2">Acciones</th>
+                  <th class="align-middle">Id</th>
+                  <th class="align-middle">Cedula</th>
+                  <th class="align-middle">Nombre</th>
+                  <th class="align-middle">Apellido</th>
+                  <th class="align-middle">Telefono1</th>
+                  <th class="align-middle">Telefono2</th>
+                  <th class="align-middle">Direccion</th>
+                  <th class="align-middle">email</th>
+                  <th class="align-middle" colSpan="2">Acciones</th>
                 </tr>
               </thead>
               <tbody>
                 {this.state.registros.map((item) => {
                   return (
                     <tr onClickCapture={() => this.updateInput(item)}>
-                      <td>{item.id_cliente}</td>
-                      <td>{item.cedula}</td>
-                      <td>{item.nombre}</td>
-                      <td>{item.apellido}</td>
-                      <td>{item.telefono1}</td>
-                      <td>{item.telefono2}</td>
-                      <td>{item.direccion}</td>
-                      <td>{item.email}</td>
-                      <td>
+                      <td class="align-middle">{item.id_cliente}</td>
+                      <td class="align-middle">{item.cedula}</td>
+                      <td class="align-middle">{item.nombre}</td>
+                      <td class="align-middle">{item.apellido}</td>
+                      <td class="align-middle">{item.telefono1}</td>
+                      <td class="align-middle">{item.telefono2}</td>
+                      <td class="align-middle">{item.direccion}</td>
+                      <td class="align-middle">{item.email}</td>
+                      <td class="align-middle">
                         <Button onMouseEnter={() => {this.setState({hoverBtn1: true})}} 
                                 onMouseLeave={() => {this.setState({hoverBtn1: false})}}
                                 onClick={() => {this.editRegistro(item.id_cliente)}} variant="info">Actualizar</Button>
                       </td>
-                      <td>
+                      <td class="align-middle">
                         <Button onMouseEnter={() => {this.setState({hoverBtn1: true})}} 
                                 onMouseLeave={() => {this.setState({hoverBtn1: false})}} 
                                 onClick={() => {this.eliminarRegistro(item.id_cliente)}} variant="danger">Eliminar</Button>
