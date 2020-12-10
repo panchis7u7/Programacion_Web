@@ -3,8 +3,9 @@ import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert, Ta
 
 class Cliente extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
         this.state={
+          registros: [],
           cedula: "",
           nombre: "",
           apellido: "",
@@ -12,11 +13,11 @@ class Cliente extends React.Component {
           telefono2: "",
           direccion: "",
           email: "",
-          record: [],
           alerta: false,
           msgAlerta: "",
           tipoAlerta: "success",
         };
+        this.fetchRegistros();
       }
     
       handleChange = (evt) => {
@@ -54,20 +55,16 @@ class Cliente extends React.Component {
             direccion: "",
             email: "",
             alerta: true,
-            msgAlerta: resultado.respuesta,
+            msgAlerta: resultado.response,
             tipoAlerta: "success",
           });
         });
       };
 
-      componentWillMount(){
-        this.fethRegistros();
-      }
-
-      fethRegistros = () => {
+      fetchRegistros = () => {
         let cabezales = new Headers();
         cabezales.append("Content-Type", "application/json");
-        fetch("http://localhost:3001/api/view", {
+        fetch("http://localhost:3001/cliente", {
           method: "GET",
           headers: cabezales,
         })
@@ -75,7 +72,7 @@ class Cliente extends React.Component {
         .then((resultado) => {
           console.log("resultado: ", resultado);
           this.setState({
-            record: resultado.respuesta,
+            registros: resultado.response,
           });
         })
         .catch((error) => console.log("error: ", error));
@@ -95,25 +92,46 @@ class Cliente extends React.Component {
               }} dismissible>
                 <Alert.Heading>{this.state.msgAlerta}</Alert.Heading>
               </Alert>
-              ): null}
-              {/* Todos los registros seran mostrados*/}
-              <Row >
-                <Table striped bordered hover size="sm">
-                  <thead>
-                    <tr>
-                      <th>Cedula</th>
-                      <th>Nombre</th>
-                      <th>Apellido</th>
-                      <th>Telefono1</th>
-                      <th>Telefono2</th>
-                      <th>Direccion</th>
-                      <th>email</th>
-                      <th colSpan="2">Acciones</th>
-                    </tr>
-                  </thead>
-
-                </Table>
-              </Row>
+              ) : null}
+            <Row>
+              <Table striped bordered hover size="sm">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono1</th>
+                    <th>Telefono2</th>
+                    <th>Direccion</th>
+                    <th>email</th>
+                    <th colSpan="2">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {this.state.registros.map((item) => {
+                    return (
+                      <tr>
+                        <td>{item.id_cliente}</td>
+                        <td>{item.cedula}</td>
+                        <td>{item.nombre}</td> 
+                        <td>{item.apellido}</td>
+                        <td>{item.telefono1}</td>
+                        <td>{item.telefono2}</td>
+                        <td>{item.direccion}</td>
+                        <td>{item.email}</td>
+                        <td>
+                          <Button variant="info">Actualizar</Button>
+                        </td>
+                        <td>
+                          <Button variant= "danger">Eliminar</Button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody> 
+              </Table>
+            </Row>
             <Row>
               <Form>
                 <FormGroup>

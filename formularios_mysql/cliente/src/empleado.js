@@ -2,7 +2,7 @@ import React from "react";
 import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert} from "react-bootstrap";
 import './App.css';
 
-class empleado extends React.Component {
+class Empleado extends React.Component {
     constructor(props){
         super(props)
         this.state={
@@ -119,4 +119,4 @@ class empleado extends React.Component {
         );
       }
     }
- export default empleado;
+ export default Empleado;

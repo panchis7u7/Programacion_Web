@@ -36,11 +36,6 @@ conn.connect((err) => {
     console.log("MYSQL conectado!");
 });
 
-
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-});
-
 app.listen(3001, () => {
     console.log("Corriendo en el puerto 3001");
 });
@@ -48,7 +43,6 @@ app.listen(3001, () => {
 //Agregar un registro.
 app.post("/api/create", (req, res) => {
     let data = {
-        id_cliente: 1,
         cedula: req.body.cedula,
         nombre: req.body.nombre, 
         apellido: req.body.apellido,
@@ -67,6 +61,26 @@ app.post("/api/create", (req, res) => {
 });
 
 //Mostrar todos los registros.
-app.get("/api/view", (req, res) => {
+app.get("/cliente", (req, res) => {
     let sql = "SELECT * FROM cliente";
+    let query = conn.query(sql, (err, resultado) => {
+        if(err) throw err;
+        res.send(JSON.stringify({status: 200, error: null, response: resultado}));
+    });
+});
+
+app.get("/api/view/proveedor", (req, res) => {
+    let sql = "SELECT * FROM proveedor";
+    let query = conn.query(sql, (err, resultado) => {
+        if(err) throw err;
+        resultado.send(JSON.stringify({status: 200, error: null, response: resultado}));
+    });
+});
+
+app.get("/api/view/empleado", (req, res) => {
+    let sql = "SELECT * FROM empleado";
+    let query = conn.query(sql, (err, resultado) => {
+        if(err) throw err;
+        resultado.send(JSON.stringify({status: 200, error: null, response: resultado}));
+    });
 });
