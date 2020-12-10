@@ -46,26 +46,16 @@ app.post("/cliente/insert", (req, res) => {
         cedula: req.body.cedula,
         nombre: req.body.nombre, 
         apellido: req.body.apellido,
-        telefono1: req.body.telefono,
+        telefono1: 
+        req.body.telefono1,
         telefono2: req.body.telefono2,
         direccion: req.body.direccion,
         email: req.body.email,
     };
-    //let sql = "INSERT INTO cliente (id_cliente, cedula, nombre, apellido, telefono1, telefono2, direccion, email) VALUES " +
-    //"()";
     let sql = "INSERT INTO cliente SET ?";
     let query = conn.query(sql, data, (err, result) => {
         if (err) throw err;
         res.send(JSON.stringify({status: 200, error: null, response: "Nuevo registro anadido satisfactoriamente"}));
-    });
-});
-
-//Mostrar todos los registros.
-app.get("/cliente", (req, res) => {
-    let sql = "SELECT * FROM cliente";
-    let query = conn.query(sql, (err, resultado) => {
-        if(err) throw err;
-        res.send(JSON.stringify({status: 200, error: null, response: resultado}));
     });
 });
 
@@ -83,6 +73,15 @@ app.post("/proveedor/insert", (req, res) => {
     let query = conn.query(sql, data, (err, result) => {
         if (err) throw err;
         res.send(JSON.stringify({status: 200, error: null, response: "Nuevo registro anadido satisfactoriamente"}));
+    });
+});
+
+//Mostrar todos los registros.
+app.get("/cliente", (req, res) => {
+    let sql = "SELECT * FROM cliente";
+    let query = conn.query(sql, (err, resultado) => {
+        if(err) throw err;
+        res.send(JSON.stringify({status: 200, error: null, response: resultado}));
     });
 });
 
@@ -181,11 +180,11 @@ app.put("/cliente/update", (req, res) => {
 });
 
 
-// delete the record
+// Eliminar el registro.
 app.delete("/cliente/delete/:id", (req, res) => {
-	let sql = "DELETE FROM cliente WHERE id=" + req.params.id + "";
+	let sql = "DELETE FROM cliente WHERE id_cliente=" + req.params.id + "";
 	let query = conn.query(sql, (err, result) => {
 		if (err) throw err;
-		res.send(JSON.stringify({ status: 200, error: null, response: "Record deleted successfully" }));
+		res.send(JSON.stringify({ status: 200, error: null, response: "Registro eliminado satisfactoriamente!" }));
 	});
 });

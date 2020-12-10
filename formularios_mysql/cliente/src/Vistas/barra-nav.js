@@ -13,8 +13,8 @@ render(){
     return(
         <div className="App">
             <ReactBootStrap.Navbar collapseOnSelect expand="xl" bg="dark" variant="dark">
-                <Link to="/main">
-                    <ReactBootStrap.Navbar.Brand href="/main">Tienda de Musica</ReactBootStrap.Navbar.Brand>
+                <Link to="/">
+                    <ReactBootStrap.Navbar.Brand href="/">Tienda de Musica</ReactBootStrap.Navbar.Brand>
                 </Link>
                 <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">

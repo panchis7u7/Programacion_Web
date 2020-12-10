@@ -24,7 +24,7 @@ class App extends React.Component{
         <Router>
           <NavBar></NavBar>
           <Switch>
-          `<Route path="/main" component={Main}>
+          `<Route exact path="/" component={Main}>
               <Main></Main>
             </Route>     
             <Route path="/cliente" component={Cliente}>

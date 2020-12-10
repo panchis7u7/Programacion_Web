@@ -4,9 +4,13 @@
 }
 
 table {
-    margin-top: 25px;
+    margin-top: 3em;
     overflow: auto;
     display: block;
     table-layout: auto;
     height: 300px;
+}
+
+.padd {
+    padding: 0.5em 20px 0pc 20px;
 }

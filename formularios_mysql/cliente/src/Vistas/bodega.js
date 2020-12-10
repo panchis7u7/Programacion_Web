@@ -127,7 +127,7 @@ class Bodega extends React.Component {
                   <FormLabel>Descripción</FormLabel>
                   <FormControl type="text" name="descripcion" placeholder="Ingrese la descripción" onChange={this.handleChange} value={this.state.descripcion}/>
                 </FormGroup>
-                <Button onClick={this.addRegistro}>Guardar</Button>
+                <Button type="Submit" onClick={this.addRegistro}>Guardar</Button>
               </Form>
             </Row>
           </Container>
