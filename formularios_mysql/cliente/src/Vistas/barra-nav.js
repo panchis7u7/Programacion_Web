@@ -37,7 +37,7 @@ render(){
                             <Link to="/bodega">
                                 <ReactBootStrap.NavDropdown.Item href="/bodega">Bodega</ReactBootStrap.NavDropdown.Item>
                             </Link>
-                            <Link to="/bodega">
+                            <Link to="/categoria">
                                 <ReactBootStrap.NavDropdown.Item href="/categoria">Categorias</ReactBootStrap.NavDropdown.Item>
                             </Link>
                         </ReactBootStrap.NavDropdown>

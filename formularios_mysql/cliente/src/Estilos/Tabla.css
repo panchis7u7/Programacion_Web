@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+table {
+    margin-top: 25px;
+    overflow: auto;
+    display: block;
+    table-layout: auto;
+    height: 300px;
+}

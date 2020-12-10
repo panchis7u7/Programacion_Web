@@ -1,11 +1,12 @@
 import React from "react";
-import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert} from "react-bootstrap";
-import './App.css';
+import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert, Table} from "react-bootstrap";
+import "../Estilos/Tabla.css";
 
 class Empleado extends React.Component {
     constructor(props){
         super(props)
         this.state={
+          registros: [],
           cedula: "",
           nombre: "",
           apellido: "",
@@ -18,6 +19,7 @@ class Empleado extends React.Component {
           msgAlerta: "",
           tipoAlerta: "satisfactoria",
         };
+        this.fetchRegistros();
       }
     
       handleChange = (evt) => {
@@ -40,7 +42,7 @@ class Empleado extends React.Component {
           email: this.state.email,
           cargo: this.state.cargo
         })
-        fetch("http://localhost:3001/api/create", {
+        fetch("http://localhost:3001/empleado/insert", {
           method: "POST",
           headers: cabezales,
           body: cuerpo
@@ -62,11 +64,28 @@ class Empleado extends React.Component {
           });
         });
       };
-    
+      
+      fetchRegistros = () => {
+        let cabezales = new Headers();
+        cabezales.append("Content-Type", "application/json");
+        fetch("http://localhost:3001/empleado", {
+          method: "GET",
+          headers: cabezales,
+        })
+        .then((respuesta) => respuesta.json())
+        .then((resultado) => {
+          console.log("resultado: ", resultado);
+          this.setState({
+            registros: resultado.response,
+          });
+        })
+        .catch((error) => console.log("error: ", error));
+      };
+
       render(){
         return (
         <div>
-          <Container className="mh-auto">
+          <Container>
             {
               this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -77,6 +96,48 @@ class Empleado extends React.Component {
                 <Alert.Heading>{this.state.msgAlerta}</Alert.Heading>
               </Alert>
               ): null}
+            <Row>
+              <Table striped bordered hover size="sm">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono1</th>
+                    <th>Telefono2</th>
+                    <th>Direccion</th>
+                    <th>Email</th>
+                    <th>Cargo</th>
+                    <th colSpan="2">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {this.state.registros.map((item) => {
+                    return (
+                      <tr>
+                        <td>{item.id_empleado}</td>
+                        <td>{item.cedula}</td>
+                        <td>{item.nombre}</td> 
+                        <td>{item.apellido}</td>
+                        <td>{item.telefono1}</td>
+                        <td>{item.telefono2}</td>
+                        <td>{item.direccion}</td>
+                        <td>{item.email}</td>
+                        <td>{item.cargo}</td>
+                        <td>
+                          <Button variant="info">Actualizar</Button>
+                        </td>
+                        <td>
+                          <Button variant= "danger">Eliminar</Button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody> 
+              </Table>
+            </Row>
+            
             <Row>
               <Form>
                 <FormGroup>

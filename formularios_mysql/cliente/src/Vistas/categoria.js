@@ -1,17 +1,19 @@
 import React from "react";
-import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert} from "react-bootstrap";
-import './App.css';
+import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert, Table} from "react-bootstrap";
+import "../Estilos/Tabla.css";
 
-class categoria extends React.Component {
+class Categoria extends React.Component {
     constructor(props){
         super(props)
         this.state={
+          registros: [],
           nombre: "",
           descripcion: "",
           alerta: false,
           msgAlerta: "",
           tipoAlerta: "satisfactoria",
         };
+        this.fetchRegistros();
       }
     
       handleChange = (evt) => {
@@ -28,7 +30,7 @@ class categoria extends React.Component {
           nombre: this.state.nombre, 
           descripcion: this.state.descripcion,
         })
-        fetch("http://localhost:3001/api/create", {
+        fetch("http://localhost:3001/categoria/insert", {
           method: "POST",
           headers: cabezales,
           body: cuerpo
@@ -37,17 +39,35 @@ class categoria extends React.Component {
           console.log(resultado);
           this.setState({
             nombre: "",
+            descripcion: "",
             alerta: true,
             msgAlerta: resultado.respuesta,
             tipoAlerta: "satisfactoria",
           });
         });
       };
-    
+      
+      fetchRegistros = () => {
+        let cabezales = new Headers();
+        cabezales.append("Content-Type", "application/json");
+        fetch("http://localhost:3001/categoria", {
+          method: "GET",
+          headers: cabezales,
+        })
+        .then((respuesta) => respuesta.json())
+        .then((resultado) => {
+          console.log("resultado: ", resultado);
+          this.setState({
+            registros: resultado.response,
+          });
+        })
+        .catch((error) => console.log("error: ", error));
+      };
+
       render(){
         return (
         <div>
-          <Container className="mh-auto">
+          <Container>
             {
               this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -58,6 +78,35 @@ class categoria extends React.Component {
                 <Alert.Heading>{this.state.msgAlerta}</Alert.Heading>
               </Alert>
               ): null}
+            <Row>
+              <Table striped bordered hover size="sm">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th colSpan="2">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {this.state.registros.map((item) => {
+                    return (
+                      <tr>
+                        <td>{item.id_categoria}</td>
+                        <td>{item.nombre}</td>
+                        <td>{item.descripcion}</td>
+                        <td>
+                          <Button variant="info">Actualizar</Button>
+                        </td>
+                        <td>
+                          <Button variant= "danger">Eliminar</Button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody> 
+              </Table>
+            </Row>
             <Row>
               <Form>
                 <FormGroup>
@@ -76,4 +125,4 @@ class categoria extends React.Component {
         );
       }
     }
- export default categoria;
+ export default Categoria;

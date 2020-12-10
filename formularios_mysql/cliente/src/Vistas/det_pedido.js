@@ -1,6 +1,6 @@
 import React from "react";
-import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert} from "react-bootstrap";
-import './App.css';
+import { Container, Row, Form, FormGroup, FormControl, FormLabel, Button, Alert, Col} from "react-bootstrap";
+
 
 class Pedido extends React.Component {
     constructor(props){
@@ -59,7 +59,43 @@ class Pedido extends React.Component {
                 <Alert.Heading>{this.state.msgAlerta}</Alert.Heading>
               </Alert>
               ): null}
-            <Row>
+         
+                        
+                    <br></br>
+                    <br></br>
+                        <Form>
+                            <Form.Row>
+                            <br></br>
+                            <Col sm={2}></Col>
+                                <Col sm = {4}>
+                                    <FormLabel>Descripción</FormLabel>
+                                    <Form.Control type="text" name="descripcion" placeholder="Ingrese la descripción" onChange={this.handleChange} value={this.state.descripcion} />
+                                </Col>
+                                <Col sm={4}>
+                                    <FormLabel>Capacidad</FormLabel>
+                                    <Form.Control type="text" name="capacidad" placeholder="Ingrese la capacidad de la bodega." onChange={this.handleChange} value={this.state.capacidad} />
+                            </Col>
+                            <Col sm={2}></Col>
+                            <Col sm={5}></Col>
+                            <Col sm={2}>
+                                <br></br>
+                                <br></br>
+                                    <Button onClick={this.addRegistro}>Guardar</Button>
+                            </Col>
+                           
+                            <Col sm={5}></Col>   
+                                
+                            </Form.Row>
+                        </Form>
+            
+          </Container>
+        </div>
+        );
+      }
+    }
+ export default Pedido;
+
+            {/* <Row>
               <Form>
                 <FormGroup>
                   <FormLabel>Descripción</FormLabel>
@@ -71,10 +107,4 @@ class Pedido extends React.Component {
                 </FormGroup>
                 <Button onClick={this.addRegistro}>Guardar</Button>
               </Form>
-            </Row>
-          </Container>
-        </div>
-        );
-      }
-    }
- export default Pedido;
+            </Row> */}

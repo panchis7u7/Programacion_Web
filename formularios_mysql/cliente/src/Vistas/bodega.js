@@ -1,18 +1,15 @@
 import React from "react";
 import {Container,Row,Form, FormGroup, FormControl, FormLabel, Button, Alert, Table} from "react-bootstrap";
+import "../Estilos/Tabla.css";
 
-class Cliente extends React.Component {
+class Bodega extends React.Component {
     constructor(props){
-        super(props);
+        super(props)
         this.state={
           registros: [],
-          cedula: "",
           nombre: "",
-          apellido: "",
-          telefono: "",
-          telefono2: "",
-          direccion: "",
-          email: "",
+          capacidad: "",
+          descripcion: "",
           alerta: false,
           msgAlerta: "",
           tipoAlerta: "success",
@@ -31,15 +28,11 @@ class Cliente extends React.Component {
         var cabezales = new Headers();
         cabezales.append("Content-Type", "application/json");
         var cuerpo = JSON.stringify({
-          cedula: this.state.cedula,
           nombre: this.state.nombre, 
-          apellido: this.state.apellido,
-          telefono: this.state.telefono,
-          telefono2: this.state.telefono2,
-          direccion: this.state.direccion,
-          email: this.state.email,
+          capacidad: this.state.capacidad,
+          descripcion: this.state.descripcion,
         })
-        fetch("http://localhost:3001/api/create", {
+        fetch("http://localhost:3001/bodega/insert", {
           method: "POST",
           headers: cabezales,
           body: cuerpo
@@ -47,24 +40,20 @@ class Cliente extends React.Component {
         .then((resultado) => {
           console.log(resultado);
           this.setState({
-            cedula: "",
             nombre: "",
-            apellido: "",
-            telefono: "",
-            telefono2: "",
-            direccion: "",
-            email: "",
+            capacidad: "",
+            descripcion: "",
             alerta: true,
-            msgAlerta: resultado.response,
+            msgAlerta: resultado.respuesta,
             tipoAlerta: "success",
           });
         });
       };
-
+      
       fetchRegistros = () => {
         let cabezales = new Headers();
         cabezales.append("Content-Type", "application/json");
-        fetch("http://localhost:3001/cliente", {
+        fetch("http://localhost:3001/bodega", {
           method: "GET",
           headers: cabezales,
         })
@@ -78,11 +67,10 @@ class Cliente extends React.Component {
         .catch((error) => console.log("error: ", error));
       };
 
-    
       render(){
         return (
         <div>
-          <Container>
+          <Container className="mh-auto">
             {
               this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -92,19 +80,15 @@ class Cliente extends React.Component {
               }} dismissible>
                 <Alert.Heading>{this.state.msgAlerta}</Alert.Heading>
               </Alert>
-              ) : null}
+              ): null}
             <Row>
               <Table striped bordered hover size="sm">
                 <thead>
                   <tr>
                     <th>Id</th>
-                    <th>Cedula</th>
                     <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Telefono1</th>
-                    <th>Telefono2</th>
-                    <th>Direccion</th>
-                    <th>email</th>
+                    <th>Capacidad</th>
+                    <th>Descripcion</th>
                     <th colSpan="2">Acciones</th>
                   </tr>
                 </thead>
@@ -112,14 +96,10 @@ class Cliente extends React.Component {
                   {this.state.registros.map((item) => {
                     return (
                       <tr>
-                        <td>{item.id_cliente}</td>
-                        <td>{item.cedula}</td>
+                        <td>{item.id_bodega}</td>
                         <td>{item.nombre}</td> 
-                        <td>{item.apellido}</td>
-                        <td>{item.telefono1}</td>
-                        <td>{item.telefono2}</td>
-                        <td>{item.direccion}</td>
-                        <td>{item.email}</td>
+                        <td>{item.cargo}</td>
+                        <td>{item.descripcion}</td>
                         <td>
                           <Button variant="info">Actualizar</Button>
                         </td>
@@ -132,35 +112,20 @@ class Cliente extends React.Component {
                 </tbody> 
               </Table>
             </Row>
+
             <Row>
               <Form>
-                <FormGroup>
-                  <FormLabel>Cedula</FormLabel>
-                  <FormControl type="text" name="cedula" placeholder="Ingrese la direccion." onChange={this.handleChange} value={this.state.cedula}/>
-                </FormGroup>
                 <FormGroup>
                   <FormLabel>Nombre:</FormLabel>
                   <FormControl type="text" name="nombre" placeholder="Ingrese el nombre." onChange={this.handleChange} value={this.state.nombre} required={true}></FormControl>
                 </FormGroup>
                 <FormGroup>
-                  <FormLabel>Apellido</FormLabel>
-                  <FormControl type="text" name="apellido" placeholder="Ingrese los apellidos." onChange={this.handleChange} value={this.state.apellido}/>
+                  <FormLabel>Capacidad</FormLabel>
+                  <FormControl type="text" name="capacidad" placeholder="Ingrese la capacidad de la bodega." onChange={this.handleChange} value={this.state.capacidad}/>
                 </FormGroup>
                 <FormGroup>
-                  <FormLabel>Telefono</FormLabel>
-                  <FormControl type="text" name="telefono" placeholder="Ingrese el telefono." onChange={this.handleChange} value={this.state.telefono}/>
-                </FormGroup>
-                <FormGroup>
-                  <FormLabel>Telefono2</FormLabel>
-                  <FormControl type="text" name="telefono2" placeholder="Ingrese el telefono2." onChange={this.handleChange} value={this.state.telefono2}/>
-                </FormGroup>
-                <FormGroup>
-                  <FormLabel>Direccion</FormLabel>
-                  <FormControl type="text" name="direccion" placeholder="Ingrese la direccion." onChange={this.handleChange} value={this.state.direccion}/>
-                </FormGroup>
-                <FormGroup>
-                  <FormLabel>Correo electronico</FormLabel>
-                  <FormControl type="text" name="email" placeholder="Ingrese el correo electrónico." onChange={this.handleChange} value={this.state.email}/>
+                  <FormLabel>Descripción</FormLabel>
+                  <FormControl type="text" name="descripcion" placeholder="Ingrese la descripción" onChange={this.handleChange} value={this.state.descripcion}/>
                 </FormGroup>
                 <Button onClick={this.addRegistro}>Guardar</Button>
               </Form>
@@ -170,4 +135,4 @@ class Cliente extends React.Component {
         );
       }
     }
- export default Cliente;
+ export default Bodega;

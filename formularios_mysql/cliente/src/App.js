@@ -1,13 +1,13 @@
 import React from "react";
-import './App.css';
-import NavBar from "./barra-nav.js";
-import Cliente from "./cliente.js";
-import Bodega from "./bodega.js";
-import Proveedor from "./proveedor.js";
-import Empleado from "./empleado.js";
-import Categoria from "./categoria.js";
-import Pedido from "./det_pedido.js";
-import Main from "./main.js";
+import NavBar from "./Vistas/barra-nav.js";
+import Cliente from "./Vistas/cliente.js";
+import Bodega from "./Vistas/bodega.js";
+import Proveedor from "./Vistas/proveedor.js";
+import Empleado from "./Vistas/empleado.js";
+import Categoria from "./Vistas/categoria.js";
+import Pedido from "./Vistas/det_pedido.js";
+import Main from "./Vistas/main.js";
+import './Estilos/App.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
 class App extends React.Component{
