@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col,bordered,striped,hover} from "react-bootstrap";
+import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col} from "react-bootstrap";
 import "../Estilos/Tabla.css";
 
 class Empleado extends React.Component {
@@ -167,6 +167,7 @@ class Empleado extends React.Component {
     return (
       <div>
         <Container>
+        <h1 class="h1">Empleados</h1>
           {
             this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -197,7 +198,7 @@ class Empleado extends React.Component {
                 {this.state.registros.map((item) => {
                   return (
                     <tr onClickCapture={() => this.updateInput(item)}>
-                      <td class="align-middle">{item.id_cliente}</td>
+                      <td class="align-middle">{item.id_empleado}</td>
                       <td class="align-middle">{item.cedula}</td>
                       <td class="align-middle">{item.nombre}</td>
                       <td class="align-middle">{item.apellido}</td>

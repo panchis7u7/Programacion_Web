@@ -14,7 +14,7 @@ class Main extends React.Component {
         return (
             <div className="bg">
                 <h1 className="fh1">
-                    MUSIC STORE
+                    BIENVENIDOS
                 </h1>
             </div>
         );

@@ -320,7 +320,7 @@ app.post("/det_factura/insert", (req, res) => {
     let data = {
         cantidad: req.body.cantidad,
         precio_unitario: req.body.precio_unitario,
-        total: req.body.total,
+        total: (req.body.cantidad*req.body.precio_unitario),
     };
     let sql = "INSERT INTO det_factura SET ?";
     let query = conn.query(sql, data, (err, result) => {
@@ -346,6 +346,7 @@ app.delete("/det_factura/delete/:id", (req, res) => {
 	});
 });
 
+
 // ************************ FACTURA **************************
 //Mostrar todos los registros.
 app.get("/factura", (req, res) => {
@@ -360,18 +361,19 @@ app.get("/factura", (req, res) => {
 });
 
 //Agregar un registro.
-app.post("/cliente/insert", (req, res) => {
+app.post("/factura/insert", (req, res) => {
     let data = {
-        cedula: req.body.cedula,
-        nombre: req.body.nombre, 
-        apellido: req.body.apellido,
-        telefono1: 
-        req.body.telefono1,
-        telefono2: req.body.telefono2,
-        direccion: req.body.direccion,
-        email: req.body.email,
+        fecha_pago: req.body.fecha_pago, 
+        hora_pago: req.body.hora_pago,
+        tipo_pago: req.body.tipo_pago,
+        cantidad: req.body.cantidad,
+        precio_total: req.body.precio_total,
+        id_cliente: req.body.selected_cli,
+        id_empleado: req.body.selected_emp,
+        id_item: req.body.selected_item,
+        id_det_factura: req.body.selected_det,
     };
-    let sql = "INSERT INTO cliente SET ?";
+    let sql = "INSERT INTO facturar SET ?";
     let query = conn.query(sql, data, (err, result) => {
         if (err) throw err;
         res.send(JSON.stringify({status: 200, error: null, response: "Nuevo registro anadido satisfactoriamente"}));
@@ -397,7 +399,8 @@ app.delete("/cliente/delete/:id", (req, res) => {
 	});
 });
 
-// ************************ Item **************************
+
+// ************************ ITEM **************************
 //Mostrar todos los registros.
 app.get("/item", (req, res) => {
     let sql = "SELECT * FROM item;";

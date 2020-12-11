@@ -131,6 +131,7 @@ class Categoria extends React.Component {
     return (
       <div>
         <Container>
+        <h1 class="h1">Categorias</h1>
           {
             this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {

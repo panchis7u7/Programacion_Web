@@ -90,7 +90,7 @@ class Proveedor extends React.Component {
     cabezales.append("Content-Type", "application/json");
     let cuerpo = JSON.stringify({
       id_proveedor: id,
-      ruc: this.state.cedula,
+      ruc: this.state.ruc,
       nombre: this.state.nombre,
       apellido: this.state.apellido,
       telefono1: this.state.telefono1,
@@ -161,6 +161,7 @@ class Proveedor extends React.Component {
     return (
       <div>
         <Container>
+        <h1 class="h1">Proveedores</h1>
           {
             this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {

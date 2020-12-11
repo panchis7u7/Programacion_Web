@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col,bordered,striped,hover} from "react-bootstrap";
+import { Container, Row, Form, FormControl, FormLabel, Button, Alert, Table, Col} from "react-bootstrap";
 import "../Estilos/Tabla.css";
 
 class Bodega extends React.Component {
@@ -61,7 +61,7 @@ class Bodega extends React.Component {
   fetchRegistros = () => {
     let cabezales = new Headers();
     cabezales.append("Content-Type", "application/json");
-    fetch("http://localhost:3001/cliente", {
+    fetch("http://localhost:3001/bodega", {
       method: "GET",
       headers: cabezales,
     })
@@ -76,81 +76,71 @@ class Bodega extends React.Component {
   };
 
   editRegistro = (id) => {
-    let cabezales= new Headers();
+    let cabezales = new Headers();
     cabezales.append("Content-Type", "application/json");
     let cuerpo = JSON.stringify({
-      id_cliente: id,
-      cedula: this.state.cedula,
+      id_bodega: id,
       nombre: this.state.nombre,
-      apellido: this.state.apellido,
-      telefono1: this.state.telefono1,
-      telefono2: this.state.telefono2,
-      direccion: this.state.direccion,
-      email: this.state.email,
+      capacidad: this.state.capacidad,
+      descripcion: this.state.descripcion,
     });
     console.log(cuerpo);
-    fetch("http://localhost:3001/cliente/update", {
+    fetch("http://localhost:3001/bodega/update", {
       method: "PUT",
       headers: cabezales,
       body: cuerpo,
     })
-    .then((respuesta) => respuesta.json())
-    .then((resultado) => {
-      console.log(resultado);
-      this.setState({
-        id_cliente: "",
-        cedula: "",
-        nombre: "",
-        apellido: "",
-        telefono1: "",
-        telefono2: "",
-        direccion: "",
-        email: "",
-        alerta: true,
-        msgAlerta: resultado.response,
-        tipoAlerta: "success",
-      });
-      this.fetchRegistros();
-    })
-    .catch((error) => console.log("error: ", error));
+      .then((respuesta) => respuesta.json())
+      .then((resultado) => {
+        console.log(resultado);
+        this.setState({
+          id_bodega: "",
+          nombre: "",
+          capacidad: "",
+          descripcion: "",
+          alerta: true,
+          msgAlerta: resultado.response,
+          tipoAlerta: "success",
+        });
+        this.fetchRegistros();
+      })
+      .catch((error) => console.log("error: ", error));
   };
 
   updateInput = (item) => {
-    if(this.state.hoverBtn1 === true){
+    if (this.state.hoverBtn1 === true) {
       return;
     } else {
-    this.setState({
-      cedula: item.cedula,
-      nombre: item.nombre,
-      apellido: item.apellido,
-      telefono1: item.telefono1,
-      telefono2: item.telefono2,
-      direccion: item.direccion,
-      email: item.email,
-    });
-  }
+      this.setState({
+        id_bodega: item.id_bodega,
+        nombre: item.nombre,
+        capacidad: item.capacidad,
+        descripcion: item.descripcion,
+      });
+    }
   };
 
   eliminarRegistro = (id) => {
-    fetch("http://localhost:3001/cliente/delete/" + id, {
-    method: "DELETE",
+    fetch("http://localhost:3001/bodega/delete/" + id, {
+      method: "DELETE",
     })
-    .then((respuesta) => respuesta.json())
-    .then((resultado) => {
-      this.setState({
-        alerta: true,
-        msgAlerta: resultado.response,
-        tipoAlerta: "danger",
-      });
-      this.fetchRegistros();
-    })
-    .catch((error) => console.log("error: ", error));
+      .then((respuesta) => respuesta.json())
+      .then((resultado) => {
+        this.setState({
+          alerta: true,
+          msgAlerta: resultado.response,
+          tipoAlerta: "danger",
+        });
+        this.fetchRegistros();
+      })
+      .catch((error) => console.log("error: ", error));
   };
 
   render() {
     return (
       <div>
         <Container>
+        <h1>Bodegas</h1>
           {
             this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -166,13 +156,9 @@ class Bodega extends React.Component {
               <thead>
                 <tr>
                   <th class="align-middle">Id</th>
-                  <th class="align-middle">Cedula</th>
                   <th class="align-middle">Nombre</th>
-                  <th class="align-middle">Apellido</th>
-                  <th class="align-middle">Telefono1</th>
-                  <th class="align-middle">Telefono2</th>
-                  <th class="align-middle">Direccion</th>
-                  <th class="align-middle">email</th>
+                  <th class="align-middle">Capacidad</th>
+                  <th class="align-middle">Descripcion</th>
                   <th class="align-middle" colSpan="2">Acciones</th>
                 </tr>
               </thead>
@@ -180,23 +166,19 @@ class Bodega extends React.Component {
                 {this.state.registros.map((item) => {
                   return (
                     <tr onClickCapture={() => this.updateInput(item)}>
-                      <td class="align-middle">{item.id_cliente}</td>
-                      <td class="align-middle">{item.cedula}</td>
+                      <td class="align-middle">{item.id_bodega}</td>
                       <td class="align-middle">{item.nombre}</td>
-                      <td class="align-middle">{item.apellido}</td>
-                      <td class="align-middle">{item.telefono1}</td>
-                      <td class="align-middle">{item.telefono2}</td>
-                      <td class="align-middle">{item.direccion}</td>
-                      <td class="align-middle">{item.email}</td>
+                      <td class="align-middle">{item.capacidad}</td>
+                      <td class="align-middle">{item.descripcion}</td>
                       <td class="align-middle">
-                        <Button onMouseEnter={() => {this.setState({hoverBtn1: true})}} 
-                                onMouseLeave={() => {this.setState({hoverBtn1: false})}}
-                                onClick={() => {this.editRegistro(item.id_cliente)}} variant="info">Actualizar</Button>
+                        <Button onMouseEnter={() => { this.setState({ hoverBtn1: true }) }}
+                          onMouseLeave={() => { this.setState({ hoverBtn1: false }) }}
+                          onClick={() => { this.editRegistro(item.id_bodega) }} variant="info">Actualizar</Button>
                       </td>
                       <td class="align-middle">
-                        <Button onMouseEnter={() => {this.setState({hoverBtn1: true})}} 
-                                onMouseLeave={() => {this.setState({hoverBtn1: false})}} 
-                                onClick={() => {this.eliminarRegistro(item.id_cliente)}} variant="danger">Eliminar</Button>
+                        <Button onMouseEnter={() => { this.setState({ hoverBtn1: true }) }}
+                          onMouseLeave={() => { this.setState({ hoverBtn1: false }) }}
+                          onClick={() => { this.eliminarRegistro(item.id_bodega) }} variant="danger">Eliminar</Button>
                       </td>
                     </tr>
                   );
@@ -210,45 +192,21 @@ class Bodega extends React.Component {
             <Form.Row>
               <Col sm={2}> </Col>
               <Col sm={4}>
-               <br></br>
-                <FormLabel>Cedula</FormLabel>
-                <FormControl type="text" name="cedula" placeholder="Ingrese la cedula." onChange={this.handleChange} value={this.state.cedula} />
+                <br></br>
+                <FormLabel>Nombre</FormLabel>
+                <FormControl type="text" name="nombre" placeholder="Ingrese el nombre." onChange={this.handleChange} value={this.state.nombre} />
               </Col>
               <Col sm={4}>
                 <br></br>
-                <FormLabel>Nombre:</FormLabel>
-                <FormControl type="text" name="nombre" placeholder="Ingrese el nombre." onChange={this.handleChange} value={this.state.nombre} required={true}></FormControl>
-              </Col>
-              <Col sm={2}> </Col>
-              <Col sm={2}> </Col>
-              <Col sm={4}>
-                <br></br>
-                <FormLabel>Apellido</FormLabel>
-                <FormControl type="text" name="apellido" placeholder="Ingrese los apellidos." onChange={this.handleChange} value={this.state.apellido} required={true}/>
-              </Col>
-              <Col sm={4}>
-                <br></br>
-                <FormLabel>Telefono</FormLabel>
-                <FormControl type="text" name="telefono1" placeholder="Ingrese el telefono." onChange={this.handleChange} value={this.state.telefono1} required={true}/>
+                <FormLabel>Capacidad</FormLabel>
+                <FormControl type="text" name="capacidad" placeholder="Ingrese la capacidad." onChange={this.handleChange} value={this.state.capacidad} required={true}></FormControl>
               </Col>
               <Col sm={2}> </Col>
               <Col sm={2}> </Col>
               <Col sm={4}>
                 <br></br>
-                <FormLabel>Telefono2</FormLabel>
-                <FormControl type="text" name="telefono2" placeholder="Ingrese el telefono2." onChange={this.handleChange} value={this.state.telefono2} />
-              </Col>
-              <Col sm={4}>
-                <br></br>
-                <FormLabel>Direccion</FormLabel>
-                <FormControl type="text" name="direccion" placeholder="Ingrese la direccion." onChange={this.handleChange} value={this.state.direccion} required={true}/>
-              </Col>
-              <Col sm={2}> </Col>
-              <Col sm={2}> </Col>
-              <Col sm={4}>
-                <br></br>
-                <FormLabel>Correo electronico</FormLabel>
-                <FormControl type="text" name="email" placeholder="Ingrese el correo electrónico." onChange={this.handleChange} value={this.state.email} required={true}/>
+                <FormLabel>Descripcion</FormLabel>
+                <FormControl type="text" name="descripcion" placeholder="Ingrese los descripcion." onChange={this.handleChange} value={this.state.descripcion} required={true} />
               </Col>
               <Col sm={2}> </Col>
               <Col sm={5}> </Col>
@@ -267,4 +225,4 @@ class Bodega extends React.Component {
     );
   }
 }
- export default Bodega;
+export default Bodega;

@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col, Dropdown} from "react-bootstrap";
+import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col} from "react-bootstrap";
 import "../Estilos/Tabla.css";
 
 class Factura extends React.Component {
@@ -11,6 +11,14 @@ class Factura extends React.Component {
         registrosCli: [],
         registrosItem: [],
         registrosFact: [],
+        nombre_emp: "",
+        nombre_cli: "",
+        nombre_item: "",
+        nombre_det: "",
+        selected_cli: "",
+        selected_emp: "",
+        selected_item: "",
+        selected_det: "",
         id_factura: "",
         fecha_pago: "",
         hora_pago: "",
@@ -39,6 +47,8 @@ class Factura extends React.Component {
     this.setState({
       [evt.target.name]: evt.target.value,
     });
+    console.log(evt.target.value);
+    console.log(this.state.selected_item);
   };
 
   //Añadir un registro.
@@ -48,13 +58,16 @@ class Factura extends React.Component {
     var cuerpo = JSON.stringify({
         id_factura: this.state.id_factura,
         fecha_pago: this.state.fecha_pago,
-        nombre: this.state.nombre,
-        nombre_parte: this.state.nombre_parte,
+        hora_pago: this.state.hora_pago,
+        tipo_pago: this.state.tipo_pago,
         cantidad: this.state.cantidad,
-        precio_unitario: this.state.precio_unitario,
         precio_total: this.state.precio_total,
+        id_cliente: this.state.selected_cli,
+        id_empleado: this.state.selected_emp,
+        id_item: this.state.selected_item,
+        id_det_factura: this.selected_det,
     })
-    fetch("http://localhost:3001/cliente/insert", {
+    fetch("http://localhost:3001/factura/insert", {
       method: "POST",
       headers: cabezales,
       body: cuerpo
@@ -62,13 +75,15 @@ class Factura extends React.Component {
       .then((resultado) => {
         console.log(resultado);
         this.setState({
-          cedula: "",
+          id_factura: "",
+          fecha_pago: "",
+          hora_pago: "",
+          tipo_pago: "",
           nombre: "",
-          apellido: "",
-          telefono1: "",
-          telefono2: "",
-          direccion: "",
-          email: "",
+          nombre_parte: "",
+          cantidad: "",
+          precio_unitario: "",
+          precio_total: "",
           alerta: true,
           msgAlerta: resultado.response,
           tipoAlerta: "success",
@@ -98,7 +113,7 @@ class Factura extends React.Component {
     let cabezales= new Headers();
     cabezales.append("Content-Type", "application/json");
     let cuerpo = JSON.stringify({
-      id_cliente: id,
+      id_factura: id,
       cedula: this.state.cedula,
       nombre: this.state.nombre,
       apellido: this.state.apellido,
@@ -237,6 +252,7 @@ class Factura extends React.Component {
     return (
       <div>
         <Container>
+        <h1 class="h1">Facturas</h1>
           {
             this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -301,31 +317,31 @@ class Factura extends React.Component {
               <Col sm={4}>
                 <br></br>
                 <FormLabel>Hora de Pago:</FormLabel>
-                <FormControl type="time" name="hora_pago" placeholder="Seleccione la hora de pago." onChange={this.handleChange} value={this.state.nombre} required={true}></FormControl>
+                <FormControl type="time" name="hora_pago" placeholder="Seleccione la hora de pago." onChange={this.handleChange} value={this.state.hora_pago} required={true}></FormControl>
               </Col>
               <Col sm={2}> </Col>
               <Col sm={2}> </Col>
               <Col sm={4}>
                 <br></br>
                 <FormLabel>Nombre de la parte: </FormLabel>
-                <FormControl type="text" name="nombre_parte" placeholder="Ingrese el nombre de la parte." onChange={this.handleChange} value={this.state.apellido} required={true}/>
+                <FormControl type="text" name="nombre_parte" placeholder="Ingrese el nombre de la parte." onChange={this.handleChange} value={this.state.nombre_parte} required={true}/>
               </Col>
               <Col sm={4}>
                 <br></br>
                 <FormLabel>Cantidad: </FormLabel>
-                <FormControl type="number" name="cantidad" placeholder="Ingrese la cantidad." onChange={this.handleChange} value={this.state.telefono1} required={true}/>
+                <FormControl type="number" name="cantidad" placeholder="Ingrese la cantidad." onChange={this.handleChange} value={this.state.cantidad} required={true}/>
               </Col>
               <Col sm={2}> </Col>
               <Col sm={2}> </Col>
               <Col sm={4}>
                 <br></br>
                 <FormLabel>Precio unitario:</FormLabel>
-                <FormControl type="number" name="precio_unitario" placeholder="Ingrese el precio unitario." onChange={this.handleChange} value={this.state.telefono2} />
+                <FormControl type="number" name="precio_unitario" placeholder="Ingrese el precio unitario." onChange={this.handleChange} value={this.state.precio_unitario} />
               </Col>
               <Col sm={4}>
                 <br></br>
                 <FormLabel>Precio Total:</FormLabel>
-                <FormControl type="number" name="precio_total" placeholder="Ingrese el precio total." onChange={this.handleChange} value={this.state.direccion} required={true}/>
+                <FormControl type="number" name="precio_total" placeholder="Ingrese el precio total." onChange={this.handleChange} value={this.state.precio_total} required={true}/>
               </Col>
               <Col sm={2}> </Col>
               <Col sm={2}> </Col>
@@ -337,10 +353,10 @@ class Factura extends React.Component {
               <Col sm={4}>
                 <br></br>
                 <FormLabel>Cliente:</FormLabel>
-                <FormControl as="select" name="cliente" placeholder="Seleccione el empleado: ." onChange={this.handleChange} value={this.state.nombre} required={true}>
+                <FormControl as="select" name="nombre_cli" placeholder="Seleccione el empleado: ." onChange={this.handleChange} value={this.state.nombre_cli} required={true}>
                 {this.state.registrosCli.map((item) => {
                         return (
-                         <FormControl as="option" key={item.nombre} value={item.nombre}>{item.nombre}</FormControl>
+                         <FormControl as="option" key={this.state.selected_cli} onClickCapture={this.handleChange} value={item.selected_cli}>{item.nombre}</FormControl>
                     );
                     })}
                 </FormControl>
@@ -350,10 +366,10 @@ class Factura extends React.Component {
               <Col sm={4}>
               <br></br>
                 <FormLabel>Empleado: </FormLabel>
-                <FormControl as="select" name="empleado" onChange={this.handleChange} value={this.state.email} required={true}>
+                <FormControl as="select" name="nombre_emp" onChange={this.handleChange} value={this.state.nombre_emp} required={true}>
                     {this.state.registrosEmp.map((item) => {
                         return (
-                         <FormControl as="option" key={item.nombre} value={item.nombre}>{item.nombre}</FormControl>
+                         <FormControl as="option" key={this.state.selected_emp} onClickCapture={this.handleChange} value={item.selected_emp}>{item.nombre}</FormControl>
                     );
                     })}
                 </FormControl>
@@ -361,10 +377,10 @@ class Factura extends React.Component {
               <Col sm={4}>
               <br></br>
                 <FormLabel>Item: </FormLabel>
-                <FormControl as="select" name="item" onChange={this.handleChange} value={this.state.nombre_parte} required={true}>
+                <FormControl as="select" name="nombre_item" onChange={this.handleChange} value={this.state.nombre_item} required={true}>
                 {this.state.registrosItem.map((item) => {
                         return (
-                         <FormControl as="option" key={item.nombre} value={item.nombre}>{item.nombre}</FormControl>
+                         <FormControl as="option" key={this.state.selected_item} onChange={this.handleChange} value={item.selected_item}>{item.nombre}</FormControl>
                     );
                     })}
                 </FormControl>
@@ -374,10 +390,10 @@ class Factura extends React.Component {
               <Col sm={4}>
               <br></br>
                 <FormLabel>Det_Factura</FormLabel>
-                <FormControl as="select" name="det_factura" onChange={this.handleChange} value={this.state.email} required={true}>
+                <FormControl as="select" name="nombre_det" onChange={this.handleChange} value={this.state.nombre_det} required={true}>
                 {this.state.registrosFact.map((item) => {
                         return (
-                         <FormControl as="option" key={item.cantidad} value={item.cantidad}>{item.cantidad}</FormControl>
+                         <FormControl as="option" key={this.state.selected_det} onClickCapture={this.handleChange} value={item.selected_det}>{item.cantidad}</FormControl>
                     );
                     })}
                 </FormControl>

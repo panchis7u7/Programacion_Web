@@ -161,6 +161,7 @@ class Cliente extends React.Component {
     return (
       <div>
         <Container>
+        <h1 class="h1">Clientes</h1>
           {
             this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {

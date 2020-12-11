@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col,bordered,striped,hover} from "react-bootstrap";
+import {Container,Row,Form,FormControl,FormLabel,Button,Alert,Table,Col} from "react-bootstrap";
 import "../Estilos/Tabla.css";
 
 class Det_pedido extends React.Component {
@@ -132,6 +132,7 @@ class Det_pedido extends React.Component {
     return (
       <div>
         <Container>
+        <h1>Determinar pedidos</h1>
           {
             this.state.alerta === true ? (
               <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -185,23 +186,21 @@ class Det_pedido extends React.Component {
                 <FormLabel>Descripcion</FormLabel>
                 <FormControl type="text" name="descripcion" placeholder="Ingrese la descripcion." onChange={this.handleChange} value={this.state.descripcion} required={true}></FormControl>
               </Col>
-              <Col sm={2}> </Col>
-              <Col sm={2}> </Col>
               <Col sm={4}>
                 <br></br>
                 <FormLabel>Cantidad</FormLabel>
                 <FormControl type="text" name="cantidad" placeholder="Ingrese la cantidad." onChange={this.handleChange} value={this.state.cantidad} required={true}/>
               </Col>
-              <Col sm={2}> </Col>
-              <Col sm={5}> </Col>
-              <Col sm={2}>
+              <Col sm={4}> </Col>
+              <Col sm={4}>
                 <br></br>
                 <br></br>
                 <Button type="submit" onClick={this.addRegistro} variant="primary" block>Guardar</Button>
                 <br></br>
                 <br></br>
               </Col>
-              <Col sm={6}> </Col>
+              <Col sm={4}> </Col>
+              <Col sm={8}> </Col>
             </Form.Row>
           </Form>
         </Container>

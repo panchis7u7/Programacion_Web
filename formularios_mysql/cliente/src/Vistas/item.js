@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Form, FormControl, FormLabel, Button, Alert, Table, Col, bordered, striped, hover } from "react-bootstrap";
+import { Container, Row, Form, FormControl, FormLabel, Button, Alert, Table, Col} from "react-bootstrap";
 import "../Estilos/Tabla.css";
 
 class Empleado extends React.Component {

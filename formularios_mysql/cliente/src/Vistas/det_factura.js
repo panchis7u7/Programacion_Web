@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Form, FormControl, FormLabel, Button, Alert, Table, Col, bordered, striped, hover } from "react-bootstrap";
 import "../Estilos/Tabla.css";
 
-class Factura extends React.Component {
+class Det_factura extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +20,7 @@ class Factura extends React.Component {
 
     componentDidMount() {
         this.fetchRegistros();
-    }
+    };
 
     handleChange = (evt) => {
         this.setState({
@@ -80,7 +80,6 @@ class Factura extends React.Component {
             id_det_factura: id,
             cantidad: this.state.cantidad,
             precio_unitario: this.state.precio_unitario,
-            total: this.state.total,
         });
         console.log(cuerpo);
         fetch("http://localhost:3001/det_factura/update", {
@@ -95,7 +94,6 @@ class Factura extends React.Component {
                     id_det_factura: "",
                     cantidad: "",
                     precio_unitario: "",
-                    total: "",
                     alerta: true,
                     msgAlerta: resultado.response,
                     tipoAlerta: "success",
@@ -110,9 +108,9 @@ class Factura extends React.Component {
             return;
         } else {
             this.setState({
-                cantidad: this.state.cantidad,
-                precio_unitario: this.state.precio_unitario,
-                total: this.state.total,
+                cantidad: item.cantidad,
+                precio_unitario: item.precio_unitario,
+                total: item.total,
             });
         }
     };
@@ -137,6 +135,7 @@ class Factura extends React.Component {
         return (
             <div>
                 <Container>
+                <h1 class="h1">Determinar facturas</h1>
                     {
                         this.state.alerta === true ? (
                             <Alert variant={this.state.tipoAlerta} onClose={() => {
@@ -197,23 +196,15 @@ class Factura extends React.Component {
                                 <FormLabel>Precio Unitario</FormLabel>
                                 <FormControl type="text" name="precio_unitario" placeholder="Ingrese el precio unitario." onChange={this.handleChange} value={this.state.precio_unitario} required={true}></FormControl>
                             </Col>
-                            <Col sm={2}> </Col>
-                            <Col sm={2}> </Col>
+                            <Col sm={4}> </Col>
                             <Col sm={4}>
-                                <br></br>
-                                <FormLabel>Total</FormLabel>
-                                <FormControl type="text" name="total" placeholder="Ingrese el total." onChange={this.handleChange} value={this.state.total} required={true} />
-                            </Col>
-                            <Col sm={2}> </Col>
-                            <Col sm={5}> </Col>
-                            <Col sm={2}>
                                 <br></br>
                                 <br></br>
                                 <Button type="submit" onClick={this.addRegistro} variant="primary" block>Guardar</Button>
                                 <br></br>
                                 <br></br>
                             </Col>
-                            <Col sm={6}> </Col>
+                            <Col sm={8}> </Col>
                         </Form.Row>
                     </Form>
                 </Container>
@@ -221,4 +212,4 @@ class Factura extends React.Component {
         );
     }
 }
-export default Factura;
+export default Det_factura;
