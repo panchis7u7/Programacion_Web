@@ -8,7 +8,7 @@ function App(props) {
   return (
     <div class="login-box">
       <h1>Login</h1>
-      <form onSubmit={(e) => e.preventDefault()} action="http://localhost:3003/login" method="GET">
+      <form action="http://localhost:3001/login" method="GET">
         <label for="usuario">Usuario</label>
         <input value={user} onChange={(e) => setUser(e.target.value)} name="user" type="text" placeholder="Enter Username"></input>
         <label for="contrasena">Contraseña</label>
