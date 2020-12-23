@@ -1,22 +1,29 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const mysql = require('mysql');
 const app = express();
 
 app.use(bodyParser.json());
 app.use(cors({origin: '*'}));
 
-const users = [
-    {user: 'Sebastian', password: '1234'},
-    {user: 'Buki', password: 'tu_carcel'},
-    {user: 'notoi', password: 'password'},
-];
+const conn = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "password",
+    database: "tienda_musica",
+});
+
+conn.connect((err) => {
+    if(err) throw err;
+    console.log("MYSQL conectado!");
+});
 
 app.listen(3001, () => {
     console.log("Corriendo en el puerto 3001!");
 });
 
-app.get("/login", (req,res) => {
+app.post("/login", (req,res) => {
     let encontrado = users.find((user) => {
         return (user.user === req.query.user && user.password === req.query.password);
     });
