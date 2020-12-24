@@ -6,9 +6,9 @@ function App(props) {
   const [password, setPassword] = useState('');
 
   return (
-    <div class="login-box">
+    <div className="login-box">
       <h1>Login</h1>
-      <form action="http://localhost:3001/login" method="GET">
+      <form action="http://localhost:3001/login" method="POST">
         <label for="usuario">Usuario</label>
         <input value={user} onChange={(e) => setUser(e.target.value)} name="user" type="text" placeholder="Enter Username"></input>
         <label for="contrasena">Contraseña</label>

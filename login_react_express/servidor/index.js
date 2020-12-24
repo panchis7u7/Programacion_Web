@@ -3,15 +3,17 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mysql = require('mysql');
 const app = express();
+const llave = 'Secreto';
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors({origin: '*'}));
 
 const conn = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "password",
-    database: "tienda_musica",
+    database: "Login",
 });
 
 conn.connect((err) => {
@@ -24,13 +26,18 @@ app.listen(3001, () => {
 });
 
 app.post("/login", (req,res) => {
-    let encontrado = users.find((user) => {
-        return (user.user === req.query.user && user.password === req.query.password);
+    //Encontrar en la BD el usuario, ojo... este encriptado con AES-128-ECB!.
+    let sql = `SELECT id_usuario, usuario, CAST(AES_DECRYPT(contraseña, '${llave}') AS CHAR(255)) AS contraseña FROM usuarios WHERE usuario = '${req.body.user}' AND ` +
+    `AES_DECRYPT(contraseña, '${llave}') = '${req.body.password}'`; 
+
+    let query = conn.query(sql, (err, resultado) => {
+        if (err) throw err;
+        console.log(resultado);
+        if (resultado != "")
+            res.send(`El usuario: "${req.body.user}" se ha logueado.`);
+        else
+            res.send(`El Usuario: "${req.body.user}" no ha sido encontrado!`);
     });
-    if (encontrado)
-        res.send(`El usuario ${req.query.user} se ha logueado.`);
-    else
-        res.send(`Usuario: ${req.query.user} no ha sido encontrado!`);
 });
 
 app.get("/", (req, res) => {
