@@ -35,11 +35,9 @@ app.post('/login', (req,res) => {
         if (err) throw err;
         console.log(resultado);
         if (resultado != "")
-            //res.send(`El usuario: "${req.body.user}" se ha logueado.`);
-            //res.sendFile(__dirname + '/public/html/after_login.html', {});
             res.redirect(`/Login/welcome?user=${req.body.user}`);
         else
-            res.send(`El Usuario: "${req.body.user}" no ha sido encontrado!`);
+            res.redirect(`/Login/welcome?user=error`);
     });
 });
 
@@ -49,5 +47,5 @@ app.get('/', (req, res) => {
 
 app.get('/login/welcome', (req, res) => {
     var query = req.query.user;
-    res.sendFile(__dirname + '/public/html/after_login.html');
+    res.sendFile(__dirname + '/public/html/after_login.html', {});
 });
