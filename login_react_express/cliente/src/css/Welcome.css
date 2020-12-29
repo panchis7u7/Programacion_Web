@@ -1,4 +1,9 @@
-.login-box {
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.welcome-box {
     width: 320px;
     height: 420px;
     background: #000;

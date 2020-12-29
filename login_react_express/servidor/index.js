@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mysql = require('mysql');
+const { json } = require('body-parser');
 const app = express();
 const llave = 'Secreto';
 
@@ -34,10 +35,11 @@ app.post('/login', (req,res) => {
     let query = conn.query(sql, (err, resultado) => {
         if (err) throw err;
         console.log(resultado);
-        if (resultado != "")
-            res.redirect(`/Login/welcome?user=${req.body.user}`);
+        if (resultado != ""){
+            res.send(JSON.stringify({redirect: `login/welcome?user=${req.body.user}`, user: `${req.body.user}`,}));
+        }
         else
-            res.redirect(`/Login/welcome?user=error`);
+            res.send(`error`);
     });
 });
 
