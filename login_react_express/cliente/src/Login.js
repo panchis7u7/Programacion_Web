@@ -15,7 +15,7 @@ class Login extends React.Component{
   render() {
     return (
       <div className="login-box">
-        <h1>Login</h1>
+        <h2>Login</h2>
         <form action="http://localhost:3001/login" method="POST">
           <label for="user">Usuario</label>
           <input value={this.state.user} onChange={this.handleChange} name="user" type="text" placeholder="Enter Username"></input>

@@ -35,11 +35,10 @@ app.post('/login', (req,res) => {
     let query = conn.query(sql, (err, resultado) => {
         if (err) throw err;
         console.log(resultado);
-        if (resultado != ""){
+        if (resultado != "")
             res.send(JSON.stringify({redirect: `login/welcome?user=${req.body.user}`, user: `${req.body.user}`,}));
-        }
         else
-            res.send(`error`);
+            res.send(JSON.stringify({redirect: `login/error?user=${req.body.user}`, user: `${req.body.user}`,}));
     });
 });
 
