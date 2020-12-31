@@ -4,6 +4,8 @@ const cors = require('cors');
 const mysql = require('mysql');
 const { json } = require('body-parser');
 const app = express();
+
+//Llave para desencriptar las contraseñas de AES!.
 const llave = 'Secreto';
 
 app.use(bodyParser.json());
