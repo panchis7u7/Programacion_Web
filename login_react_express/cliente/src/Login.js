@@ -1,4 +1,6 @@
 import React from 'react';
+//Importar el archivo que maneja la encriptacion de datos que se enviaran al lado del servidor!.
+import { encrypt } from './EncryptionHandler';
 import './css/Login.css';
 
 
@@ -16,12 +18,12 @@ class Login extends React.Component{
     return (
       <div className="login-box">
         <h2>Login</h2>
-        <form action="http://localhost:3001/login" method="POST">
+        <form onSubmit={this.handleSubmit} action="http://localhost:3001/login">
           <label for="user">Usuario</label>
           <input value={this.state.user} onChange={this.handleChange} name="user" type="text" placeholder="Enter Username"></input>
           <label for="password">Contraseña</label>
           <input value={this.state.password} onChange={this.handleChange} name="password" type="password" placeholder="Enter Password"></input>
-          <input type="button" onClick={this.handleClick} value="Log In"></input>
+          <input type="submit" value="Log In"></input>
           <a href="#">Olvidaste tu contraseña?</a><br></br>
           <a href="#">No tienes una cuenta?</a>
         </form>
@@ -35,10 +37,11 @@ class Login extends React.Component{
     });
   };
 
-    handleClick = (e) => {
+  handleSubmit = (e) => {
+    e.preventDefault();
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
-    let body = JSON.stringify({user: this.state.user, password: this.state.password});
+    let body = JSON.stringify({user: this.state.user, password: encrypt(this.state.password)});
     console.log(body);
     fetch("http://localhost:3001/login", {
       method: 'POST',
