@@ -12,3 +12,4 @@
 *.tar
 *.rar
 /node_modules/
+servidor/node_modules/

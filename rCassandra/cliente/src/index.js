@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './CSS/index.css';
-import NavBar from './Components/NavBar';
+import Ruta from './Components/Ruteo';
+import "bootstrap/dist/css/bootstrap.css";
 import reportWebVitals from './Components/reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar />
+    <Ruta />
   </React.StrictMode>,
   document.getElementById('root')
 );
