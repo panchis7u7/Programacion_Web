@@ -32,14 +32,4 @@ export class StarbucksService {
       $estado: '',
     });
   }
-
-  getStarbucks(): Observable<IStarbucks[]>{
-    return this.http.get<IStarbucks[]>("http://localhost:3001/starbucks", 
-    {responseType: "json"})
-    .pipe(tap((_) => console.log("Starbuks obtenidos.")),
-    catchError(
-        this.errorHandlerService.handleError<IStarbucks[]>("getStarbucks", [])
-      )
-    );
-  }
 }

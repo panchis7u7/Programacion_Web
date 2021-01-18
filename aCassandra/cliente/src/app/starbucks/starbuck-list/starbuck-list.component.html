@@ -1,8 +1,47 @@
 <div class="mat-elevation-z8">
-    <mat-table [dataSource]="starbucks">
+    <mat-table [dataSource]="listData">
         <ng-container matColumnDef="estado">
-            <mat-header-cell *matHeaderCellDef>estado</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{element|json}}</mat-cell>
+            <mat-header-cell *matHeaderCellDef>Estado</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.estado}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="ciudad">
+            <mat-header-cell *matHeaderCellDef>Ciudad</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.ciudad}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="id_tienda">
+            <mat-header-cell *matHeaderCellDef>Id_tienda</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.id_tienda}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="no_tienda">
+            <mat-header-cell *matHeaderCellDef>No_tienda</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.no_tienda}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="nombre">
+            <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.nombre}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="codigo_postal">
+            <mat-header-cell *matHeaderCellDef>Codigo_postal</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.codigo_postal}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="direccion">
+            <mat-header-cell *matHeaderCellDef>Direccion</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.direccion}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="latitud">
+            <mat-header-cell *matHeaderCellDef>Latitud</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.latitud}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="longitud">
+            <mat-header-cell *matHeaderCellDef>Longitud</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.longitud}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="actions">
+            <mat-header-cell *matHeaderCellDef></mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                <button mat-icon-button><mat-icon>launch</mat-icon></button>
+                <button mat-icon-button color="warn"><mat-icon>delete_outline</mat-icon></button>
+            </mat-cell>
         </ng-container>
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>

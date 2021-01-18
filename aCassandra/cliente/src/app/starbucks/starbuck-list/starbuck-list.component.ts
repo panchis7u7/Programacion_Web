@@ -11,21 +11,32 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./starbuck-list.component.sass']
 })
 export class StarbuckListComponent implements OnInit {
-  starbucks: Observable<IStarbucks[]>;
-  displayedColumns: string[] = ['estado'];
-  //post:any = [];
+
+  listData: MatTableDataSource<any>;
+  displayedColumns: string[] = ['estado', 'ciudad', 'id_tienda', 'no_tienda', 'nombre', 'codigo_postal', 'direccion', 'latitud', 'longitud', 'actions'];
+  post:any = [];
 
   constructor(private service: StarbucksService) {
-    /*this.service.getStarbucks().subscribe(data => {
-      this.post.push(data);
-      
-    this.listData = new MatTableDataSource(this.post); 
-    });*/
+    this.listData = new MatTableDataSource();
+  }
+
+  getSimpleStarbucks() {
+    //return this.http.get("http://localhost:3001/starbucks");
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    fetch("http://localhost:3001/starbucks", {
+      method: "GET",
+      headers: headers,
+    })
+    .then((respuesta) => respuesta.json())
+    .then((resultado) => {
+      console.log("Resultado: ", resultado.response.rows);
+      this.listData = new MatTableDataSource(resultado.response.rows);
+    })
+    .catch((error) => console.log("error: ", error));
   }
 
   ngOnInit(): void {
-    this.starbucks = this.service.getStarbucks();
-    console.log(this.starbucks);
+    this.getSimpleStarbucks();
   }
-
 }
