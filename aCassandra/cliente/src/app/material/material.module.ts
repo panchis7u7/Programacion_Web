@@ -6,6 +6,7 @@ import * as ListMaterial from '@angular/material/list';
 import * as InputMaterial from '@angular/material/input';
 import * as FormMaterial from '@angular/material/form-field';
 import * as ButtonMaterial from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table'
 
 @NgModule({
   declarations: [],
@@ -17,6 +18,7 @@ import * as ButtonMaterial from '@angular/material/button';
     FormMaterial.MatFormFieldModule,
     ListMaterial.MatListModule,
     ButtonMaterial.MatButtonModule,
+    MatTableModule,
   ],
   exports : [
     Material.MatToolbarModule,
@@ -25,6 +27,7 @@ import * as ButtonMaterial from '@angular/material/button';
     FormMaterial.MatFormFieldModule,
     ListMaterial.MatListModule,
     ButtonMaterial.MatButtonModule,
+    MatTableModule,
   ]
 })
 export class MaterialModule { }

@@ -9,12 +9,14 @@ import { StarbucksComponent } from './starbucks/starbucks.component';
 import { StarbuckComponent } from '../app/starbucks/starbuck/starbuck.component';
 import { StarbucksService } from './shared/starbucks.service';
 import { HttpClientModule } from '@angular/common/http';
+import { StarbuckListComponent } from './starbucks/starbuck-list/starbuck-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StarbuckComponent,
-    StarbucksComponent
+    StarbucksComponent,
+    StarbuckListComponent
   ],
   imports: [
     BrowserModule,

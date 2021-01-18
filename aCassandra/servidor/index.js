@@ -24,3 +24,11 @@ app.post('/starbucks/add', (req, res) => {
     console.log(req.body);
     res.send();
 });
+
+app.get("/starbucks", (req, res) => {
+    let query = "SELECT * FROM starbucks LIMIT 1";
+    cliente.execute(query).then(result => {
+        console.log(result.rows[0]);
+        res.send(JSON.stringify({status: 200, error: null, response: result}));
+    }
+)});
