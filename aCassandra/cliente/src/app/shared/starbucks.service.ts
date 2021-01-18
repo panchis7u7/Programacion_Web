@@ -10,15 +10,15 @@ export class StarbucksService {
 
   form: FormGroup = new FormGroup({
     $key: new FormControl(null),
-    $estado: new FormControl(''), 
-    $ciudad: new FormControl(''),
-    $id_tienda: new FormControl(''),
-    $no_tienda: new FormControl(''),
-    $nombre: new FormControl(''),
-    $direccion: new FormControl(''),
-    $codigo_postal: new FormControl(''),
-    $longitud: new FormControl(''),
-    $latitud: new FormControl(''),
+    estado: new FormControl(''), 
+    ciudad: new FormControl(''),
+    id_tienda: new FormControl(''),
+    no_tienda: new FormControl(''),
+    nombre: new FormControl(''),
+    direccion: new FormControl(''),
+    codigo_postal: new FormControl(''),
+    longitud: new FormControl(''),
+    latitud: new FormControl(''),
   });
 
   initializeFormGroup() {

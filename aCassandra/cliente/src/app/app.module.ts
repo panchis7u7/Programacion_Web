@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StarbucksComponent } from './starbucks/starbucks.component';
 import { StarbuckComponent } from '../app/starbucks/starbuck/starbuck.component';
 import { StarbucksService } from './shared/starbucks.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { StarbucksService } from './shared/starbucks.service';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [StarbucksService],
   bootstrap: [AppComponent]

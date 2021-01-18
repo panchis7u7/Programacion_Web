@@ -19,3 +19,8 @@ cliente.connect(error => {
 app.listen('3001', () => {
     console.log("Servidor corriendo en el puerto 3001!");
 });
+
+app.post('/starbucks/add', (req, res) => {
+    console.log(req.body);
+    res.send();
+});

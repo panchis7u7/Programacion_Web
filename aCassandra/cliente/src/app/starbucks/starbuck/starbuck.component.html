@@ -1,27 +1,27 @@
-<form [formGroup]="service.form" class="normal-form">
+<form [formGroup]="service.form" class="normal-form" (submit)="onSubmit()">
     <mat-grid-list cols="2" rowHeight="350px">
         <mat-grid-tile>
             <div class="controles-container">
                 <input type="hidden" formControlName="$key">
                 <mat-form-field>
                     <mat-label>Estado</mat-label>
-                    <input formControlName="$estado" matInput placeholder="Estado">
+                    <input formControlName="estado" matInput placeholder="Estado">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Ciudad</mat-label>
-                    <input formControlName="$ciudad" matInput placeholder="Ciudad">
+                    <input formControlName="ciudad" matInput placeholder="Ciudad">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Id</mat-label>
-                    <input formControlName="$id_tienda" matInput placeholder="Id_tienda">
+                    <input formControlName="id_tienda" matInput placeholder="Id_tienda">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>No. tienda</mat-label>
-                    <input formControlName="$no_tienda" matInput placeholder="No_tienda">
+                    <input formControlName="no_tienda" matInput placeholder="No_tienda">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Nombre</mat-label>
-                    <input formControlName="$nombre" matInput placeholder="Nombre">
+                    <input formControlName="nombre" matInput placeholder="Nombre">
                 </mat-form-field>
             </div>
         </mat-grid-tile>
@@ -29,19 +29,19 @@
             <div class="controles-container">
                 <mat-form-field>
                     <mat-label>Direccion</mat-label>
-                    <input formControlName="$direccion" matInput placeholder="Direccion">
+                    <input formControlName="direccion" matInput placeholder="Direccion">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Codigo Postal</mat-label>
-                    <input formControlName="$codigo_postal" matInput placeholder="Codigo_postal">
+                    <input formControlName="codigo_postal" matInput placeholder="Codigo_postal">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Longitud</mat-label>
-                    <input formControlName="$longitud" matInput placeholder="Longitud">
+                    <input formControlName="longitud" matInput placeholder="Longitud">
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Latitud</mat-label>
-                    <input formControlName="$latitud" matInput placeholder="Latitud">
+                    <input formControlName="latitud" matInput placeholder="Latitud">
                 </mat-form-field>
                 <div class="button-row">
                     <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid">Submit</button>

@@ -5,7 +5,7 @@ import * as GridMaterial from '@angular/material/grid-list';
 import * as ListMaterial from '@angular/material/list';
 import * as InputMaterial from '@angular/material/input';
 import * as FormMaterial from '@angular/material/form-field';
-import * as ButtonMaterial from '@angular/material/button'
+import * as ButtonMaterial from '@angular/material/button';
 
 @NgModule({
   declarations: [],

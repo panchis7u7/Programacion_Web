@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { StarbucksService } from '../../shared/starbucks.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-starbuck',
@@ -8,13 +10,51 @@ import { StarbucksService } from '../../shared/starbucks.service';
 })
 export class StarbuckComponent implements OnInit {
 
-  constructor(public service: StarbucksService) { }
+  constructor(public service: StarbucksService, private fb: FormBuilder, private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.service.form = this.fb.group({
+      estado: '',
+      ciudad: '',
+      id_tienda: '',
+      no_tienda: '',
+      nombre: '',
+      direccion: '',
+      codigo_postal: '',
+      longitud: '',
+      latitud: '',
+    });
   }
 
   onClear(){
     this.service.form.reset();
     this.service.initializeFormGroup();
+  }
+
+  onSubmit(){
+    console.log(this.service.form.getRawValue());
+    const formData = this.service.form.getRawValue();
+
+    const data = {
+      estado: formData.estado,
+      ciudad: formData.ciudad,
+      id_tienda: formData.id_tienda,
+      no_tienda: formData.no_tienda,
+      nombre: formData.nombre,
+      direccion: formData.direccion,
+      codigo_postal: formData.codigo_postal,
+      longitud: formData.longitud,
+      latituda: formData.latitud,
+      scope: '*',
+    }
+    this.http.post("http://localhost:3001/starbucks/add", data).subscribe(
+      result => {
+        console.log('success');
+        console.log(result);
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 }
