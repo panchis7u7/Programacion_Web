@@ -71,7 +71,9 @@ export class StarbuckListComponent implements OnInit {
     this.dialog.open(StarbuckComponent, dialogConfig);
   }
 
-  onDelete(){
-    
+  onDelete($key:string){
+    if(confirm('Estas seguro que quieres borrar este registro?')){
+      
+    }
   }
 }

@@ -1,24 +1,32 @@
+<mat-toolbar>
+    <span>{{service.form.controls['$key'].value?"Modificar Starbucks":"Nuevo Starbucks"}}</span>
+    <span class="fill-remaining-space"></span>
+</mat-toolbar>
 <form [formGroup]="service.form" class="normal-form" (submit)="onSubmit()">
     <mat-grid-list cols="2" rowHeight="350px">
         <mat-grid-tile>
             <div class="controles-container">
-                <!-- <input type="hidden" formControlName="$key">-->
+                <input type="hidden" formControlName="$key">
                 <input type="hidden" formControllName="id_tienda">
                 <mat-form-field>
                     <mat-label>Estado</mat-label>
                     <input formControlName="estado" matInput placeholder="Estado">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Ciudad</mat-label>
                     <input formControlName="ciudad" matInput placeholder="Ciudad">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>No. tienda</mat-label>
                     <input formControlName="no_tienda" matInput placeholder="No_tienda">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Nombre</mat-label>
                     <input formControlName="nombre" matInput placeholder="Nombre">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
             </div>
         </mat-grid-tile>
@@ -27,18 +35,22 @@
                 <mat-form-field>
                     <mat-label>Direccion</mat-label>
                     <input formControlName="direccion" matInput placeholder="Direccion">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Codigo Postal</mat-label>
                     <input formControlName="codigo_postal" matInput placeholder="Codigo_postal">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Longitud</mat-label>
                     <input formControlName="longitud" matInput placeholder="Longitud">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Latitud</mat-label>
                     <input formControlName="latitud" matInput placeholder="Latitud">
+                    <mat-error>Este campo es obligatorio.</mat-error>
                 </mat-form-field>
             </div>
         </mat-grid-tile>

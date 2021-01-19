@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -10,19 +10,21 @@ export class StarbucksService {
   constructor(private http: HttpClient) { }
 
   form: FormGroup = new FormGroup({
+    $key: new FormControl(null),
     id_tienda: new FormControl(''),
-    ciudad: new FormControl(''),
+    ciudad: new FormControl('', Validators.required),
     codigo_postal: new FormControl(''),
-    direccion: new FormControl(''),
-    estado: new FormControl(''), 
-    latitud: new FormControl(''),
-    longitud: new FormControl(''),
-    no_tienda: new FormControl(''),
-    nombre: new FormControl(''),
+    direccion: new FormControl('', Validators.required),
+    estado: new FormControl('', Validators.required), 
+    latitud: new FormControl('', Validators.required),
+    longitud: new FormControl('', Validators.required),
+    no_tienda: new FormControl('', Validators.required),
+    nombre: new FormControl('', Validators.required),
   });
 
   initializeFormGroup() {
     this.form.setValue({
+      $key: null,
       estado: '',
       ciudad: '',
       no_tienda: '',
@@ -35,8 +37,22 @@ export class StarbucksService {
     });
   }
 
+  editStarbuck(starbuck:any){
+    console.log('Update: ', starbuck);
+    this.http.post("http://localhost:3001/starbucks/update", starbuck).subscribe(
+            result => {
+              console.log('success');
+              console.log(result);
+            },
+            error => {
+              console.log(error);
+            }
+          );
+  }
+
   populateForm(starbuck:any){
-    /*this.form.setValue({
+    this.form.setValue({
+      $key: starbuck.id_tienda,
       estado: starbuck.estado,
       ciudad: starbuck.ciudad,
       no_tienda: starbuck.no_tienda,
@@ -46,8 +62,8 @@ export class StarbucksService {
       codigo_postal: starbuck.codigo_postal,
       longitud: starbuck.longitud,
       latitud: starbuck.latitud
-    });*/
-    this.form.setValue(starbuck);
+    });
+    //this.form.setValue(starbuck);
     console.log(starbuck);
   }
 }

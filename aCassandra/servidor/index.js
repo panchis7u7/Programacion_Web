@@ -25,6 +25,15 @@ app.post('/starbucks/add', (req, res) => {
     res.send();
 });
 
+app.post('/starbucks/update', (req, res) => {
+    console.log(req.body);
+    let query = `UPDATE starbucks SET estado='${req.body.estado}', ciudad='${req.body.ciudad}', ` +
+    `no_tienda='${req.body.no_tienda}', nombre='${req.body.nombre}', codigo_postal='${req.body.codigo_postal}', ` +
+    `direccion='${req.body.direccion}', latitud=${req.body.latitud}, longitud=${req.body.longitud} ` +
+    `WHERE id_tienda = ${req.body.id_tienda}`
+    res.send();
+});
+
 app.get("/starbucks", (req, res) => {
     let query = "SELECT * FROM starbucks LIMIT 5";
     cliente.execute(query).then(result => {

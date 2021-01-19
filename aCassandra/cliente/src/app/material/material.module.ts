@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [],
@@ -27,6 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatPaginatorModule,
     MatSortModule,
     MatDialogModule,
+    MatSnackBarModule,
   ],
   exports : [
     Material.MatToolbarModule,
@@ -40,6 +42,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatPaginatorModule,
     MatSortModule,
     MatDialogModule,
+    MatSnackBarModule,
   ]
 })
 export class MaterialModule { }
