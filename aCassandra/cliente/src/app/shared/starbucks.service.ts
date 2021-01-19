@@ -37,8 +37,19 @@ export class StarbucksService {
     });
   }
 
+  deleteStarbuck(starbuck:any){
+    this.http.post("http://localhost:3001/starbucks/delete", starbuck).subscribe(
+      result => {
+        console.log('success');
+        console.log(result);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
   editStarbuck(starbuck:any){
-    console.log('Update: ', starbuck);
     this.http.post("http://localhost:3001/starbucks/update", starbuck).subscribe(
             result => {
               console.log('success');

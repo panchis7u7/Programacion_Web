@@ -53,7 +53,7 @@ export class StarbuckComponent implements OnInit {
             direccion: formData.direccion,
             codigo_postal: formData.codigo_postal,
             longitud: formData.longitud,
-            latituda: formData.latitud,
+            latitud: formData.latitud,
             scope: '*',
           }
         
