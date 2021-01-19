@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { StarbucksService } from '../../shared/starbucks.service';
-import { Observable } from 'rxjs';
-import { IStarbucks } from '../../Models/Starbucks';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatSort } from '@angular/material/sort';
+import { MatPaginator } from '@angular/material/paginator';
 
 
 @Component({
@@ -12,16 +12,17 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class StarbuckListComponent implements OnInit {
 
-  listData: MatTableDataSource<any>;
+  listData!: MatTableDataSource<any>;
   displayedColumns: string[] = ['estado', 'ciudad', 'id_tienda', 'no_tienda', 'nombre', 'codigo_postal', 'direccion', 'latitud', 'longitud', 'actions'];
   post:any = [];
+  searchKey!:string;
+  @ViewChild(MatSort) sort!: MatSort;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor(private service: StarbucksService) {
-    this.listData = new MatTableDataSource();
   }
 
   getSimpleStarbucks() {
-    //return this.http.get("http://localhost:3001/starbucks");
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
     fetch("http://localhost:3001/starbucks", {
@@ -32,6 +33,9 @@ export class StarbuckListComponent implements OnInit {
     .then((resultado) => {
       console.log("Resultado: ", resultado.response.rows);
       this.listData = new MatTableDataSource(resultado.response.rows);
+      this.listData.sort = this.sort;
+      this.listData.paginator = this.paginator;
+      console.log('Tamaño: ', this.listData.data.length);
     })
     .catch((error) => console.log("error: ", error));
   }

@@ -6,8 +6,10 @@ import * as ListMaterial from '@angular/material/list';
 import * as InputMaterial from '@angular/material/input';
 import * as FormMaterial from '@angular/material/form-field';
 import * as ButtonMaterial from '@angular/material/button';
-import {MatTableModule} from '@angular/material/table'
+import { MatTableModule } from '@angular/material/table'
 import { MatIconModule } from '@angular/material/icon';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [],
@@ -21,6 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
     ButtonMaterial.MatButtonModule,
     MatTableModule,
     MatIconModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   exports : [
     Material.MatToolbarModule,
@@ -31,6 +35,8 @@ import { MatIconModule } from '@angular/material/icon';
     ButtonMaterial.MatButtonModule,
     MatTableModule,
     MatIconModule,
+    MatPaginatorModule,
+    MatSortModule,
   ]
 })
 export class MaterialModule { }
