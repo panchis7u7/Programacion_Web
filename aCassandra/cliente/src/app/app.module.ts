@@ -10,13 +10,14 @@ import { StarbuckComponent } from '../app/starbucks/starbuck/starbuck.component'
 import { StarbucksService } from './shared/starbucks.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StarbuckListComponent } from './starbucks/starbuck-list/starbuck-list.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
     AppComponent,
     StarbuckComponent,
     StarbucksComponent,
-    StarbuckListComponent
+    StarbuckListComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { StarbuckListComponent } from './starbucks/starbuck-list/starbuck-list.c
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    GoogleMapsModule,
   ],
   providers: [StarbucksService],
   bootstrap: [AppComponent],

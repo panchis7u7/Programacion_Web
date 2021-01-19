@@ -2,6 +2,15 @@
 <div class="container">
     <mat-toolbar>
         <span class="fill-remaining-space"></span>
+        <span>Conoce tu starbuck mas cercano!</span>
+        <span class="fill-remaining-space"></span>
+    </mat-toolbar>
+    <google-map width="100%" [center]="centro">
+        <map-marker [position]="centro"> </map-marker>
+        <map-marker [position]="starbuckMC"> </map-marker>
+    </google-map>
+    <mat-toolbar>
+        <span class="fill-remaining-space"></span>
         <span>Insertar nuevo starbucks</span>
         <span class="fill-remaining-space"></span>
     </mat-toolbar>

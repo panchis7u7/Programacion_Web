@@ -1,4 +1,6 @@
+import { rendererTypeName } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-starbucks',
@@ -7,11 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarbucksComponent implements OnInit {
 
-  //listData: MatTableDataSource<any>;
+  centro!: google.maps.LatLngLiteral;
+  starbuckMC!: google.maps.LatLngLiteral;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
+  navigator.geolocation.getCurrentPosition((pos) => {
+    this.centro = {
+      lat: pos.coords.latitude,
+      lng: pos.coords.longitude,
+    }
+
+    this.starbuckMC = {
+      lat: -35,
+      lng: 90,
+    }
+  })
+      
   }
 
 }

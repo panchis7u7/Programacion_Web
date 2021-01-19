@@ -1,0 +1,580 @@
+estado,id_tienda,ciudad,codigo_postal,direccion,latitud,longitud,no_tienda,nombre
+AGU,1,Aguascalientes,20280,"Blvd J Ma. Chavez No 1919,  San Pedro",21.84,-102.29,25944-239829,City Express Aguascalientes
+AGU,2,Aguascalientes,20130,"Av. Universidad No. 2229-A, Col. San José del Arenal",21.91,-102.31,17065-178804,Plaza Las Palmas
+AGU,3,Aguascalientes,,2 Rancho Las Trojes de Alonso,21.92,-102.29,32131-114607,Altaria
+AGU,4,Aguascalientes,20234,Blvd. Jose Maria Chavez No. 1531,21.86,-102.29,32750-137046,Asuncion
+AGU,5,Aguascalientes,20115,"101 Prolongacion Ignacio Zaragoza, Fraccionamiento Valle de las Trojes",21.92,-102.3,32110-119599,Colosio
+BCN,6,Ensenada,22832,"Pedro Loyola No 612 Locales A-02, 03, 04, Col. Carlos Pacheco",31.84,-116.6,16701-173887,Macroplaza Ensenada
+BCN,7,Ensenada,22800,678 Boulevard Costero Lazaro Cardenas,31.86,-116.63,38265-114605,Ensenada Malecon
+BCN,8,Mexicali,21259,Calzada Manuel Gomez Morin 799,32.65,-115.41,32418-132854,Lienzo
+BCN,9,Mexicali,21090,"Blvd. Lazaro Cardenas n.1801, Zona Industrial",32.62,-115.46,21909-216025,Mexicali Plaza del Valle
+BCN,10,Mexicali,44556,"Calz. Lopez Mateos esq. Calle Alfarero, Lote s/n Seccion A Porcion Sur Manzana 7",32.62,-115.51,16196-166687,Mexicali Centinela
+BCN,11,Mexicali,21259,"Prolongacion Lazaro Cardenas, Carretera a Tijuana, Local 51",32.62,-115.51,32645-136562,Galerias del Valle
+BCN,12,Mexicali,21330,"Benito Juarez Boulevard y Lazario, Cardenas sin, Fracc. Residencias",32.63,-115.44,32108-119584,Plaza Centenario
+BCN,13,Tijuana,22420,"Lote 0001 Mza F Blvd Agua Caliente 10387, Chapultepec, Carretera Aeropuerto",32.51,-117.01,21191-209751,Paseo Chapultepec Tijuana
+BCN,14,Tijuana,22435,"S/N Col. Nueva Tijuana, Delegacion Meza de Otay",32.54,-116.98,15298-159705,Tijuana Airport Inside
+BCN,15,Tijuana,22320,"Paseo de los Heroes , Zona Rio",32.52,-117.01,31869-114908,Paseo de los Heroes
+BCN,16,Tijuana,22700,1302 Paseo del Pedregal,32.53,-117.12,32149-114975,Playas de Tijuana
+BCN,17,Tijuana,22435,Carretera Aeropuerto s/n Col. Nueva,32.54,-116.98,20439-205549,Aeropuerto Tijuana II
+BCN,18,Tijuana,,Boulevard Salinas,32.51,-117.01,32133-113704,Tijuana Salinas
+BCN,19,Tijuana,22435,"Carretera Aeropuerto s/n nueva, Tijuana",32.54,-116.95,28015-249492,Apto. Tijuana Exterior
+BCN,20,Tijuana,,"Paseo de los Heroes Zona Rio, Local 19",32.53,-117.02,31931-113585,Plaza Rio Tijuana
+BCN,21,Tijuana,22010,"Paseo de Los Heroes #9902, Colonia Zona Rio",32.53,-117.03,29033-252215,Camino Real Tijuana
+BCN,22,Tijuana,22710,"Blvd CorredorTijuana Rosarito, No. 21015",19.51,-99.23,15296-159704,Macroplaza Tijuana
+BCN,23,Tijuana,22024,"Calle Hipodromo #12027-0, Col. Hipodromo Aguacaliente",32.51,-117,29669-254834,Hipodromo Caliente
+BCS,24,Cabo San Lucas,23453,"Boulevard Marina Lote 7-D, Col La Marina",22.89,-109.91,17483-182364,Marina Cabo San Lucas
+BCS,25,La Paz,23090,"Blvd. Pino Payas y Carreterra La Paz, Cd. Constitucion Local L100",24.12,-110.34,17257-180645,Plaza La Paz
+BCS,26,La Paz,23050,"Calzada Forjadores de Sudcalifornia, N. 38, 39 y 40, Ex- Base Aérea",24.13,-110.31,19085-198605,La Paz Soriana
+BCS,27,Los Cabos,23410,Blvd. Paseo de la Marina,22.89,-109.91,1898-141665,Marina Los Cabos
+BCS,28,Los Cabos,23400,Blvd. Nauricio Castro no. 4650 Col.,23.04,-109.71,2103-141452,CM Los Cabos
+BCS,29,Los Cabos,23420,"Carretera Transpenínsular, s/n km 43.5, Municipio San Jose del Cabo, B.C.S.",23.13,-109.71,18205-188644,Aeropuerto Los Cabos  II
+BCS,30,Los Cabos,23420,Carretera Transpeninsular s/n km 43.5,23.13,-109.71,9035-151831,Aeropuerto Los Cabos 1
+BCS,31,San Jose del Cabo,23406,"Carr. Transpeninsular km 29.5, Colonia La Jolla",23.04,-109.71,25757-242315,Plaza Peninsula Cabo
+CAM,32,Campeche,24014,"Av Pedro Sainz de Barranda s/n  esq., Av. Darsena",19.86,-90.52,20432-205546,Galerias Campeche
+CAM,33,Ciudad del Carmen,24180,"Av. Luis Donaldo Colosio # 58, Col. Limonar",18.65,-91.81,22225-218845,Zentralia Ciudad del Carmen
+CHH,34,Chihuahua,31238,Blvd de la Juventud #5905,28.62,-106.12,32607-126546,Periferico de la Juventud
+CHH,35,Chihuahua,3114,"Av. Periferico de la Juventud #5700, Desarrollo El Saucito",28.66,-106.13,18492-188944,Citadela Chihuahua
+CHH,36,Chihuahua,,Plaza del Sol Mall,20.65,-103.4,32622-136956,Plaza del Sol - Chihuahua
+CHH,37,Chihuahua,31270,BLVD Antonio Ortiz Mena #1800 Esq Con Av,28.64,-106.1,32756-138645,Blvd Ortiz Mena Chihuahua
+CHH,38,Chihuahua,31000,"Av. Independencia # 401, 102 y 104 de la calle Victoria.",28.64,-106.08,49224-267549,Chihuahua Centro
+CHH,39,Ciudad Juarez,32459,"Av. Francisco Villarreal Torres #11204, Colonia Partido Senecu",31.71,-106.38,28828-251444,3 Torres Cd. Juarez
+CHH,40,Ciudad Juarez,32618,"Blbd Teofilo Borunda #8681, Esq Paseo de la Victoria",31.69,-106.41,32646-126547,Misiones
+CHH,41,Ciudad Juarez,61010,4630 Avenue Paseo del Triunfo de la Repu,31.74,-106.44,32552-121206,Paseo Triunfo de la Republica
+CHH,42,Ciudad Juarez,32121,"Carr. Panamericana Km 18.5 S/N, Aeropuerto Chihuahua",31.64,-106.44,49764-271068,Aeropuerto Cd. Juarez
+CHH,43,Ciudad Juarez,32540,7331-A Manuel Gomez Morin Boulevard,31.72,-106.42,32278-121207,Ciudad Juarez Campestre
+CHP,44,Tuxtla Gutierrez,20060,"Belisario Dominguez No. 2, 535 Local-01, Col. Santa Elena",16.75,-93.14,15264-159105,Tuxtla Belisario Dominguez
+CHP,45,Tuxtla Gutierrez,29040,Blvd. Juan Pablo II S/N,16.75,-93.08,21304-210707,Tuxtla II DT
+COA,46,Monclova,,Blvd. Harold Rio Pape,26.93,-101.42,28795-251213,Monclova
+COA,47,Saltillo,25279,Boulevard Nazario Ortiz Garza No. 2345,25.46,-100.98,47816-259924,Galerias Saltillo
+COA,48,Saltillo,23,Periferico Luis Echeverria #1416,25.44,-100.98,31894-111406,Saltillo La Quinta Inn
+COA,49,Saltillo,25240,"Blvd. Venustiano Carranza, Municipio de Saltillo",25.45,-100.99,25504-236933,Plaza Carranza
+COA,50,Torreon,,Independencia Boulevard,25.55,-103.44,32150-119576,Independencia Boulevard
+COA,51,Torreon,27010,"Indepenpencia Boulevard #1300, Col Navarro",25.58,-103.41,32164-119622,Torreon Cimaco
+COA,52,Torreon,27105,"Autopista Torreon San Pedro #505, Fracc. Santa Barbara",25.58,-103.42,21277-209762,Plaza 505 Torreon
+COA,53,Torreon,27250,"Paseo de la Rosita S/N Col Campestre la, Rosita C.P. 27250",25.52,-103.42,32421-119577,La Rosita
+COL,54,Colima,28010,"Av. Felipe Sevilla del Rio No. 351, Reyes, Col. Jardines Vista Hermosa",19.25,-103.71,1363-139187,Colima Sevilla
+COL,55,Manzanillo,28867,"Blvd. Miguel de la Madrid No. 8714, Fracc. 01",19.1,-104.33,32753-139193,Manzanillo Blvd Madrid
+DIF,56,Ciudad de Mexico,5129,"de la Industria Militar 1296,, Lomas de Chamizal, Cuajimalpa",19.39,-99.26,22854-225484,STIM
+DIF,57,Ciudad de Mexico,11570,"Homero n.503, Col. Chapultepec Morales, Del. Miguel Hidalgo",19.44,-99.19,20484-206205,EMERSON
+DIF,58,Ciudad de Mexico,1030,"Palanque s/n, Col. Narvarte",19.4,-99.15,19758-198607,Narvarte
+DIF,59,Ciudad de Mexico,10200,AV SAN JERONIMO 819 COL SAN JERONIMO,19.32,-99.23,23728-232709,Pasaje San Jeronimo
+DIF,60,Ciudad de Mexico,14050,RENATO LEDUC 224 COL TORIELLO GUERRA,19.3,-99.16,23997-234584,RENATO LEDUC
+DIF,61,Ciudad de Mexico,11590,"Melchor Ocampo n.453 Col. Anzures, Del. Miguel Hidalgo",19.42,-99.18,20438-205552,Melchor Ocampo
+DIF,62,Ciudad de Mexico,6350,"Norte Mosqueta 259, Esq. Insurgentes N, Delegacion Cuauhtemoc",19.49,-99.13,18278-188665,Forum Buenavista
+DIF,63,Ciudad de Mexico,14330,"Canaverales #222, Col. Granjas Coapa, Del. Tlalpan",19.29,-99.11,20394-205054,Pabellon Cuemanco
+DIF,64,Ciudad de Mexico,2300,"Calzada Vallejo numero 1090, Colonia Industrial Vallejo",19.49,-99.15,23627-224864,Via Vallejo
+DIF,65,Ciudad de Mexico,,"Pedregal #24, Colonia Molino del Rey",19.33,-99.2,29168-252829,Torre Virreyes
+DIF,66,Ciudad de Mexico,,"Av. Madero esquina Bolivar, Bolivar Centro Historico Cd Mex",19.44,-99.14,28751-250945,Madero II
+DIF,67,Ciudad de Mexico,14240,"Carretera Picacho Ajusco n.557, Col. Lomas de Padierna",19.28,-99.21,22783-224824,Picacho
+DIF,68,Ciudad de Mexico,11000,"Monte Pelvoux No.210, Lomas Chapultepec",19.43,-99.2,22780-224829,Monte Pelvoux
+DIF,69,Ciudad de Mexico,3500,"Calzada de Tlalpan 564, Col Tlalpan Nativitas",19.34,-99.15,29815-224825,Calzada de Tlalpan
+DIF,70,Ciudad de Mexico,6500,"Rio Lerma n. 303, Col. Cuauhtemoc, Del. Cuauhtemoc",19.43,-99.18,21983-216624,SPA
+DIF,71,Ciudad de Mexico,11510,"Moliere esquina Cervantes Saavedra, Moliere esq C. Saavedra Col Granada",19.44,-99.2,47987-260826,Miyana
+DIF,72,Ciudad de Mexico,52763,"Vialidad de la Barranca No. 22, Col. Valle de las Palmas",19.39,-99.28,16464-171705,Hospital Angeles Interlomas
+DIF,73,Ciudad de Mexico,11590,"Mariano Escobedo No.476, Anzures",19.43,-99.18,22784-224830,Torre Polanco
+DIF,74,Ciudad de Mexico,4310,"Avenida Universidad numero 1778, Col. Romero de Terreros, Del. Coyoacan",19.35,-99.18,25665-241989,Oasis II - PA
+DIF,75,Ciudad de Mexico,2080,"Egipto #142 Col. Claveria, Delegacion Azcapotzalco",19.46,-99.18,22776-224835,Patio Claveria
+DIF,76,Ciudad de Mexico,,"Av. Ejercito Nacional 843, Local H 103, Col. Granada Delegación Miguel Hidalgo",19.44,-99.2,25656-241988,Antara II
+DIF,77,Ciudad de Mexico,7950,Av 510 n.340 Pueblo Sn Juan de Aragon,19.47,-99.08,21180-209747,Bosque de Aragon
+DIF,78,Ciudad de Mexico,11250,"Calzada Legaria N 549, Col. Diez de Abril",19.45,-99.21,22542-222084,Plaza Rio San Joaquin
+DIF,79,Ciudad de Mexico,11320,Lago Alberto No. 320 Colonia Anahuac,19.44,-99.18,26554-244510,BBVA
+DIF,80,Ciudad de Mexico,3810,"Obrero Mundial 296 Narvarte, Benito Juarez",19.4,-99.16,26376-237921,Obrero Mundial
+DIF,81,Ciudad de Mexico,6760,"Monterrey n.330, Col., Roma Sur District",19.41,-99.16,20396-205105,Roma Sur
+DIF,82,Ciudad de Mexico,,"Lago Alberto esquina Mariano Escobedo, Mariano Escobedo",19.3,-99.02,27838-248909,Punto Polanco
+DIF,83,Ciudad de Mexico,3100,"Av. Félix Cuevas n.274, Col. Del Valle",19.37,-99.17,20449-205548,SPA
+DIF,84,Ciudad de Mexico,6600,"Av Paseo de la Reforma 510, Colonia Juarez",19.42,-99.17,26552-244509,Corporativo BBVA Bancomer Reforma
+DIF,85,Ciudad de Mexico,3200,"Manzanas n. 40 Col Del Valle, Del. Benito Juarez",19.37,-99.18,20395-205053,SPA
+DIF,86,Ciudad de Mexico,14050,Tlalpan 4731 Col. Toriello Guerra,19.29,-99.16,24878-224826,Tlalpan Hospitales
+DIF,87,Ciudad de Mexico,,Aeropuerto Intenacional de la Cd. Mex,22.3,-97.88,27199-246913,AICM T1 S21 and 22
+DIF,88,Ciudad de Mexico,3020,"Av. Cuauhtemoc 462, Col. Narvarte, Del. Benito Juarez",19.4,-99.16,49944-271824,PARQUE DELTA III
+DIF,89,Ciudad de Mexico,9890,"Av. Tlahuac #4409, Col. Lomas Estrella",19.32,-99.09,22786-224844,Patio Lomas Estrella
+DIF,90,Ciudad de Mexico,3230,"Av. Insurgentes Sur n.1458, Col., Local 2, Actipan District",19.37,-99.18,20233-204145,Torre Origami
+DIF,91,Ciudad de Mexico,53398,"Blvd. Adolfo Lopez Mateos, Esquina Rio San Joaquin",19.39,-99.19,23596-224846,Parque Toreo
+DIF,92,Ciudad de Mexico,5340,Av. Tamaulipas No. 3000,19.36,-99.28,30770-101701,Superama Santa Fe
+DIF,93,Ciudad de Mexico,11320,Avenue Mariano Escobedo y Lago Alberto,19.44,-99.19,32789-136168,Parques Polanco
+DIF,94,Ciudad de Mexico,6140,"Michoacan #139, esq. Cuautla, Col. Condesa",19.41,-99.17,38128-95330,Condesa II
+DIF,95,Ciudad de Mexico,,"Super Avenida Lomas Verdes 1200, Fracc.",19.51,-99.27,32107-105790,Lomas Verdes II
+DIF,96,Ciudad de Mexico,11540,"Moliere # 222 Col. Los Morales, Del. Miguel Hidalgo",19.43,-99.2,27493-247853,Moliere 222 II
+DIF,97,Ciudad de Mexico,11570,Av. Presidente Mazaryk #39,19.43,-99.18,31096-103471,Mazaryk Spencer
+DIF,98,Ciudad de Mexico,3103,Av. Homero & E. Alan Poe,19.44,-99.2,6183-149885,Homero
+DIF,99,Ciudad de Mexico,6600,"Avenida Paseo de la Reforma, No. 342 Local 4  Col. Cuauhtemoc",19.43,-99.17,18631-192944,Torre del Angel Florencia
+DIF,100,Ciudad de Mexico,23420,"Dominguez, Colonia Centro de Cuidad, Santa Fe, Delegacion Alvaro Obregon",19.39,-99.19,19701-198126,Garden Santa Fe
+DIF,101,Ciudad de Mexico,1210,"Javier Barros Sierra, s/n Col Centro de Ciudad, Santa Fe",19.37,-99.26,8019-149986,Park Plaza I
+DIF,102,Ciudad de Mexico,3100,"Av. Insurgentes Sur No. 1647, Col. San Jose Insurgentes",19.36,-99.18,16372-169210,Prisma Insurgentes
+DIF,103,Ciudad de Mexico,6600,"107 Londres, Col. Juarez, Del. Cuauhtemoc",19.43,-99.16,32109-116006,Londres
+DIF,104,Ciudad de Mexico,11560,"Presidente Masaryk #360 Col. Polanco, 19 Col. Polanco c.p., Del. Miguel Hidalg",19.43,-99.2,38111-77723,Masaryk Pasaje Polanco
+DIF,105,Ciudad de Mexico,2070,"Nextengo 71, Azcapotzalco",19.47,-99.19,47393-247386,Pabellon Azcapotzalco
+DIF,106,Ciudad de Mexico,52950,Av. Jinetes No. 84,19.56,-99.22,31069-102272,Arboledas
+DIF,107,Ciudad de Mexico,15900,"Fray Servando Teresa de Mier No. 964, Jardin Balbuena, Venustiano Carranza",19.42,-99.1,15648-163804,Balbuena
+DIF,108,Ciudad de Mexico,3810,"Montecito 38, Colonia Napoles, Delegacion Benito Juarez",19.39,-99.17,22010-217185,Montecitos WTC
+DIF,109,Ciudad de Mexico,1780,"Av. Toluca #1086, Col.Olivar de los Padres, Alvaro Obregon",19.34,-99.24,38104-83600,Olivar de los Padres
+DIF,110,Ciudad de Mexico,9020,"Canal de Tezontle 1520, Iztapalapa",19.38,-99.08,15504-162365,Plaza Oriente
+DIF,111,Ciudad de Mexico,3330,"Av. Popocatepetl 540 esquina con av., Universidad 2038, Col. Xoco Delg. Coyoac",19.36,-99.15,19757-189365,Patio Universidad
+DIF,112,Ciudad de Mexico,6000,"Londres #127, Local #38, Plaza La Rosa",19.43,-99.16,38130-95642,Zona Rosa
+DIF,113,Ciudad de Mexico,3300,"Av. Division del Norte No. 1746, Col. Portales",19.37,-99.16,19185-188668,Division del Norte
+DIF,114,Ciudad de Mexico,6600,"1A, Amberes Col. Juarez, Del. Cuauhtemoc",19.43,-99.17,31818-115826,Amberes
+DIF,115,Ciudad de Mexico,6000,"Juarez 30 Col Centro, Delegacion Cuauhtemoc",19.05,-98.22,17576-183526,Juarez 32
+DIF,116,Ciudad de Mexico,3100,"Avenida Coyoacan No. 1622, Local 101, Colonia Del Valle",19.37,-99.17,17662-184007,Corp. Coyoacan
+DIF,117,Ciudad de Mexico,7090,"Calzada San Juan De Aragon, No. Ext. 516, Col D M Nacional, Municipio O Delegacion",19.47,-99.08,16167-168865,Eduardo Molina
+DIF,118,Ciudad de Mexico,,Av. Paseo de La Reforma # 69,19.43,-99.15,31366-104230,Embassy Suites Hotel
+DIF,119,Ciudad de Mexico,53100,"Circuito Ingenieros # 11, Locales A y B,",19.51,-99.23,30881-101703,Circuito Ingenieros
+DIF,120,Ciudad de Mexico,11510,"Av. Ejército Nacional 980, local K12, Col. Chapultepec Morales, Central Dist",19.44,-99.21,3096-137364,Pabellon Polanco
+DIF,121,Ciudad de Mexico,14300,Prol Division del Nte 4344,19.3,-99.13,1934-142186,Plaza La Hacienda
+DIF,122,Ciudad de Mexico,3810,Montecitos No 38 N3 Local 03 Col Napoles,19.39,-99.17,15496-162006,Torre WTC
+DIF,123,Ciudad de Mexico,5000,"Jose Ma Castorena 320, Col. Villas Cuajimalpa",19.36,-99.29,3092-132452,Castorena
+DIF,124,Ciudad de Mexico,1900,"Av. De las Fuentes 425, local 6A",19.32,-99.21,15845-161527,Jolie Place
+DIF,125,Ciudad de Mexico,55420,"Av. Juarez # 15, esq Convento de Acolman, Santa Monica",19.53,-99.23,16376-170365,Santa Monica -
+DIF,126,Ciudad de Mexico,9020,1512 Avenue Canal de Tezontle,19.38,-99.08,32209-116506,Parque Tezontle 2
+DIF,127,Ciudad de Mexico,5109,"Av. Vasco de Quiroga 3800, Local 255, Col. Antigua Mina La Totolapa",19.36,-99.28,38148-98213,Centro Comercial Santa Fe
+DIF,128,Ciudad de Mexico,3910,"Insurgentes Sur #1405, Col. Insurgentes Mixcoac, Benito Juarez",19.37,-99.18,38112-87302,Insurgentes Sur Parroquia
+DIF,129,Ciudad de Mexico,53100,"Circuito Medicos # 45,  Ciudad Satelite",19.51,-99.23,16895-175444,Satelite Centro Civico
+DIF,130,Ciudad de Mexico,6140,47 Benjamin Franklin Hipodromo Condesa,19.41,-99.18,32439-126544,La Salle
+DIF,131,Ciudad de Mexico,1210,"Act. Roberto Medellin 800 col Santa Fe, Del. Alvaro Obregon",19.37,-99.26,27498-247854,Corporativo Banamex
+DIF,132,Ciudad de Mexico,3920,"Alfonso Reyes 218 Colonia Hipodromo, Condesa, Delegacion Benito Juarez",19.41,-99.17,18491-189985,Alfonso Reyes
+DIF,133,Ciudad de Mexico,76100,"Av 5 de Febrero 9200 Col Fraccionamiento, Zona Industrial Benito Juarez",20.65,-100.43,8087-151205,Jurica
+DIF,134,Ciudad de Mexico,14050,"150, Col. Toriello",19.3,-99.16,3900-153724,Medica Sur Tlalpan
+DIF,135,Ciudad de Mexico,6000,"Av. 5 de mayo #19 Col. Centro, Delegacion Cuauhtemoc",19.43,-99.14,18885-196404,5 de Mayo
+DIF,136,Ciudad de Mexico,3100,"Eugenia #1,062",19.39,-99.17,2077-144665,Eugenia
+DIF,137,Ciudad de Mexico,19000,"Periferico sur # 4132, Col. Jardines Del Pedregal",19.31,-99.21,13013-149989,Mexfund Pedregal
+DIF,138,Ciudad de Mexico,3810,"Insurgentes Sur #729, local b Col. Napoles, Del. Benito Juarez",19.39,-99.17,38109-87304,WTC
+DIF,139,Ciudad de Mexico,5120,"Paseo de los Laureles #458 Col, Bosques de las Lomas",19.39,-99.25,38105-79342,Bosques Horizontes
+DIF,140,Ciudad de Mexico,3000,"Av. Cuauhtemoc esq. Obrero Mundial, Col. Narvarte",19.4,-99.15,30844-100240,Plaza Delta
+DIF,141,Ciudad de Mexico,11510,Ejercito Nacional #843,19.44,-99.2,31143-103466,Los Atrios Antara Polanco
+DIF,142,Ciudad de Mexico,9410,"Avenida Canal Río Churubusco No. 1635, Colonia Central de Abastos",19.38,-99.1,27807-248698,Plaza Central
+DIF,143,Ciudad de Mexico,11560,"Xola 535 esquina Mier y Pesado, Col. Del Valle",19.4,-99.17,7192-150924,Torre Mexicana
+DIF,144,Ciudad de Mexico,11540,"Moliere # 222 Col. Los Morales, Del. Miguel Hidalgo",19.43,-99.2,26860-119552,Moliere 222
+DIF,145,Ciudad de Mexico,6100,Av. Nuevo Leon # 188,19.41,-99.17,31105-101583,Nuevo Leon
+DIF,146,Ciudad de Mexico,,"Jaime Balmes #8, Local 4, Colonia Los Morales Polanco,",19.44,-99.21,38118-93434,Corporativo Polanco
+DIF,147,Ciudad de Mexico,5109,"Av. Vasco de Quiroga 3800, Local 155",19.36,-99.28,31621-109367,Centro Comercial Santa Fe 2
+DIF,148,Ciudad de Mexico,14000,"Insurgentes Sur No. 4184 p.b. loc 1, Col. La Joya",19.28,-99.17,38132-96707,Insurgentes La Joya
+DIF,149,Ciudad de Mexico,,326 Horacio Plaza Cantera,19.43,-99.19,31349-106597,Horacio
+DIF,150,Ciudad de Mexico,15620,"Capitan Carlos Leon s/n Colonia Penon, de los Banos",19.42,-99.08,32277-131206,MEX - Mexico City Airport T2 PA INT
+DIF,151,Ciudad de Mexico,2430,"Av. Acoxpa No.430 Col. Ex Hacienda Coapa, Delegacion Tlalpan",19.3,-99.14,18293-182304,Angeles Acoxpa
+DIF,152,Ciudad de Mexico,5000,"Av Carlos Graef Fernandez #154 Local P.B, Col. Cuajimalpa",19.36,-99.28,13075-156045,Centro Medico ABC Santa Fe
+DIF,153,Ciudad de Mexico,6700,"Plaza Luis Cabrera # 5 Local 1, Col Roma",19.42,-99.16,16375-170366,Plaza Luis Cabrera
+DIF,154,Ciudad de Mexico,52926,Carr. Lago de Guadalupe Km. 3.5 Col. Mar,19.59,-99.23,31696-111205,ITESM Mexico City Campus
+DIF,155,Ciudad de Mexico,9060,"Av. Rio Churubusco No.583 Local B10, Col. Sector Popular",19.37,-99.12,17835-185524,Portal Churbusco
+DIF,156,Ciudad de Mexico,1020,"Av. Insurgentes Sur #1971, Col. Guadalupe Inn",19.35,-99.19,38139-97349,Plaza Inn
+DIF,157,Ciudad de Mexico,1900,"Crater 709,  Col. Pedregal de San Angel",19.32,-99.21,38107-84663,Pedregal
+DIF,158,Ciudad de Mexico,6000,"Republica de Urugual No. 56, Col. Centro, Delegacion Cuauhtemoc",19.43,-99.14,17350-181186,Uruguay
+DIF,159,Ciudad de Mexico,15620,"Av. Capitan Carlos Leon s/n,",19.42,-99.08,30771-101280,MEX - Aeropuerto Int Dufry
+DIF,160,Ciudad de Mexico,1000,"Av Revolucion No. 1817, Colonia San Angel, Del. Alvaro Obregon",19.34,-99.19,29337-245329,Patio Revolucion
+DIF,161,Ciudad de Mexico,52977,"Circuito Jimenez Cantu, Atizapan de, Zaragoza",19.55,-99.27,3097-139076,Galerias Atizapan
+DIF,162,Ciudad de Mexico,,Av. Miguel A. De Quevedo  # 624,19.34,-99.17,31436-99448,Miguel Angel Quevedo 2
+DIF,163,Ciudad de Mexico,11590,"Galileo no. 8 local 3 esq. Campos Eliseo, Miguel Hidalgo",19.43,-99.19,38108-84662,Campos Eliseos
+DIF,164,Ciudad de Mexico,1210,"Guillermo Gonzalez Camarena No. 2000, esq. Vasco de Quirogam Centro de Cd.",19.36,-99.28,38122-84664,Santa Fe
+DIF,165,Ciudad de Mexico,,"Aeropuerto Intenacional de la Cd. Mex, Aeropuerto Intenacional de la Cd. Mex",19.45,-99.05,47285-257724,Salon Ejecutivo Mexicana T1
+DIF,166,Ciudad de Mexico,5348,"Av. Vasco de Quiroga No. 3900, Col. Santa Fe Cuajimalpa, Del Cuajimalpa",19.36,-99.28,16638-173889,Torre Diamante
+DIF,167,Ciudad de Mexico,52772,Fraccion 7 y 8 del Lote 20,19.38,-99.3,32205-123484,Jesus del Monte
+DIF,168,Ciudad de Mexico,,Av. de Las Palmas 765,19.43,-99.22,31088-102451,Palmas
+DIF,169,Ciudad de Mexico,1210,"Prolongacion Paseo de la Reforma 400, Pena Blanca Santa Fe, Alvaro Obregon",19.38,-99.26,21493-212466,Patio Santa Fe
+DIF,170,Ciudad de Mexico,9420,"Avenida Rio Churubusco 1072, Colonia Nueva Rosita, Local No. 1, 2 y 3",19.38,-99.1,17986-184008,Zentralia Churubusco
+DIF,171,Ciudad de Mexico,,"Av. Capitan Carlos Leon s/n, Sala B, Loc",19.42,-99.08,31012-101547,MEX - Aeropuerto Nacional Sala B
+DIF,172,Ciudad de Mexico,6600,"Av. Passeo de La Reforma #195, Local 1, esq. Rio Marne",19.43,-99.16,12792-155005,Reforma Rio Marne
+DIF,173,Ciudad de Mexico,5349,"Av. Santa Fe No. 495 PB Local 2, Col. Cruz Manca",19.37,-99.26,17971-182865,SPA
+DIF,174,Ciudad de Mexico,1900,"Adolfo Lopez Mateos 4020, Col. Jardines del Pedregal",19.31,-99.21,38129-96087,Plaza Santa Teresa
+DIF,175,Ciudad de Mexico,6000,"Madero #42 Col. Centro, Centro Historico district",19.43,-99.14,18633-193344,Madero
+DIF,176,Ciudad de Mexico,6600,222 Avenue Reforma,19.43,-99.16,32189-108438,222 Reforma
+DIF,177,Ciudad de Mexico,5109,"Av. Vasco de Quiroga #3800, Local 1,000, Santa Fe, Deleg. Cuajimalpa",19.36,-99.28,18399-190304,SPA
+DIF,178,Ciudad de Mexico,11570,247 Campo Eliseos,19.43,-99.2,31548-108187,Obelisco
+DIF,179,Ciudad de Mexico,11529,"Lago Zurich s/n esq. Cervantes Saaverda, Col Ampliacion Granada Delegacion Miguel",19.44,-99.2,12997-149988,Carso Polanco I
+DIF,180,Ciudad de Mexico,1060,Av. Altavista # 147 Local 1,19.35,-99.2,30816-100246,Altavista-Mexico
+DIF,181,Ciudad de Mexico,54020,"3130 Col. Valle Dorado, Blvd. Manuel Avita Camacho, Tlanepantla",19.55,-99.21,7082-149985,Valle Dorado
+DIF,182,Ciudad de Mexico,44279,"Via. Dr. Jimenez Cantu, Bosque Esmeralda, Atizapan de Zaragosa, Edo. Mex",19.28,-99.14,19478-198127,City Center Esmeralda
+DIF,183,Ciudad de Mexico,4120,Division del Norte Ave 2590,19.35,-99.15,32755-136945,Division del Norte
+DIF,184,Ciudad de Mexico,,"Calle Pilares & Calle Pestalozzi, Coloni",19.38,-99.16,38134-96693,Pilares
+DIF,185,Ciudad de Mexico,15620,"Av. Capitan Carlos Leon s/n, Sala E, Loc",19.42,-99.08,30786-100221,MEX - Aeropuerto Cenca
+DIF,186,Ciudad de Mexico,4980,"Benito Juarez No. 17 Local E, Colonia ExHacienda de Coapa",19.31,-99.14,17909-182805,Plaza America
+DIF,187,Ciudad de Mexico,11520,"Av. Ejercito Nacional # 579 P.B. 01, Col. Granada",19.44,-99.19,15130-157804,Ejercito Nacional
+DIF,188,Ciudad de Mexico,,"Av. Periferico Sur #, Centro Comercial San Jeronimo",19.33,-99.21,38124-94690,San Jeronimo
+DIF,189,Ciudad de Mexico,1710,"Calz. De los Leones #145, Locales 19 y 20 Col. Las Aguilas",19.36,-99.2,38103-79344,Las Aguilas
+DIF,190,Ciudad de Mexico,6170,180 Sonora Avenue,19.41,-99.17,3095-135295,Amsterdam
+DIF,191,Ciudad de Mexico,2230,Avenide Eje 5 Norte 990,19.5,-99.18,31622-108284,Tecnoparque
+DIF,192,Ciudad de Mexico,11500,397 Avenue Miguel de Cervantes Saavedra,19.22,-98.96,31546-107881,Irrigacion
+DIF,193,Ciudad de Mexico,1030,"Av. Insurgentes Sur No 1898 Local A, Col. Florida",19.35,-99.19,16193-169208,Torre Siglum
+DIF,194,Ciudad de Mexico,15620,"Av. Capitan Carlos Leon s/n, Sala B",19.44,-99.08,38151-98039,MEX - Aeropuerto Sala Bravo
+DIF,195,Ciudad de Mexico,9020,1512 Avenue Canal de Tezontle,19.38,-99.08,32151-116505,Parque Tezontle 1
+DIF,196,Ciudad de Mexico,6600,"Colectores 13 No. 280, Col. Magdalena de las Salinas",19.49,-99.13,31393-103353,Parque Lindavista 2
+DIF,197,Ciudad de Mexico,6760,"Tlacotalpan No. 59, Col. Roma Sur",19.41,-99.17,16463-171706,Hospital Angeles Metropolitano
+DIF,198,Ciudad de Mexico,1100,Manuel Avila Camacho 1,19.43,-99.2,1889-105282,Torre Inverlat
+DIF,199,Ciudad de Mexico,6600,"Colectores 13 No. 280, Col. Magdalena de las Salinas",19.49,-99.13,31391-103352,Parque Lindavista 1
+DIF,200,Ciudad de Mexico,14610,"Periferico Sur No. 4991 local 1, Col. Tepepan",19.28,-99.14,38131-95614,Tepepan
+DIF,201,Ciudad de Mexico,54740,"Manzana C, # 24 B Av. 1 de Mayo, Col. Ce",19.65,-99.21,32704-119567,Izcalli Mega
+DIF,202,Ciudad de Mexico,6600,"222 Avenue Reforma, Col. Juarez. C.P.",19.43,-99.16,32207-116504,222 Reforma 2
+DIF,203,Ciudad de Mexico,5300,"Av. Santa Fe  482;  Col. Cruz Manca;, Del. Cuajimpala",19.36,-99.27,16604-173485,City Walk
+DIF,204,Ciudad de Mexico,,Autopista Chamapa-Lecheria S/N,19.6,-99.2,38136-96879,Punta Norte
+DIF,205,Ciudad de Mexico,53120,Hacienda de Echegaray,19.49,-99.23,31256-102301,Echegaray
+DIF,206,Ciudad de Mexico,2430,"Av. Del Rosario No. 1025, Col El Rosario",19.5,-99.2,17351-181185,El Rosario
+DIF,207,Ciudad de Mexico,,Av. Miguel Angel de Quevedo #287,19.35,-99.18,31795-106354,Miguel Angel Quevedo 3
+DIF,208,Ciudad de Mexico,,"Bosque de Lilas #92, Local,Centro Comerc",19.39,-99.25,30651-96717,Plaza Lilas
+DIF,209,Ciudad de Mexico,3810,"Montecito 38, Colonia Napoles District",19.39,-99.17,18384-188964,Insurgentes WTC -
+DIF,210,Ciudad de Mexico,11850,"Seccion 1RA,  Bosque de Chapultepec, Acceso Gratuitas",19.42,-99.18,17133-179228,Chapultepec Reforma
+DIF,211,Ciudad de Mexico,4920,"Av. Canal de Miramontes No. 2091, Col. Los Girasoles",19.31,-99.12,38114-247765,Super Plaza - Miramontes
+DIF,212,Ciudad de Mexico,14050,"Puente de Piedra No. 150, Col. Torielo Guerra",19.3,-99.16,16182-169204,Medica Sur II
+DIF,213,Ciudad de Mexico,4340,"Av. Insurgentes Sur #2374., Col. Chimalistac",19.34,-99.19,38152-99047,Insurgentes Relox
+DIF,214,Ciudad de Mexico,55070,"Av. Central esq. Av. 1 de Mayo, Col. Jardines de Morelos, Ecatepec",20.7,-103.38,8164-151464,Americas Ecatepec
+DIF,215,Ciudad de Mexico,4500,"Anillo Periferico No. 4690 Local 192, Ampliacion Pedregal de San Angel",19.3,-99.19,15125-157824,C.C. Perisur
+DIF,216,Ciudad de Mexico,3020,Xola No.1159 Col. Narvarte,19.4,-99.16,22517-221626,Xola
+DIF,217,Ciudad de Mexico,5300,"Juan Salvador Agraz 61, Col. Santa Fe, Cuajimalpa",19.36,-99.28,21486-212465,One o One
+DIF,218,Ciudad de Mexico,3730,"Revolucion 780, Col. Mixcoac",19.38,-99.19,15442-161530,C.M Mixcoac
+DIF,219,Ciudad de Mexico,53290,"Av. Gabriel Mancera #1,357, Local 1",19.37,-99.17,3950-146784,Gabriel Mancera
+DIF,220,Ciudad de Mexico,,Av. Patriotismo #229,19.4,-99.18,31141-104320,Metropoli Patriotismo
+DIF,221,Ciudad de Mexico,54054,Lateral Autopista Mexico-Toluca #1235,19.36,-99.28,31092-101631,Santa Fe IMAX
+DIF,222,Ciudad de Mexico,11560,"Ave Santa Fe No 94 Col Zedec Santa Fe, Office Tower",19.37,-99.26,2145-139071,Samara I
+DIF,223,Ciudad de Mexico,1900,"Av. San Jeronimo No. 240, Col. Jardines del Pedregal",19.34,-99.2,16244-169211,Jardines del Pedregal
+DIF,224,Ciudad de Mexico,52786,"Av. Lomas Anahuac, s/n., Lomas Anahuac,  Huixquilucan",19.4,-99.27,30985-103242,Universidad Anahuac
+DIF,225,Ciudad de Mexico,4200,"Calzada Taxquena No. 1475, Colonia Campestre Churubusco",19.34,-99.13,17910-182804,SPA
+DIF,226,Ciudad de Mexico,6600,"Av Paseo de la Reforma 347 esq Rio Tiber, Colonia Juarez, Delegacion Cuauhtemoc",19.43,-99.17,15668-164269,HSBC Corporate
+DIF,227,Ciudad de Mexico,3200,"Felix Cuevas #6, esq Insurgentes Sur",19.37,-99.18,5068-146785,Felix Cuevas
+DIF,228,Ciudad de Mexico,6050,"Av. Juarez No. 76, Col. Centro",19.44,-99.15,38123-93700,Alameda
+DIF,229,Ciudad de Mexico,4780,"Calzada del Hueso # 670, Local 32-35, Col. Los Robles",19.3,-99.12,14875-156046,Coapa Chedraui
+DIF,230,Ciudad de Mexico,15620,"Capitan Carlos Leon s/n Colonia Penon, de los Banos",19.42,-99.08,32276-131205,MEX - Mexico City Airport T2 Lleg
+DIF,231,Ciudad de Mexico,11000,"Prado Norte #324 Local 2 manzana 16, lote 15 Col. Lomas de Chapultepec",19.43,-99.21,38106-81520,Prado Norte
+DIF,232,Ciudad de Mexico,6500,"Av. Paseo de La reforma # 255, Co. Cuauhtemoc",19.43,-99.16,16367-170664,Bolsa Mexicana de Valores
+DIF,233,Ciudad de Mexico,,"Av. Coyoacan #2000, Local 201-A, Colonia",19.36,-99.17,38140-97645,Centro Coyoacan
+DIF,234,Ciudad de Mexico,1210,"Av. Vasco de Quiroga 3800 loc. 255, Col Antigua Mina di Totolapa",19.36,-99.28,7147-139074,Ampliacion Santa Fe III
+DIF,235,Ciudad de Mexico,57310,Avenue Bordo de Xochiaca,19.42,-99.02,1345-136176,Cuidad Jardin
+DIF,236,Ciudad de Mexico,3900,Damas # 130 Col. San Jose Insurgentes,19.36,-99.18,15124-157805,San Jose Insurgentes
+DIF,237,Ciudad de Mexico,15620,"Capitan Carlos Leon s/n Colonia Penon, de los Banos",19.42,-99.08,32275-131204,MEX - Mexico City Airport T2 PA NAC
+DIF,238,Ciudad de Mexico,11000,Acueducto Rio Hondo # 20 Col. Virreyes,19.42,-99.21,16544-172784,Medica Sur Lomas
+DIF,239,Ciudad de Mexico,11700,"Bosque de Duraznos, No. 39, Col Bosques de las Lomas, Miguel Hidalgo",19.4,-99.24,9134-91203,Parque Duraznos
+DIF,240,Ciudad de Mexico,3100,"Av. Universidad No. 757 Col. Del Valle, Delegacion Benito Juarez",19.38,-99.16,23632-230826,Universidad 767
+DIF,241,Ciudad de Mexico,6600,"80 Avenue Pase de la Reforma, P.B. Col. Juarez",19.43,-99.15,31740-113664,Fiesta Americana Reforma
+DIF,242,Ciudad de Mexico,54054,"Av. De las Fuentes #1-A,",19.52,-99.25,38149-98017,Bellavista
+DIF,243,Ciudad de Mexico,14390,"Calzada Del Hueso No. 519, Col Residensial Acoxpa. Local 189",19.3,-99.12,9034-151829,Galerias Coapa (Dead)
+DIF,244,Ciudad de Mexico,3100,191 Tlacoquermecatl Col. Del Valle,19.38,-99.17,32017-109624,Tlacoquermecatl
+DIF,245,Ciudad de Mexico,6700,"Durango # 205, Local 01 Col. Roma C.P",19.42,-99.16,15379-160564,Durango
+DIF,246,Ciudad de Mexico,6600,"Av. Paseo de la Reforma # 374, Local 2",19.43,-99.17,14972-156626,Reforma Varsovia
+DIF,247,Ciudad de Mexico,1020,"Insurgentes Sur #1743, Pb Col. Napoles, Del. Benito Juarez",19.36,-99.18,38113-92780,Insurgentes Juan Pablo
+DIF,248,Ciudad de Mexico,3020,"Av. Cuauhtemoc 462, Parque Delta",19.4,-99.16,29931-256008,Plaza Delta II
+DIF,249,Ciudad de Mexico,,"Camino a Santa Teresa #13, Col: Heroes de Padierna,",19.31,-99.22,38116-91204,Santa Teresa
+DIF,250,Ciudad de Mexico,4739,"Av. del Iman # 151, Local  98",19.31,-99.16,30843-102302,Gran Sur
+DIF,251,Ciudad de Mexico,5100,"Av. Camino al Olivo No. 22, Col. Lomas de Vistahermosa",19.37,-99.28,30880-101742,Vista Hermosa
+DIF,252,Ciudad de Mexico,3810,"Pennsylvania #143 Col. Napoles, Delegacion Benito Juarez",19.39,-99.18,20486-206206,Pennsylvania
+DIF,253,Ciudad de Mexico,6500,"Av. Paseo de la Reforma no. 325, local 2, 3, 4 y 5 Col. Cuauhtemoc c.p.",19.43,-99.17,38101-78563,Reforma Angel Sheraton
+DIF,254,Ciudad de Mexico,10700,"Camino a Santa Teresa 1055, Col Heroes de Padierna",19.31,-99.22,16784-175825,Hospital Angeles Pedregal I
+DIF,255,Ciudad de Mexico,3310,Av Universidad 1000  Sta Cruz B juarez,19.37,-99.15,24272-84666,Plaza Universidad
+DIF,256,Ciudad de Mexico,7700,"Av Othon de Mendizabal No 343, Loc Z-100-B",19.51,-99.15,15323-160025,Torres Lindavista
+DIF,257,Ciudad de Mexico,6140,"Av. Tamaulipas No. 55, loc. 101, Col. Condesa",19.41,-99.17,38156-99633,Tamaulipas
+DIF,258,Ciudad de Mexico,,"Blvrd. Magnocentro, Lote 2, Mz 1",19.41,-99.27,31068-103407,Magnocentro
+DIF,259,Ciudad de Mexico,14300,"Calzada Acoxpa No. 438 Col. Prado Coapa, Deleg. Coyoacan",19.3,-99.14,2107-141448,Via Acoxpa
+DIF,260,Ciudad de Mexico,11560,"Ave Santa Fe No. 94, Col Zedec Santa Fe",19.37,-99.26,16297-150024,Samara II
+DIF,261,Ciudad de Mexico,6760,"Tuxpan #53 esquina Tehuantepec, Col. Roma",19.41,-99.16,23814-233184,Tuxpan 53
+DIF,262,Ciudad de Mexico,1210,"Guillermo Gonzalez Camarena 1500, Loc 1, Centro de Cd. Santa Fe",19.37,-99.26,38150-98182,Santa Fe 2
+DIF,263,Ciudad de Mexico,3100,"Pestalozzi No. 1166 Local 1, Del Valle Centro District",19.38,-99.16,18397-189968,Pestalozzi
+DIF,264,Ciudad de Mexico,6500,"Av. Paseo de la Reforma, no. 505 local PB-11",19.42,-99.18,38110-87307,Torre Mayor
+DIF,265,Ciudad de Mexico,53140,201 Avenue Adolfo Lopez Mateos,19.48,-99.25,32063-117724,San Mateo Shopping Center
+DIF,266,Ciudad de Mexico,6110,"Blvd. Manuel Avila Camacho #50 y 66, Locales B02 y B03",19.43,-99.21,31665-107352,Lomas Plaza
+DIF,267,Ciudad de Mexico,15620,"Av. Capitan Carlos Leon s/n, Sala E, Col",19.42,-99.08,30842-101546,MEX - Aeropuerto Internacional II
+DIF,268,Ciudad de Mexico,6030,"Paseo de la Reforma 10, Col. Tabacalera, Del. Cuauhtemoc",19.44,-99.15,9123-152091,Torre Caballito
+DIF,269,Ciudad de Mexico,,"16 de septiembre # 79 , Local 102",19.33,-99.1,38155-99133,16 de Septiembre
+DIF,270,Ciudad de Mexico,11320,"Bahia San Hipolito 43 Locales 1 y 2, Colonia Anahuac",19.44,-99.18,1836-154026,Marina Nacional
+DIF,271,Ciudad de Mexico,14090,"Calzada de Tlalpan 4998 Col. La Joya, Del. Tlalpan",19.28,-99.16,25569-241535,Tezoquipa
+DIF,272,Ciudad de Mexico,1480,A Lopez Mateos 1701 Plateros A Obregón,19.37,-99.19,24431-237917,Plateros
+DIF,273,Ciudad de Mexico,1090,"Calle Iglesia 270 Esq. Av Rio Magdalena, Col. Tizapan de San Angel Del A. Obregon",19.34,-99.2,25800-242472,Grand San Jeronimo
+DIF,274,Ciudad de Mexico,,"Calz de Tlalpan 1037 Col Americas Unidas, Del. Benito Juarez",19.38,-99.14,28418-250664,Tlalpan Nativitas
+DIF,275,Ciudad de Mexico,3730,"Carracci n. 3 esq. Av. Patriotismo, Col. San Juan Mixcoac",19.41,-99.18,21968-216024,Carracci
+DIF,276,Ciudad de Mexico,6600,"Reforma 250 esq. Niza Col Cuauhtemoc, Reforma 250 esq. Niza Col Cuauhtemoc",19.43,-99.16,25073-239891,Capital Reforma II
+DIF,277,Ciudad de Mexico,4330,"Enriquez Urena 20 Col Los Reyes Coyoacan, Del. Coyoacan",19.34,-99.16,47813-259929,Copilco 20
+DIF,278,Ciudad de Mexico,1280,"Calle 10 N-132 San Pedro de los Pinos, Del Alvaro Obregón",19.39,-99.19,47812-259930,Plaza Exhibimex
+DIF,279,Ciudad de Mexico,3230,"Av Insurgentes sur esquina Parroquia, Parroquia 194, Colonia del Valle.",19.37,-99.18,25070-239864,Galerias Insurgentes II
+DIF,280,Ciudad de Mexico,6350,"Eje 1 Nte Mosqueta 259 Buenavista, Eje 1 Nte Mosqueta 259 Buenavista",19.45,-99.15,25071-239866,Forum Buenavista II
+DIF,281,Ciudad de Mexico,11550,"Shiller esquina Masaryk 111, Polanco, Shiller esquina Masaryk 111, Polanco",19.43,-99.19,25069-239865,"Shiller, Masaryk 111"
+DIF,282,Ciudad de Mexico,11520,"Calz. Las Aguilas 1953 Col. Axomiatla, Del. Alvaro Obregon",19.34,-99.25,27379-247387,Axomiatla II
+DIF,283,Ciudad de Mexico,9040,"Av. Leyes de Reforma esq. Baratillo, Col. Ejidos del Moral Del. Iztapalapa",19.38,-99.09,27378-247385,Plaza Basica
+DIF,284,Ciudad de Mexico,6600,"Paseo de la Reforma 180, Reforma esquina Insurgentes",19.43,-99.16,47148-256886,Reforma 180
+DUR,285,Durango,34060,Blvd. Felipe Pescador #1401,24.04,-104.66,26722-245127,Paseo Durango
+DUR,286,Gomez Palacio,35080,Av.Miguel Aleman No.625 Esq.Versalles,25.55,-103.5,22408-220664,Gomez Palacio
+GRO,287,Acapulco,39690,Avenue Costera Miguel Aleman 97,16.86,-99.87,32319-119558,Fiesta American Condesa
+GRO,288,Acapulco,39559,Costera Miguel Aleman esq. Fragata Acap,16.85,-99.91,27761-248668,Fragata Costa Azul
+GRO,289,Acapulco,3330,Costera Miguel Aleman S/N,16.86,-99.87,31097-99809,Galerias Diana Plaza Emporio
+GRO,290,Acapulco,39850,"Av. Costera Miguel Aleman # 2148, Fracc. Costal Azul",16.84,-99.85,31095-102268,Costa Azul
+GRO,291,Acapulco,39907,"52 Boulevard de las Naciones, Locales 28, 29 y 30",16.79,-99.81,32165-251215,Acapulco Diamante - Relocation
+GRO,292,Acapulco,39890,"18 Boulevard de las Naciones, Lote 1. Mza. 5 Local 66.",16.77,-99.78,1372-119592,La Isla Acapulco
+GRO,293,Acapulco,39670,"Av. Costera Miguel Aleman, Av.Wilfrido Massieu",16.86,-99.87,28753-250944,Galerias Acapulco
+GUA,294,Celaya,38080,Col. Las Compuertas Del Campestre,20.53,-100.78,47823-259925,Galerias Celaya
+GUA,295,Celaya,38044,"Blvd Adolfo Lopez Mateos 1025 Loc 5, Renacimiento",20.52,-100.83,32553-132450,Lopez Mateos 1
+GUA,296,Celaya,38000,"Blvd Lopez Mateos #1245 Ote., Col. Centro",20.52,-100.79,21189-209754,Celaya Campestre
+GUA,297,Guanajuato,36000,Jardin de la Union S/N,21.02,-101.25,1918-141464,Guanajuato Centro
+GUA,298,Irapuato,30670,Boulevard Villas de Irapuato 1362,20.68,-101.38,32417-132449,Irapuato 1
+GUA,299,Irapuato,36822,"Carretera Federal León  Querétaro, Libramiento Norponiente #7866",20.71,-101.31,47296-254833,Carretera - Irapuato
+GUA,300,Irapuato,36643,"Blvd. Villas de Irapuato, CC Cibeles",20.68,-101.37,27202-246921,Plaza Cibeles
+GUA,301,Leon,37150,"Blvd. Juan Alonso de Torres #2002, Col. Valle del Campestre",21.15,-101.7,24198-236545,Plaza Mayor II
+GUA,302,Leon,37480,"Blv Mariano Escobedo No. 2502 y 2504, Local 7 y 8, Col. Leon Moderno",21.11,-101.66,14907-77726,Mariano Escobedo
+GUA,303,Leon,,"Blvd. Juan Alonso de Torres #1315, San Jose del Consuelo",21.13,-101.6,28013-249485,Galerias Las Torres
+GUA,304,Leon,37150,"1115 Paseo del Moral Avenue, Local 1 y 1A, Col. Valle del Campestre",21.15,-101.69,31871-117785,Plaza Zentro
+GUA,305,Leon,37128,"Blvd. Paseo de los Insurgentes #3356, Col. San Jose de Las Piletas",21.17,-101.73,47665-256884,Puerta Bajio
+GUA,306,Leon,37150,"2002 Juan Alonso de Torres Boulevard, Col. Valle del Campestre, C.P.",21.15,-101.7,31893-114606,Plaza Mayor Leon
+GUA,307,Leon,37161,1401 Boulevard Juan Alonso de Torres Pte,21.15,-101.7,31930-112544,Las Torres
+GUA,308,Leon,37530,"Blvd. Aeropuerto #104 Cerrito de Jerez, Leon Sur",21.09,-101.63,21193-209749,Altacia
+GUA,309,Leon,37500,"Blvd. Adolfo Lopez Mateos No. 1702, Col. Parque Manzanares",21.12,-101.66,16718-173861,Galerias Leon
+GUA,310,Leon,37530,"2510 Adolfo Lopez Mateos Boulevard, Local 27, 28, 29 y kiosco 5 , Col. Mega",21.1,-101.64,32031-118524,Centro Max
+GUA,311,Leon,37295,"Blvd. Aeropuerto #843 local 77-B, Col. Predio Santa Anita",21.09,-101.61,17984-187105,Outlet Leon
+GUA,312,Salamanca,36766,"Camino a Mancera No. 214,, Fracc. Residecial Las Glorias",20.58,-101.22,47051-256607,Salamanca Power Town
+GUA,313,San Miguel de Allende,37700,3 Canal,20.91,-100.74,32416-132444,San Miguel Centro
+GUA,314,Siloa,36270,"C. Leon-Silao km 153, Col. Sn Antonio",20.97,-101.46,23513-230827,One Silao
+HID,315,Pachuca,42080,"Camino Real de la Plata no. 100 y 102, Loc. 125, col. zona plateada",20.1,-98.77,3021-142844,Galerias Pachuca
+HID,316,Pachuca,42060,Everado Marquwz 1100,20.11,-98.75,3019-140931,Pachuca San Javier
+JAL,317,Guadalajara,45645,"Av. Lopez Mateos Sur S/N, Tlajomulco",20.67,-103.39,26301-244259,Urban Center La Rioja
+JAL,318,Guadalajara,45659,C. Guadalajara Chapala Km 17,20.53,-103.29,24644-238588,Apto Gdl Llegadas Nacionales
+JAL,319,Guadalajara,,Av. Americas # 346,20.68,-103.37,38143-97351,Americas Guadalajara
+JAL,320,Guadalajara,44639,"Ave. Providencia #2951, Col Providencia",20.7,-103.39,38137-96291,Providencia Guadalajara
+JAL,321,Guadalajara,45659,"Carretera Guadalajara-Chapala, Km. 17.5,",20.52,-103.3,30763-99077,GDL - Aeropuerto Guadalajara PB
+JAL,322,Guadalajara,45010,"Calzada Norte #7195 Col. Ciudad Granja, Zapopan",20.68,-103.45,25669-241970,Ciudad Granjas
+JAL,323,Guadalajara,44500,Avenue de la Patria,20.66,-103.42,32208-108347,Cordilleras
+JAL,324,Guadalajara,,Av. Lopez Mateos s/n,20.62,-103.42,31508-103853,Las Fuentes
+JAL,325,Guadalajara,44540,"Prolongacion Avenida Santa Margarita, #4860, Subancla 3,",20.73,-103.44,30957-101702,Valle Real Guadalajara
+JAL,326,Guadalajara,45027,Juan Palomar & Arias # 123 Local 1,20.68,-103.43,31566-108338,Jardines Vallarta
+JAL,327,Guadalajara,45010,Carretra a Nogales No. 4760,20.72,-103.49,47824-259926,Technology Park
+JAL,328,Guadalajara,45129,4275 Pablo Neruda & Patria Avenue,20.69,-103.41,32536-119565,Tecos
+JAL,329,Guadalajara,45601,8650 Camino al Iteso,20.61,-103.42,32210-119602,Iteso
+JAL,330,Guadalajara,,Av. Lopez Cotilla #1465,20.67,-103.37,31192-103808,Chapultepec Guadalajara
+JAL,331,Guadalajara,44690,3300 Avenue Mexico,20.68,-103.4,31453-107338,Plaza Mexico
+JAL,332,Guadalajara,45116,"Av Patria S/N Esq Paseo Royal Country, Fracc Royal Country Jalisco",20.7,-103.42,16371-170364,Patio Patria
+JAL,333,Guadalajara,45050,"2375 Adolfo Lopez Mateos Boulevard, Local 4A-Zona C, Col. Ciudad del Sol",20.65,-103.4,31793-114608,Plaza del Sol
+JAL,334,Guadalajara,44100,"Calle Morelos # 219 Col. Centro, entre calles Maestranza y Degollado",20.68,-103.35,25661-241969,Guadalajara Centro
+JAL,335,Guadalajara,45030,"Av. Rafael Sanzio No. 150, Local C4 Nivel Vallarta",20.68,-103.43,1971-96037,Galerias Guadalajara
+JAL,336,Guadalajara,45136,"Av.Santa Margarita esq.Servidor Publico, Municipio de Zapopan",20.73,-103.43,25503-236935,Real Center
+JAL,337,Guadalajara,,Blvrd. Lopez Mateos,20.67,-103.39,38144-96427,Minerva Guadalajara
+JAL,338,Guadalajara,,"Av. Vallarta entre Juan Palomar, y Aria",20.68,-103.39,28167-249490,Sania
+JAL,339,Guadalajara,45659,Carretera Guadalajara Chapala Km 17.5,20.52,-103.3,31476-140004,GDL - Guadalajara Intl Airport
+JAL,340,Guadalajara,44540,"Av Vallarta 3959, Col Don Bosco, Zapopan",20.67,-103.4,38154-99071,Gran Plaza
+JAL,341,Guadalajara,44550,"Mariano Otero No 3295, Fracc Verde Valle",20.65,-103.39,30817-99269,Mariano Otero
+JAL,342,Guadalajara,45050,"150 Avenue Rafael Sanzio, Local 05, Nivel Terrasa, Col. La Estancia",20.68,-103.43,31837-116906,Galerias Guadalajara 2
+JAL,343,Guadalajara,44550,"Av. Mariano Otero #1499, Col. Verde Valle",20.65,-103.39,28014-249484,Expo Guadalajara
+JAL,344,Guadalajara,44630,"1025 Terranova , Colonia Lomas de Provid",20.69,-103.39,31681-112524,Terranova
+JAL,345,Guadalajara,,"Av. Americas & Av. Providencia, Colonia",20.7,-103.38,31682-105092,Zona Financiera
+JAL,346,Guadalajara,44140,"Av. Vallarta #2425, Atrio Central, Colon",20.67,-103.38,38153-99006,Centro Magno
+JAL,347,Guadalajara,45659,"Carretera Guadalajara-Chapala, Km. 17.5,",20.52,-103.3,30715-99043,GDL - Aeropuerto Guadalajara Pta
+JAL,348,Guadalajara,,"Av. Alcalde #1931 esq. Felix, Palavicini",20.69,-103.35,28016-249494,Alcalde
+JAL,349,Guadalajara,45040,"Av. Guadalupe #1559, Colonia Chapalita",20.67,-103.41,38145-96722,Chapalita Guadalajara
+JAL,350,Guadalajara,44540,"Boulevard Bugambilias #2299, Local D - 4,  Col. Bugambilias",20.6,-103.45,30694-100779,Bugambilias Guadalajara
+JAL,351,Guadalajara,44700,Av. Circunvalación No 2700 Col. Oblatos.,20.69,-103.3,18848-196004,Oblatos
+JAL,352,Guadalajara,11950,Puerta de Hierro Blvd. Col. Lomas Altas,20.7,-103.32,1914-119547,Andares
+JAL,353,Guadalajara,45070,"5435 Copernico Avenue, Colonia Arboledas",20.63,-103.42,32388-127146,Copernico
+JAL,354,Guadalajara,45150,Avenida Manuel Avila Camacho # 3240,20.71,-103.37,32606-119580,Avila Camacho
+JAL,355,Puerto Vallarta,48335,"Paseo de la Marina No. 121 Local 25,, Fracc. La Marina Vallarta",20.67,-105.25,3565-153294,Nima Bay
+JAL,356,Puerto Vallarta,48300,2485 Boulevard Francisco Medina Ascencio,20.65,-105.24,31450-107581,Plaza Peninsula
+JAL,357,Puerto Vallarta,48300,"Paseo Diaz Ordaz No. 920 Local A, Centro",20.61,-105.23,21188-209757,Malecon Vallarta II
+JAL,358,Puerto Vallarta,48338,2920 Francisco Medina Asencio Boulevard,20.66,-105.24,32211-119574,Galerias Vallarta
+JAL,359,Puerto Vallarta,48300,Paseo Diaz Ordaz,21.15,-86.82,31847-114974,Malecon 1
+JAL,360,Puerto Vallarta,63732,"Avenida Paseo de Los Cocoteros, 85 Sur Locales",20.69,-105.29,1373-132447,Paradise Plaza
+JAL,361,Puerto Vallarta,48291,"Parcela 158, Z1 P3/5, Local 1, Col. Las Juntas",20.69,-105.26,20392-205064,Las Juntas
+JAL,362,Tlajomulco,45643,"Av. Lopez Mateos No. 1307 Local 1, El Palomar District",20.59,-103.44,16447-169209,Palomar
+JAL,363,Tlaquepaque,44840,"Av. Gen Marcelino Garcia Barragan # 2077, Col. El Paradero",20.65,-103.32,2158-121209,Forum Tlaquepaque
+JAL,364,Zapopan,45201,Ave Gral Ramon Corona 2514,20.73,-103.45,32696-139186,Tec Guadalajara
+JAL,365,Zapopan,45134,"Carretera a Tesistan No 2, Los Robles",20.75,-103.42,25439-239825,Plaza Los Robles
+JAL,366,Zapopan,45110,"Av. Patria No. 2051-4, lote 8",20.7,-103.42,30716-99849,Patria Acueducto Guadalajara
+MIC,367,Lazaro Cardenas,60955,Av. Las Palmas 1559,17.98,-102.21,26703-245077,Ciudad Lazaro Cardenas
+MIC,368,Morelia,58241,1494 Camelinas Avenue,19.68,-101.18,32420-132445,Camelinas
+MIC,369,Morelia,58020,"Av.Ventura Puente #744, Col. Ventura Puente",19.69,-101.18,24203-236544,Ventura Puente
+MIC,370,Morelia,58080,Calzada de la Huerta # 2713,19.68,-101.22,26858-245928,La Huerta
+MIC,371,Morelia,58260,450 Avenue Enrique Ramirez Miguel,19.69,-101.16,31792-108924,Morelia Campestre
+MIC,372,Morelia,,Avenue Tecnologico de Monterrey,19.65,-101.17,2159-230327,Paseo Altozano
+MIC,373,Uruapan,60160,"Calle Lazaro Cardenas #2109, Esquina Bruselas",19.41,-102.07,27201-246920,Uruapan II DT
+MIC,374,Uruapan,60120,"Blvd Industrial No. 1241 Local A-10 y 11, Col. Villa Uruapan",19.42,-102.04,13070-156048,CC Uruapan
+MOR,375,Cuernavaca,62250,Avenue Domingo Diez #1003 Locales 1y2,18.95,-99.24,31590-108339,Domingo Diez
+MOR,376,Cuernavaca,62170,904 Avenue Emiliano Zapata,18.96,-99.25,32049-109625,Zapata
+MOR,377,Cuernavaca,62290,Av. Rio de Mayo,18.93,-99.22,38133-96880,Cuernavaca Vistahermosa
+MOR,378,Cuernavaca,,"Carr. Mexico-Acapulco S/N, Local 158",18.94,-99.19,30652-100048,Galerias Cuernavaca
+MOR,379,Cuernavaca,62000,"Salazar No. 40 Col. Centro, Benito Juarez",18.92,-99.23,27464-247807,Cuernavaca Centro
+MX,380,Apodaca,66603,"Carretera Miguel Aleman No. 789, Ave. Del Telefono",25.76,-100.19,47820-259927,Sendero La Fe
+MX,381,Atizapan de Zaragoza,54720,"Via Jorge Jimenez Cantu s/n, loc. 1",19.56,-99.3,38142-95538,Zona Esmeralda
+MX,382,Coacalco,55700,"Via Jose Lopez Portillo No 105, entre Boulevard Coacalco y Providencia",19.64,-99.1,16168-168864,Plaza Las Flores
+MX,383,Coacalco,55710,Via Jose lopez Portillo,19.64,-99.1,13069-142824,CC Coacalco
+MX,384,Coacalco,55700,"Via Jose Lopez Portillo No.1, Pueblo San Francisco Coacalco.",19.63,-99.1,25676-241986,Cosmopol
+MX,385,Cuautitlan Izcalli,54730,Autopista Mexico Queretaro Km 38,19.67,-99.2,32754-140812,San Marcos
+MX,386,Cuautitlan Izcalli,54738,Ave 1 de Mayo con Avenida Huixquilucan,19.66,-99.21,2144-139849,Luna Parc
+MX,387,Ecatepec,55140,"Av. Carlos Hank Gonzalez No. 120, Col. Rinconada de Aragon. Local 115",19.53,-99.03,15614-163324,Plaza Aragon
+MX,388,Ecatepec,55140,"Av. Carlos Hank González # 120, Local 15AM;  Col. Rinconada de Aragón",19.56,-99.02,25024-239624,Plaza Aragon II
+MX,389,Estado de Mexico,57205,"Av. Bordo de Xochiaca n.3, Col., Ciudad Jardin Bicentenario",19.42,-99.02,20453-205550,Ciudad Jardin II
+MX,390,Estado de Mexico,,"Mexico Cuautla No 1 Col Santa Barbara, Ixtapaluca Edo. Mex.",19.3,-98.88,28420-250688,Sendero Ixtapaluca
+MX,391,Estado de Mexico,56337,"Av Nezahualcoyotl 1 Col Sta Maria, Municipo de Chimalhuacan",19.41,-98.93,47809-259932,Plaza Chimalhuacan
+MX,392,Estado de Mexico,0,"Cto. Comercial Plaza La Hacienda, Villas de la Hacienda, Atizapan, 54500",19.61,-99.23,48712-264427,Villas de la Hacienda
+MX,393,Estado de Mexico,52929,Av de los Jinetes Tlalnepantla Edo Mex,19.45,-99.24,27032-246490,Av. Jinetes
+MX,394,Estado de Mexico,52323,"Av. Circunvalación Poniente n.189,Col., Vista del Valle, Naucalpan",19.48,-99.27,20500-206204,Espacio Vista del Valle
+MX,395,Estado de Mexico,53399,Transmisiones Militares,19.46,-99.22,49219-267551,Cetram 4 caminos
+MX,396,Estado de Mexico,54033,"Sor Juana Ines de la Cruz No. 280, Tlalnepantla",19.45,-99.17,26766-245328,Tlalnepantla Carso
+MX,397,Estado de Mexico,6500,Rio Lerma 232 esquina Rio Mississippi,19.43,-99.17,49216-267566,Torre Diana
+MX,398,Estado de Mexico,56577,"MEX-PUEBLA KM.30.3, JARDIN INDUSTRIAL",19.29,-98.9,23729-232712,Carretera a Puebla
+MX,399,Estado de Mexico,54000,"Blvd México-Queretaro 1898, Periferico, Viveros de la Loma",19.53,-99.22,47149-256885,Santa Monica Periferico DT
+MX,400,Estado de Mexico,55031,"Av. Central esq. Av. Primero de Mayo, Av. Central esq. Av. Primero de Mayo",19.58,-99.02,29668-254836,Power Center Las Americas
+MX,401,Huixquilucan,52764,"Av. Jesus del Monte #41, Col. Jesus del Monte",19.38,-99.3,18051-170381,Parque Interlomas
+MX,402,Huixquilucan,52787,"Vialidad de la Barranca 6, Colonia Ex Hacienda Jesus del Monte",19.4,-99.28,16336-136172,Paseo Interlomas
+MX,403,Huixquilucan,52787,"Blvrd. Magnocentro L1 Mz2, Lomas Anahuac",19.41,-99.27,38126-94637,Interlomas
+MX,404,Huixquilucan,52783,"Av Bosque de Minas No.33 loc 6,7 terraza, Col. Bosques de la Herradura",19.42,-99.26,38121-93099,Herradura
+MX,405,Medepec,52140,Paseo San Isidro No. 400,17.08,-96.72,16543-172786,Plaza del Parque
+MX,406,Metepec,,"Vialidad Metepec S/N,",19.26,-99.62,38138-96878,Galerias Metepec
+MX,407,Metepec,52160,"Boulevard Toluca-Metepec #719 norte, antes 505 norte. Col. Las Jaras",19.25,-99.61,47226-257384,Pabellon Metepec
+MX,408,Metepec,,Av. Leona Vicario #386,19.26,-99.62,38141-97350,Plaza Mayor Metepec
+MX,409,Mexico,53390,"Boulevard Manuel Avila Camacho # 456, Naucalpan de Juarez, Mexico",19.46,-99.22,26556-244506,Parque Toreo II
+MX,410,Mexico,2960,"Calz. Vallejo esq. Pte 94B, Col. San Francisco Xocotitla",19.47,-99.14,28975-244507,Patio La Raza
+MX,411,Mexico City,1050,"Miguel Angel de Quevedo 121, Guadalupe Chimalistac",19.35,-99.18,18285-188667,Gandhi
+MX,412,Municipio de Huixquilucan,52772,"Vialidad de la Barranca numero 6, Colonia Ex Hacienda Jesus del Monte",19.4,-99.28,25072-239888,Paseo Interlomas II
+MX,413,Naucalpan,53100,"Circuito Medicos #6, esq. Fernando Leal Novelo, Ciudad Sateli",19.51,-99.23,38117-77731,Satelite
+MX,414,Naucalpan,53160,"Blvd Manuel Avila Camacho 3034, Lt 47 MZ1, Colonia Florida",19.49,-99.24,17471-182325,Torres de Satelite
+MX,415,Naucalpan,53100,"Cto. Comercial # 2251, Local R308, CD. Satelite",19.51,-99.23,15131-157826,C.C. Plaza Satelite
+MX,416,Naucalpan,53120,#26 Col Fracc Blvd,19.49,-99.25,9047-150044,Plaza Lomas Verdes
+MX,417,Naucalpan,53200,"Av. Lomas Verdes No. 640, loc. 13 y 14, Col. La Soledad",19.49,-99.25,38119-93098,Lomas Verdes
+MX,418,Naucalpan,,"Cto. Economistas y, Circunvalacion pte FI-4",19.51,-99.25,38115-79340,Zona Azul
+MX,419,Naucalpan,53950,"Fuente de Tritones 22, Fraccionamiento Lomas de Tecamachalco",19.43,-99.23,17486-182344,Fuente de Tritones
+MX,420,"San Cristobal Centro, EDO MEX",55020,"Prolongación Agricultura PD Soledad, Miyuhualco y Tierra Blanca Col.",19.61,-99.05,20452-205545,Patio Ecatepec
+MX,421,Tlalnepantla,54055,"Blvd. Manuel Avila Camacho N.1007, San Lucas Tepetlacalco, Tlalnepantla",19.52,-99.23,50448-241997,Mundo E
+MX,422,Tlalnepantla de Baz,54000,"Sor Juana Ines de la Cruz 101, Col. Tlalnepantla Centro",19.54,-99.2,15892-165825,Sor Juana
+MX,423,Toluca,50160,"Paseo Tollocan, esq. 1° de Mayo",19.27,-99.68,24646-238587,Galerias Toluca
+MX,424,Toluca,53743,"Carr Toluca Mex km 48.7, Municipio de Ocoyoacac",19.28,-99.49,23223-228834,Carr Toluca Mexico km 48
+MX,425,Toluca,50110,Eduardo Monroy Cardenas 2000,19.27,-99.7,32419-132844,ITESM Toluca
+MX,426,Toluca,50120,Avenue Venustiano Carranza 903,19.28,-99.66,31713-111228,Toluca Colon
+MX,427,Toluca,52000,"Local 10 y 11 Col. Parque Industrial, Lerma",19.29,-99.55,18636-192945,Sendero Toluca
+MX,428,Toluca,53743,"Carr, Mex-Toluca 42.8 Col. Ortiz Rubio, Municipio de Ocoyoacac",19.28,-99.45,22779-224827,Carretera Mexico-Toluca KM 42
+MX,429,Toluca,52172,"Avenue Tecnologico 1600, Norte San Salvador Tizatlalli",19.27,-99.57,32574-119596,Tecnologico Metepec
+NAY,430,Tepic,63185,Av. De la Cultura esq. Rio Bravo,21.49,-104.89,23225-228833,Tepic Shopping Center
+NAY,431,Tepic,63000,Boulevard Luis Donaldo Colosio N. 680,21.49,-104.87,1917-134787,Forum Tepic
+NLE,432,Apodaca,66600,Carretera Miguel Aleman KM 24,25.78,-100.12,48657-264432,Apto. Mty. TC SUE
+NLE,433,Guadalupe,67173,705 Pintores Mexicanos,19.52,-99.08,31872-108681,Avenue Las Americas
+NLE,434,Guadalupe,45030,6000 Guadalupe Avenue,20.66,-103.44,32667-132448,Guadalupe
+NLE,435,Monterrey,66600,C. Miguel Aleman Km 24,25.78,-100.18,24643-238604,Apto Mty TB SUE
+NLE,436,Monterrey,66260,"Frida Khalo #194 esq Rufino Tamayo, Magma Towers Plaza",25.65,-100.33,21190-209752,Magma Towers
+NLE,437,Monterrey,64753,"A. Fundadores # 995, Colonia Valle Oriente",25.64,-100.32,25435-241025,Plaza Sienna
+NLE,438,Monterrey,66050,Carretera a Colombia km 5.5,25.78,-100.11,5014-144444,MTY International Airport TB PB
+NLE,439,Monterrey,64590,Av. Prolongacion Madero,25.68,-100.27,32794-137741,Churubusco
+NLE,440,Monterrey,65040,"Ave. Manuel L. Barragan # 1600, San Nicolas de los Garza",25.72,-100.32,2104-141451,Plaza Fiesta Anahuac
+NLE,441,Monterrey,66278,676 Avenue Hacienda Penuelas,25.73,-100.4,31794-116129,Plaza Cumbres
+NLE,442,Monterrey,64610,Av. Paseo de los Leones # 2400 Col. Cumb,25.71,-100.38,31266-102322,Cumbres Sonic Monterrey
+NLE,443,Monterrey,64984,"Carretera Nacional KM 268,  La Rioja",25.58,-100.24,25225-239827,Esfera City Center
+NLE,444,Monterrey,66626,"Blvd. Aeropuerto #10, Parque Industrial Milenio",25.79,-100.13,47980-260827,Plaza Aeropuerto Mty
+NLE,445,Monterrey,76220,Av. Gomez Morin  404 Col. Del Valle,25.65,-100.36,30960-102269,Gomez Morin
+NLE,446,Monterrey,66260,"Av. Lazaro Cardenas #2400, zona Valle Oriente",25.63,-100.3,26299-244260,Metropolitan
+NLE,447,Monterrey,64650,"1882 Antonio L Rodriguez Boulevard, Plaza Sur, Col. Santa Maria C.P.",25.67,-100.38,32048-119305,Desarrollos Delta
+NLE,448,Monterrey,45070,3602 Mariano Otero,20.64,-103.42,31895-108825,La Calma
+NLE,449,Monterrey,64349,"Paseo de Los Leones esq. Paseo Cumbres, Av. Paseo de Los Leones #2001",25.74,-100.41,23222-228832,Plaza Qu
+NLE,450,Monterrey,66418,"Av. Sendero #200, San Nicolas de Los Garza",25.63,-100.28,25526-241273,Paseo Sendero
+NLE,451,Monterrey,64000,Avenue Constitucion 1804-B Pte.,25.67,-100.34,32473-131724,Constitucion
+NLE,452,Monterrey,64000,"Av. Juarez #1102, Pabellon M",25.77,-100.41,47050-256606,Pabellon M
+NLE,453,Monterrey,64830,"Av. Revolucion 2703, Colonia Ladrillera",25.66,-100.28,22558-222445,Nuevo Sur
+NLE,454,Monterrey,66600,Carretera Miguel Aleman Km 24,25.78,-100.11,32106-119550,MTY - Terminal 2
+NLE,455,Monterrey,66260,"1000 Batallon De San Patricio, San Pedro Garza Garcia NL",25.65,-100.34,31870-106764,Plaza Fiesta San Agustin
+NLE,456,Monterrey,66278,1000 Avenue Lazaro Cardenas,25.64,-100.31,31296-105887,Galerias Valle Oriente
+NLE,457,Monterrey,64849,Av Eugenio Garza Sada 2501 Sur Col Tecno,25.65,-100.29,31257-105667,Tecnologico de Monterrey
+NLE,458,Monterrey,64050,315 Avenue Jose Eleuterio Gzz,25.68,-100.35,31943-108806,Plaza Real
+NLE,459,Monterrey,76220,Calzada del Valle 401,25.66,-100.36,31049-102271,Valle Plaza 401 Monterrey
+NLE,460,Monterrey,66477,410 Romulo Garza,25.73,-100.21,32162-116130,Citadel Mall Monterrey
+NLE,461,Monterrey,66231,"Avenue Vasconcelos Ote #345, Col del Valle",25.65,-100.35,32204-120384,Plaza Tanarah
+NLE,462,Monterrey,64840,Avenue Eugenio Garza Sada #250,25.64,-100.29,31992-119591,Garza Sada
+NLE,463,Monterrey,66220,Av. Vasconcelos 804A Pte,25.66,-100.39,31610-108143,Vasconcelos
+NLE,464,Monterrey,66265,Av. Jose Vasconcelos y Av. Gomez Morin.,25.65,-100.36,30986-101302,Plaza San Pedro Monterrey
+NLE,465,Monterrey,66470,"Av. Miguel Aleman #107, Paseo La Fe",25.68,-100.28,47052-256605,Paseo La Fe
+NLE,466,Monterrey,66450,AV.UNIVERSIDAD ESQ SALVADOR DIAZ MIRON,25.74,-100.3,32751-137951,Anahuac
+NLE,467,Monterrey,,C. Miguel Aleman Km 24,25.68,-100.28,24647-238610,Apto Mty TA SUE
+NLE,468,Monterrey,64610,#1301 Paseo de los Leones,25.71,-100.38,32132-108126,Paseo de los Leones
+NLE,469,Monterrey,83250,"Av Garza Sada s/n Monterrey, Nuevo Leon",25.6,-100.26,5084-148264,MM Garza Sada
+NLE,470,Monterrey,64630,1841 Anillo Periferico,25.69,-100.38,32163-112868,San Jeronimo Monterrey
+NLE,471,Monterrey,64620,Insurgentes 2500 Col Vista Hermosa,25.68,-100.35,31244-105325,Galerias Monterrey
+NLE,472,Monterrey,64860,3604 Avenue Revolucion,25.64,-100.27,31620-108683,Revolucion Super 7
+NLE,473,Nuevo Leon,66600,"Carr Miguel Aleman #250-B, Apodaca District",25.74,-100.2,21185-209760,Miguel Aleman Monterrey
+NLE,474,San Pedro Garza Garcia,66278,"Ave. Lazaro Cardenas 2311, Jose Maria Escriva",25.65,-100.33,47821-259928,La Aurora
+NLE,475,San Pedro Garza Garcia,66278,Batallon de San Patricio #1000,25.65,-100.34,32387-134007,Plaza Fiesta San Agustin Interior
+NLE,476,San Pedro Garza Garcia,66238,Avenue Morones Prieto #450,25.66,-100.42,31990-119562,Universidad de Monterrey
+OAX,477,Oaxaca,6805,"Calz. Porfirio Diaz #258, Col Reforma, Plaza del Parque",17.08,-96.72,21181-209744,Plaza del Parque -
+PUE,478,Puebla,1770,"Av.43 Oriente #5, Col Huexotitla",19.03,-98.21,3802-153447,Puebla Huexotitla
+PUE,479,Puebla,72190,"Av. Kepler No. 2143, Col. Reserva Territorial Atlixcayotl",19.02,-98.23,16461-171707,Hospital Angeles Puebla
+PUE,480,Puebla,,Circuito Interior Juan Pablo II #3302,19.04,-98.23,38147-98018,Puebla Las Animas
+PUE,481,Puebla,72040,"Blvd Hermanos Serdad No. 270, Rancho Colorado",18.98,-98.25,24978-239445,Galerias Hermanos Serdan PUEBLA
+PUE,482,Puebla,72530,"25 poniente, 16 de Septimbre",19.04,-98.2,49147-267188,25 Poniente
+PUE,483,Puebla,72400,"39 Poniente #3515 local 4 y 5, C.C. El Triangulo,  Col. Las Animas",19.04,-98.24,30854-101588,Triangulo
+PUE,484,Puebla,72530,Centro31 orinte No. 803 Col. Ladrillera,19.03,-98.2,29935-255964,31 Oriente
+PUE,485,Puebla,72810,Blvrd. Atlixcayotl 1501,19.03,-98.24,38146-98019,Puebla Masarik
+PUE,486,Puebla,72400,"Av. Juarez No. 2511, Col. La Paz, entre 25 y 23 sur",19.05,-98.22,30650-99692,Juarez Puebla
+PUE,487,Puebla,72170,"Calzada Zavaleta #3916 Local 1, Col Santa Buenavista",19.05,-98.25,3804-153448,Puebla Zavaleta
+PUE,488,Puebla,72000,"Av. 2 Oriente 201, 2 Norte",19.04,-98.2,29662-254827,Puebla Centro
+PUE,489,Puebla,72450,"Blvd. Del Nino Poblano #2,510 Col. Col.",19.03,-98.23,38157-228844,Angelopolis - Relocation
+PUE,490,Puebla,72830,"PASEO OPERA NO. 11 AND 13, Local 1, Lomas de Agnelpolis II",19.01,-98.21,23860-233604,Adagio
+PUE,491,Puebla,,"Calle 5 de Mayo # 1,427, Local 22, Col.",19.06,-98.3,9107-100808,Cholula
+QUE,492,Queretaro,76030,"Av. Constituyentes No. 57, Col. Cimatario",20.58,-100.39,17988-187104,Constituyentes Qro
+QUE,493,Queretaro,76127,Town Center Juriquilla,20.69,-100.45,27200-246919,Town Center Juriquilla
+QUE,494,Queretaro,76230,"Boulevard Jurica la Campana No. 899, Local 02, Residencial Caletto",20.71,-100.44,19159-198604,Urban Center Juriquilla
+QUE,495,Queretaro,76160,Blvd. Bernardo Quintana No. 4607,20.62,-100.41,26704-245075,Paseo Quintana
+QUE,496,Queretaro,76127,Carretera Queretaro-San Luis No. 12401,20.65,-100.43,23625-231586,Antea I
+QUE,497,Queretaro,76246,"Carr- Mexico Queretaro km # 206 +300, CC Piamonte",20.58,-100.26,27198-246918,Carretera Queretaro-Mexico
+QUE,498,Santiago de Queretaro,76180,103 Hacienda Grande,20.57,-100.41,32223-122444,Campestre Queretaro
+QUE,499,Santiago de Queretaro,76160,"4100 Bernardo Quintana Boulevard, Local PA15 & IS PA02, Colonia Alamos 3ra",20.62,-100.39,32088-119575,Plaza Boulevares
+QUE,500,Santiago de Queretaro,76000,52-C Ramon Ramirez Familiar,20.59,-100.38,32187-127145,Los Arcos
+QUE,501,Santiago de Queretaro,76000,"Avenue 5 de Febrero Sur #99, Col. Virreyes, Santiago de Queretaro",20.58,-100.41,31896-116005,Galerias Queretaro
+ROO,502,Cancun,77711,"esq Constituyentes y calle 16 bis nte, Plaza Quinta Alegria",20.63,-87.07,21485-212464,Quinta Alegria
+ROO,503,Cancun,,"Blvrd. Kukulkan Km 8.5, Zona Hotelera",21.14,-86.75,31451-106256,Plaza Caracol
+ROO,504,Cancun,77504,"Bonanpack Ave esq Nichupte, SM:6 1 lote 1",21.15,-86.82,2105-141450,Malecon las Americas
+ROO,505,Cancun,77500,"Carretera Cancun-Chetumal, Km 22",21.04,-86.87,31702-106244,CUN - Cancun Int Airport T3 PA
+ROO,506,Cancun,77500,"Boulevard  Kukulcan km. 3.5, Esq Calle Galeon Zona Hotelera",21.15,-86.79,26767-245330,Kukulcan Cancun
+ROO,507,Cancun,75220,"Carretera Cancún-Chetumal Km 22, 75220 C",21.04,-86.87,29874-255684,Terminal 3 Planta Alta II
+ROO,508,Cancun,77504,CARRETERA CAN CUN - TULUM KM 7.5,21.11,-86.84,1919-142188,Plaza Cumbres Cancun
+ROO,509,Cancun,77500,77 Bonampak Ave,21.13,-86.83,1908-168944,Bonampak 77
+ROO,510,Cancun,77500,"Carretera Cancun-Chetumal, Km 22, Terminal 2, Exterior",21.04,-86.87,12943-155404,CUN - Cancun Int T2 Exterior
+ROO,511,Cancun,77500,"Carretera Cancun-Chetumal, Km 22, Terminal 2, Exterior",21.04,-86.87,15457-161645,CUN - Cancun Intl T2- Ext Satellite
+ROO,512,Cancun,77500,"Carretera Cancun-Chetumal, Km 22",21.04,-86.87,31703-106243,CUN - Cancun Int Airport T3 PB
+ROO,513,Cancun,77500,"Blvrd. Kukulkan Km 12.5, Zona Hotelera",21.11,-86.76,31452-106353,La Isla Cancun 2
+ROO,514,Cancun,77500,Avenue Xcaret,21.16,-86.83,31378-105285,Plaza Hollywood Cancun
+ROO,515,Cancun,77500,"Avenue Bonampack S/N, Local 1",21.13,-86.83,31932-117164,Bonampak
+ROO,516,Cancun,77500,Av. Andres Quintana Roo,21.15,-86.85,31475-106927,Paseo Cancun
+ROO,517,Cancun,75220,"Carretera Cancún-Chetumal Km 22, 75220, Cancun, Quintana Roo, Mexico",21.04,-86.85,25448-241026,Aeropuerto Cancun
+ROO,518,Cozumel,77609,Rafael E. Melgar  34  Isla Cozumel,20.51,-86.95,24969-239446,Cozumel Pama
+ROO,519,Cozumel,77600,Avenue Rafael Melgar,20.51,-86.95,31993-118768,Punta Langosta
+ROO,520,Playa del Carmen,77710,Terminal Maritima Playa del Carmen,20.62,-87.08,49218-267545,Terminal Maritima
+ROO,521,Playa del Carmen,,Ave. Playacar,20.61,-87.09,32572-136726,Playacar
+ROO,522,Playa del Carmen,77702,"Carretera Federal 2100, region 100, mza 16. Lote 1, Col ejidal",20.62,-87.09,23628-231588,Centro Maya  Playa del Carmen
+ROO,523,Playa del Carmen,,Paseo del Carmen,20.62,-87.07,31449-107158,Paseo del Carmen
+ROO,524,Playa del Carmen,77710,Quinta Avenida& Calle 10,20.63,-87.07,31496-106897,Playa Basico
+ROO,525,Playa del Carmen,77710,"Quinta Av. Norte entre calle 28 nte y 30, 5B-6A-6B Fracc. 2 Lte.119",20.62,-87.08,31991-114973,Playa Tides
+ROO,526,Playa del Carmen,77710,"5a. Avenida  entre calle 12 y 14, Solidaridad",20.37,-87.42,29537-245930,5a Av Playa del Carmen
+ROO,527,Quintana Roo,,"Km. 39+300, Carretera Cancun-Chetumal, Rancho La Esperanza",21.03,-86.85,19146-199025,Carretera Cancun-Playa
+ROO,528,Tulum,77760,"Av. Ruinas de Tulun No. F-3, Col. Tulum Ruinas",20.22,-87.44,24200-236570,Tulum
+SIN,529,Culiacan,80100,"Blvd. Culiacan No. 450, Col. Recursos Hidraulicos",24.8,-107.41,1803-154027,Culiacan Cinepolis
+SIN,530,Culiacan,80130,Carretera Navolato km 4.5,24.8,-107.39,26861-245074,Aeropuerto Culiacan
+SIN,531,Culiacan,80014,"Blvd Pedro Infante, #3201 Fracc. Floresta Tres Rios",24.79,-107.44,26444-239828,Plaza Palmares
+SIN,532,Culiacan,,"Blvd. Jose Limon, Rep de Brasil",24.76,-107.42,23966-234585,Lowes Culiacan
+SIN,533,Culiacan,80027,Boulevard Jose Diego Valadez Rios & C. P,24.82,-107.4,32610-132861,Tres Rios
+SIN,534,Culiacan,,Plaza Forum,24.82,-107.4,32609-132866,Forum Culiacan
+SIN,535,Culiacan,80220,"Av. Alvaro Obregon esq. Rio San Lorenzo, Av. Gral. Alvaro Obregon #1140 Sur",24.79,-107.39,23224-228831,La Lomita DT
+SIN,536,Los Mochis,81200,Blvd Centenario esq Blvd Antonio Rosales,25.78,-109,2096-142846,Boulevard Centenario
+SIN,537,Mazatlan,82110,Av. Lomas de Mazatlan & Av. Camaron Saba,23.24,-106.45,32749-139195,Mazatlan Lomas
+SIN,538,Mazatlan,82103,"Av. De la Marina esq. Av Delfin dentro, del desarrollo Marina Mazatlan Mza. 24",23.24,-106.45,20447-205547,Galerias Mazatlan
+SIN,539,Mazatlan,82123,"Av. Reforma S/N, Fracc. Alameda",23.24,-106.44,49223-267552,Gran Plaza Mazatlan
+SLP,540,San Luis Potosi,78210,"Montes Blancos No. 180 Local 3,4 & 5",22.14,-101.02,32422-119586,Lomas
+SLP,541,San Luis Potosi,72800,1996 Venustiano Carranza Avenue,22.15,-101.01,31980-119620,Plaza Divina
+SLP,542,San Luis Potosi,78215,"Blvd. Antonio Rocha Cordero No. 700, esq. Av. Sierra Vista Poniente",22.13,-101.03,12471-154184,Plaza Carso SLP
+SLP,543,San Luis Potosi,78216,609 Cordillera del Himalaya,22.14,-101.03,32360-131224,Himalaya
+SON,544,Ciudad Obregon,85000,"Av Miguel Aleman 15 esSufragio Efectivo, Col. Real del Sol",27.51,-109.93,17003-146605,Cd. Obregon
+SON,545,Hermosillo,,Morelos Boulevard,29.12,-110.95,32793-132858,City Pitic
+SON,546,Hermosillo,,Rodriguez Boulevard,29.1,-110.95,32695-132860,Rodriguez
+SON,547,Hermosillo,83144,"Blvd. Morelos esq. Av. Trece, Blvd. Jose Maria Morelos # 307",29.12,-110.95,23813-233185,Blvd. Morelos
+SON,548,Hermosillo,83224,"Blvd. Luis Donaldo Colosio #829, Col. La Rioja",29.08,-111.01,28017-249491,Puerta Oeste
+SON,549,Hermosillo,83220,"Carretera a Bahia de Quino km 9.5, Local 21D y 23A/Col La Manga",29.09,-111.05,22035-217084,Aeropuerto Hermosillo
+SON,550,Nogales,84066,"Blvd. El Greco #45 Col. El Greco, Nogales Mall",31.29,-110.94,27203-246917,Nogales Mall Sonora
+TAB,551,Villahermosa,86035,"Av Prolongacion Paseo Tabasco, Esq Circuito Municipal",18,-92.94,1362-140065,Paseo Tabasco
+TAB,552,Villahermosa,86037,"Periferico Calos Pellicer Camara, Local 101",18.01,-92.95,22782-224833,Plaza Mallorca
+TAB,553,Villahermosa,86103,"Periférico Pellicer esquina Universidad, Sendero Villahermosa",18.02,-92.91,29741-254831,Sendero Villahermosa
+TAB,554,Villahermosa,86035,"Paseo Tabasco No.1405, Col. Desarrollo Urbano",18,-92.95,14970-156624,Galerias Tabasco
+TAB,555,Villahermosa,86190,"Periferico Carlos Pellicer Camara 129, esq. Av. Cesar Sandino, Col. 1 de mayo",17.98,-92.97,16194-161526,Altabrisa Tabasco
+TAM,556,Ciudad Victoria,87027,Av.Tamaulipas Esq. Lopez Mateos No.890,23.75,-99.15,22399-220665,Ciudad Victoria
+TAM,557,Reynosa,88710,"Blvd Hidalgo y Fuente de Diana KM101 s/n, Col. Fraccinamiento Las Fuentes",26.06,-98.32,21186-209759,Reynosa
+TAM,558,Tampico,89330,AV. HIDALGO S/N ENTRE HIDALGO Y LOMA ENC,22.27,-97.87,1895-139066,Hidago Tampico
+TAM,559,Tampico,89130,"Av. Ejercito Mexicano No. 706, Col. Primavera",22.25,-97.86,49221-267548,Fashion Mall Tampico
+TAM,560,Tampico,89107,"Av. Universidad #900, Municipio de Tampico",22.27,-97.86,25659-236934,Tampico Universidad
+VER,561,Boca del rio,94293,A.RUIZ CORTINEZ 4330  BOCA DEL RIO,19.09,-96.12,25644-241749,ANDAMAR
+VER,562,Coatzacoalcos,96550,Nuño de Balboa,18.14,-94.47,47081-256708,Coatzacoalcos DT
+VER,563,Coatzacoalcos,96536,"Av. Universidad km. 8, Col. Predio Santa Rosa",18.14,-94.49,2095-142848,Forum Coatzacoalcos
+VER,564,Cordoba,94500,"Av. 3, Calle 1 No. 104",18.89,-96.93,29671-254825,Cordoba Centro
+VER,565,Veracruz,94292,"Carretera Boca del rio-Anton Lizardo, Fracc. El Estero, BOCA DEL RIO",19.09,-96.1,19037-198124,El Dorado Veracruz
+VER,566,Veracruz,94298,"Av. Las Americas S/N, Blvd. Ruiz Cortines",19.14,-96.11,48643-264525,Plaza las Americas - Veracruz
+VER,567,Veracruz,94298,"Av Ruiz Cortinez 3, 289, esq. Calle Girasol",19.15,-96.11,15322-160026,Costa de Oro
+VER,568,Veracruz,91697,"Circuito Nvo. Veracruz macrolote14 #835, Col. Exhacienda Buenavista edo Veracruz",19.13,-96.23,26298-244256,Nuevo Veracruz
+VER,569,Xalapa,52764,"Av. Lazaro Cardenas No. 102, Col. Rafael Lucio",19.56,-96.92,16646-173860,Urban Center Xalapa
+VER,570,Xalapa Enriquez,91190,"Paseo de las Palmas #1, Jardines de las Animas",19.52,-96.87,22961-226744,Xalapa Animas
+YUC,571,Merida,,"Calle 30 n. 185, Col. San Ramon Norte",21.04,-89.62,19251-199824,City Center Merida
+YUC,572,Merida,97000,"Calle 56 A, Numero 465 x 33 A y 35",20.99,-89.62,16420-119570,Paseo Montejo
+YUC,573,Merida,97130,"451 de la Calle 7 Fraccionamie Altabrisa, Seccion 26",21.02,-89.58,32249-119595,Plaza Altabrisa
+YUC,574,Merida,97128,Circuito Colonias Avenue & Calle 22,21,-89.61,32637-132846,Circuito Colonias
+YUC,575,Merida,97117,"Av. 32 n. 219 por calle 43, Norte",21.03,-89.61,20393-205056,Plaza Jardin Merida
+YUC,576,Merida,97118,493 Calle 29 x 50 Diag. Gonazlo Guerrero,21.03,-89.63,32089-119556,Gran Plaza Merida
+ZAC,577,Zacatecas,98000,Ave Hidalgo 507-A,22.78,-102.57,32752-139185,Zacatecas Centro
+ZAC,578,Zacatecas,98040,"Col. Antigua Unidad Minera, El Bote, de Ciudad de Argentum, Local No. 156",22.78,-102.6,17987-184009,Galerias Zacatecas
+ZAC,579,Zacatecas,98097,"Blvd Garcia Salinas 311, La Estancia",32.51,-117.01,32575-135724,Garcia Salinas
