@@ -3,7 +3,8 @@ import { StarbucksService } from '../../shared/starbucks.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
-
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { StarbuckComponent } from '../starbuck/starbuck.component';
 
 @Component({
   selector: 'app-starbuck-list',
@@ -13,14 +14,14 @@ import { MatPaginator } from '@angular/material/paginator';
 export class StarbuckListComponent implements OnInit {
 
   listData!: MatTableDataSource<any>;
-  displayedColumns: string[] = ['estado', 'ciudad', 'id_tienda', 'no_tienda', 'nombre', 'codigo_postal', 'direccion', 'latitud', 'longitud', 'actions'];
+  displayedColumns: string[] = ['id_tienda', 'estado', 'ciudad', 'no_tienda', 'nombre', 'codigo_postal', 'direccion', 'latitud', 'longitud', 'actions'];
   post:any = [];
   searchKey!:string;
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(private service: StarbucksService) {
-  }
+  constructor(private service: StarbucksService,
+    private dialog: MatDialog){};
 
   getSimpleStarbucks() {
     let headers = new Headers();
@@ -42,5 +43,35 @@ export class StarbuckListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getSimpleStarbucks();
+  }
+
+  onSearchClear(){
+    this.searchKey = "";
+  }
+
+  applyFilter(){
+    this.listData.filter = this.searchKey.trim().toLowerCase();
+  }
+
+  onCreate(){
+    this.service.initializeFormGroup();
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = false;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = "60%";
+    this.dialog.open(StarbuckComponent, dialogConfig);
+  }
+
+  onEdit(row:any){
+    this.service.populateForm(row);
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = false;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = "60%";
+    this.dialog.open(StarbuckComponent, dialogConfig);
+  }
+
+  onDelete(){
+    
   }
 }

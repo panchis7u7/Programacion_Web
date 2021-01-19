@@ -1,35 +1,53 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { Observable } from 'rxjs';
-import { map, catchError, tap } from 'rxjs/operators'
-import { IStarbucks } from '../Models/Starbucks';
-import { ErrorHandlerService } from '../services/error-handler.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StarbucksService {
 
-  constructor(private errorHandlerService: ErrorHandlerService, private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   form: FormGroup = new FormGroup({
-    $key: new FormControl(null),
-    estado: new FormControl(''), 
-    ciudad: new FormControl(''),
     id_tienda: new FormControl(''),
+    ciudad: new FormControl(''),
+    codigo_postal: new FormControl(''),
+    direccion: new FormControl(''),
+    estado: new FormControl(''), 
+    latitud: new FormControl(''),
+    longitud: new FormControl(''),
     no_tienda: new FormControl(''),
     nombre: new FormControl(''),
-    direccion: new FormControl(''),
-    codigo_postal: new FormControl(''),
-    longitud: new FormControl(''),
-    latitud: new FormControl(''),
   });
 
   initializeFormGroup() {
     this.form.setValue({
-      $key: null,
-      $estado: '',
+      estado: '',
+      ciudad: '',
+      no_tienda: '',
+      id_tienda: '',
+      nombre: '',
+      direccion: '',
+      codigo_postal: '',
+      longitud: '',
+      latitud: '',
     });
+  }
+
+  populateForm(starbuck:any){
+    /*this.form.setValue({
+      estado: starbuck.estado,
+      ciudad: starbuck.ciudad,
+      no_tienda: starbuck.no_tienda,
+      id_tienda: starbuck.id_tienda,
+      nombre: starbuck.nombre,
+      direccion: starbuck.direccion,
+      codigo_postal: starbuck.codigo_postal,
+      longitud: starbuck.longitud,
+      latitud: starbuck.latitud
+    });*/
+    this.form.setValue(starbuck);
+    console.log(starbuck);
   }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { StarbucksService } from '../../shared/starbucks.service';
 import { HttpClient } from '@angular/common/http';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-starbuck',
@@ -10,10 +11,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class StarbuckComponent implements OnInit {
 
-  constructor(public service: StarbucksService, private fb: FormBuilder, private http: HttpClient) { }
+  constructor(public service: StarbucksService, private fb: FormBuilder, 
+    private http: HttpClient,
+    private dialogRef: MatDialogRef<StarbuckComponent>) { }
 
   ngOnInit(): void {
-    this.service.form = this.fb.group({
+    /* this.service.form = this.fb.group({
       estado: '',
       ciudad: '',
       id_tienda: '',
@@ -23,7 +26,7 @@ export class StarbuckComponent implements OnInit {
       codigo_postal: '',
       longitud: '',
       latitud: '',
-    });
+    }); */
   }
 
   onClear(){
@@ -38,8 +41,8 @@ export class StarbuckComponent implements OnInit {
     const data = {
       estado: formData.estado,
       ciudad: formData.ciudad,
-      id_tienda: formData.id_tienda,
       no_tienda: formData.no_tienda,
+      id_tienda: formData.id_tienda,
       nombre: formData.nombre,
       direccion: formData.direccion,
       codigo_postal: formData.codigo_postal,
@@ -47,6 +50,7 @@ export class StarbuckComponent implements OnInit {
       latituda: formData.latitud,
       scope: '*',
     }
+    
     this.http.post("http://localhost:3001/starbucks/add", data).subscribe(
       result => {
         console.log('success');
@@ -57,4 +61,11 @@ export class StarbuckComponent implements OnInit {
       }
     );
   }
+
+  onClose(){
+    this.service.form.reset();
+    this.service.initializeFormGroup();
+    this.dialogRef.close();
+  }
+
 }

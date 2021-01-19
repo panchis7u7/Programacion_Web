@@ -4,8 +4,8 @@ export interface IStarbucks {
     id_tienda: string;
     no_tienda: string;
     nombre: string;
-    codigo_postal: string;
     direccion: string;
+    codigo_postal: string;
     latitud: number;
     longitud: number;
   }

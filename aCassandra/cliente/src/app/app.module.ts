@@ -28,6 +28,7 @@ import { StarbuckListComponent } from './starbucks/starbuck-list/starbuck-list.c
     HttpClientModule,
   ],
   providers: [StarbucksService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [StarbuckComponent],
 })
 export class AppModule { }
