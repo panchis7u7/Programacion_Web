@@ -2,16 +2,31 @@
 <div class="container">
     <mat-toolbar>
         <span class="fill-remaining-space"></span>
-        <span>Conoce tu starbuck mas cercano!</span>
+        <span>Conoce tu starbucks mas cercano!</span>
         <span class="fill-remaining-space"></span>
     </mat-toolbar>
-    <google-map width="100%" [center]="centro">
-        <map-marker [position]="centro"> </map-marker>
-        <map-marker [position]="starbuckMC"> </map-marker>
+    <google-map width="100%" id="map" [center]="centro">
+        <map-marker [position]="centro" label="Casa"> </map-marker>
+        <map-marker [position]="star" label="Ubicacion"> </map-marker>
     </google-map>
+    <br>
+    <form [formGroup]="service.form" style="width: 100%; text-align: center;" (submit)="onClick()">
+        <input type="hidden" formControlName="$key">
+        <mat-form-field style="margin: 0px 10px 0px 10px;">
+            <input formControlName="latitud" matInput placeholder="Latitud">
+            <mat-label>Latitud</mat-label>
+        </mat-form-field>
+        <mat-form-field style="margin: 0px 10px 0px 10px;">
+            <input formControlName="longitud" matInput placeholder="Longitud">
+            <mat-label>Longitud</mat-label>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" class="btn-search" type="submit">Buscar starbucks mas cercano</button>
+    </form>
+    <br><br>
     <mat-toolbar>
         <span class="fill-remaining-space"></span>
-        <span>Insertar nuevo starbucks</span>
+        <span>Lista de starbucks en mexico</span>
         <span class="fill-remaining-space"></span>
     </mat-toolbar>
     <app-starbuck-list></app-starbuck-list>

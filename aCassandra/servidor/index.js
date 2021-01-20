@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors({origin: '*'}));
 
-let cliente = new casssandra.Client({contactPoints: ['127.0.0.1'], localDataCenter: 'dc1', keyspace: 'prueba'})
+let cliente = new casssandra.Client({contactPoints: ['127.0.0.1','192.168.1.117'], localDataCenter: 'dc1', keyspace: 'prueba'})
 
 cliente.connect(error => {
     if (error) throw error;
@@ -64,3 +64,43 @@ app.get("/starbucks", (req, res) => {
         res.send(JSON.stringify({status: 200, error: null, response: result}));
     }
 )});
+
+const mysql = require('mysql');
+
+const conn = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "password",
+    database: "Starbucks",
+});
+
+conn.connect((err) => {
+    if(err) throw err;
+    console.log("MYSQL conectado!");
+});
+
+//La huerta
+//Lat: 19.681530382549475, Long -101.21687712338647
+
+//Mi casa
+//Lat: 19.708001971003057, Long: -101.20430798241452
+app.post("/starbucks/search", (req, res) => {
+    let sql = `SELECT store_name, c.city, e.state, longitude, latitude, (6371 * ACOS( ` +
+                            `COS(RADIANS(${req.body.lat})) * COS(RADIANS(latitude)) * ` +
+                            `COS(RADIANS(longitude) - RADIANS(${req.body.lng})) + ` +
+                            `SIN(RADIANS(${req.body.lat})) * SIN(RADIANS(latitude)) ` +
+                            `) ` +
+                `) AS Distancia ` +
+                `FROM Tiendas ` +
+                `INNER JOIN Ciudades c ON c.id_city = Tiendas.id_city ` +
+                `INNER JOIN Estados e ON e.id_state = c.id_state ` +
+                `HAVING Distancia < 370 ` + 
+                `ORDER BY Distancia ASC ` +
+                `LIMIT 1;`;
+    console.log(sql);
+    conn.query(sql, (err, result) => {
+    console.log(result);
+        if (err) throw err;
+        res.send(JSON.stringify({status: 200, error: null, response: result}));
+    });
+});
